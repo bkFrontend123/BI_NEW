@@ -343,6 +343,7 @@
     }
     .productStartupBottom .btnCommon {
         padding: 14px 18px;
+        justify-content: center;
     }
     .productStartupListSec {
         margin-bottom:  120px;
