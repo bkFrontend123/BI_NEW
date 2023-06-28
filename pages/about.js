@@ -31,9 +31,9 @@ export default function About() {
                     <div className={`row `}>
                         <div className={`col-md-8 mx-auto`}>
                             <div className='commnHeading text-start text-md-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title-16 font-weight-500 '>About Us</div>
-                                <div className='title-64 font-secondary mb-md-3 mb-2 text-primary font-weight-600'> Get to Know Our  <span className='text-yellow fst-italic'> Amazing Team</span></div>
-                                <p className='title-24 font-weight-500 text-black px-0 px-lg-5 mb-0'>Diverse, from different backgrounds, cultures & fields; Team BimaKavach represents what it means to be inherently Indian!</p>
+                                <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title-12 text-uppercase font-weight-700'>About Us</div>
+                                <div className='title-60 font-secondary mb-md-3 mb-2 text-primary font-weight-700'> Get to Know Our  <span className='text-yellow fst-italic'> Amazing Team</span></div>
+                                <p className='title-22 font-weight-500 text-black px-0 px-lg-5 mb-0'>Diverse, from different backgrounds, cultures & fields; Team BimaKavach represents what it means to be inherently Indian!</p>
                             </div>
                         </div>
                     </div>
@@ -103,11 +103,11 @@ export default function About() {
                 {`
                     
                     .aboutUs .commnHeading{
-                        padding: 120px 0;   
+                        padding: 100px 0 80px 0;   
                     }
                     .aboutUs-teamCards{
                         padding-top: 110px 0;
-                        padding-bottom: 200px;
+                        padding-bottom: 110px;
                     }
                     .founder{
                         padding: 120px 0;
@@ -130,11 +130,15 @@ export default function About() {
                     }
                     @media only screen and (max-width: 1450px) {
                         .aboutUs .commnHeading{
-                            padding: 100px 0;
+                            padding: 100px 0 80px 0;
                         }
                         .aboutUs-teamCards{
                             padding-top: 80px;
-                            padding-bottom: 150px;
+                            padding-bottom: 90px;
+                        }
+                        .title-60 {
+                            font-size: 50px;
+                            line-height: 70px;
                         }
                         .title-64 {
                             font-size: 50px;
@@ -146,7 +150,11 @@ export default function About() {
                         .container-fluid{
                             padding: 0 40px;
                         }
-                        .title-64{
+                        .title-60{
+                            font-size: 30px;
+                            line-height: 36px;
+                        }
+                        .title-64 {
                             font-size: 30px;
                             line-height: 36px;
                         }
@@ -176,7 +184,8 @@ export default function About() {
                             padding: 46px 0;
                         }
                         .aboutUs .commnHeading{
-                            padding-bottom: 50px;   
+                            padding-bottom: 50px;  
+                            padding-top: 50px; 
                         }
                         .founderTitle{
                             margin-bottom: 20px;
@@ -188,7 +197,16 @@ export default function About() {
                             color: var(--vt-c-blueDark) !important;
                         }
                         .aboutUs-teamCards{
-                            padding-bottom: 70px
+                            padding-bottom: 60px
+                        }
+                    }
+                    @media (max-width: 575px) {
+                        .title-22 {
+                          font-size: 18px;
+                          line-height: 27px;
+                        }
+                        .aboutUs-teamCards {
+                            padding-bottom: 0;
                         }
                     }
                    

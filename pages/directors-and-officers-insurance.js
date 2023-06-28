@@ -200,6 +200,7 @@ export default function product() {
                     <ProductBanner
                         title="Directors & Officers Liability Insurance"
                         description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
+                        customClass="dAndoBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>

@@ -63,8 +63,8 @@ export default function IndustryDetail() {
           <div className='container '>
             <div className='row '>
               <div className='col-md-8'>
-                <h3 className='industryHero-title title-64 font-secondary font-weight-600 text-black mb-4'>ECommerce Insurance</h3>
-                <h3 className='industryHero-title title-48 font-secondary font-weight-600 text-primary mb-0'>Overview</h3>
+                <h3 className='industryHero-title title-60 font-secondary font-weight-600 text-black mb-4'>ECommerce Insurance</h3>
+                <h3 className='industryHero-title title-42 font-secondary font-weight-600 text-primary mb-0'>Overview</h3>
                 <p className='industryHero-descrip title-21 text-black font-weight-500 mb-0'>The online retail industry has seen astronomical growth in the past decade, and with that raises unique challenges and risks. According to a study by BigCommerce and Square:</p>
                 <div className='industryHero-descripList title-21 text-black font-weight-500  mb-1'>
                   <ul>
@@ -410,7 +410,7 @@ export default function IndustryDetail() {
               <div className='col-md-12 '>
                 <div className='aboutCompany-title'>
                   <div className='polyBox border-primary bg-blueLight mb-md-4 mb-3 text-primary title16 font-weight-500 '>Frequently Answered Questions</div>
-                  <h3 className=' title-64 font-secondary font-weight-600 text-primary'>About E-commerce Insurance</h3>
+                  <h3 className=' title-60 font-secondary font-weight-600 text-primary'>About E-commerce Insurance</h3>
                 </div>
               </div>
             </div>
@@ -618,9 +618,17 @@ export default function IndustryDetail() {
                       font-size: 56px;
                       line-height: 50px;
                     }
+                    .title-60 {
+                      font-size: 56px;
+                      line-height: 50px;
+                    }
                     .title-48{
                       font-size: 44px;
                       line-height: 60px;
+                    }
+                    .title-42{
+                      font-size: 40px;
+                      line-height: 52px;
                     }
                     .title-36 {
                       font-size: 28px;
@@ -686,11 +694,15 @@ export default function IndustryDetail() {
                         font-size: 36px;
                         line-height: 38px;
                     }
+                    .title-60{
+                      font-size: 30px;
+                      line-height: 36px;
+                    
                     .title-48{
                         font-size: 36px;
                         line-height: 38px;
                     }
-                    .title-48{
+                    .title-42{
                         font-size: 30px;
                         line-height: 36px;
                     }
@@ -826,7 +838,10 @@ export default function IndustryDetail() {
                       width: 100%;
                       justify-content: center;
                     }
-                    
+                    .title-22 {
+                      font-size: 18px;
+                      line-height: 27px;
+                    }
                   }
                   @media only screen and (max-width: 575px) {
                     .whyInsurance .title-48{

@@ -57,7 +57,7 @@ export default function Industry() {
           <div className='container '>
             <div className='row '>
               <div className='col-md-7'>
-                <h3 className='industryHero-title title-64 font-secondary font-weight-600 text-primary mb-0'>Industries</h3>
+                <h3 className='industryHero-title title-60 font-secondary font-weight-600 text-primary mb-0'>Industries</h3>
                 <p className='industryHero-descrip title-21 text-black font-weight-500 '>The way that a business manages risk can vary widely depending on the company’s type, the products or services it offers, and the industry in which it operates. It can be difficult to determine exactly what insurance coverage is necessary, so we have compiled information about all the insurance options that are relevant to your business and industry.</p>
                 <ScheduleWhatsapp />
               </div>
@@ -382,6 +382,20 @@ export default function Industry() {
                      }
                    }
 
+                   @media only screen and (max-width: 1450px) {
+                    .title-60 {
+                        font-size: 52px;
+                        line-height: 64px;
+                    }
+                    .title-64 {
+                        font-size: 52px;
+                        line-height: 64px;
+                    }
+                    .title-24 {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                  }
                   @media only screen and (max-width: 575px) {
                     
                     .industry{
@@ -406,6 +420,10 @@ export default function Industry() {
                         font-size: 36px;
                         line-height: 38px;
                     }
+                    .title-60{
+                      font-size: 30px;
+                      line-height: 36px;
+                    }
                     .title-48{
                       font-size: 36px;
                       line-height: 38px;
@@ -426,6 +444,10 @@ export default function Industry() {
                       .btnCommon{
                         font-size: 80px;
                         line-height: 27px;
+                    }
+                    .title-22 {
+                      font-size: 18px;
+                      line-height: 27px;
                     }
                   }
                   @media only screen and (max-width: 370px) {
