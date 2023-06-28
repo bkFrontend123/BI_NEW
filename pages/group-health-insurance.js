@@ -763,10 +763,13 @@ export default function GroupHealth_Insurance() {
                                 </div>*/}
                                 <IndustryBlock />
                                 <div className={`${productStyle.productStartupIcon}`}>
-                                    <Image src="/prdct_SDT_icon.svg" width="272" height="272" alt="Simple Digital & Transparent" />
+                                    <div className='badgeIconCol'>
+                                        <img className='badgeIcon' src="/icons/badgeIcon.svg" alt="Simple Digital & Transparent" />
+                                        <img className='badgeActiveIcon' src="/icons/badgeActiveIcon.svg" alt="Simple Digital & Transparent" />
+                                    </div>
                                 </div>
                             </div>
-                            <div className={`mt-5 ${productStyle.productStartupBottom}`}>
+                            <div className={`mt-5 pt-xl-4 ${productStyle.productStartupBottom}`}>
                                 <Row>
                                     <Col>
                                         <ProductSchedule />
