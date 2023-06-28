@@ -323,7 +323,7 @@ export default function GroupHealth_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Employee Retention</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Employee Retention</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>As several companies are offering a plethora of employee-associated benefits, employee retention has become increasingly challenging for an organization. Group Health Insurance encourages an employee to stay with the company, increasing employee retention</p>
                                                         </div>
                                                     </div>
@@ -331,7 +331,7 @@ export default function GroupHealth_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Promotes Healthy Workplace Culture and Boosts Productivity</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Promotes Healthy Workplace Culture and Boosts Productivity</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>A comprehensive group insurance plan demonstrates how much you care for your employee's health and well-being. The more you care, the more productive and healthy your employees will be.</p>
                                                         </div>
                                                     </div>
@@ -339,7 +339,7 @@ export default function GroupHealth_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Tax Benefits</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Tax Benefits</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Like all other business insurance premiums, Group health insurance premiums paid by employers are also tax-deductible as a business expense.</p>
                                                         </div>
                                                     </div>
@@ -352,7 +352,7 @@ export default function GroupHealth_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Pre-existing Disease is Covered From Day 1</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Pre-existing Disease is Covered From Day 1</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Unlike the retail policy, the Group Health Insurance policy may cover pre-existing illnesses and diseases from the moment an employee joins the organization.</p>
                                                         </div>
                                                     </div>
@@ -360,7 +360,7 @@ export default function GroupHealth_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Extensive Coverage With no Limit on Diseases</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Extensive Coverage With no Limit on Diseases</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Employee group health plans cover various ailments.</p>
                                                         </div>
                                                     </div>
@@ -368,15 +368,15 @@ export default function GroupHealth_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Larger Maternity Coverage</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Larger Maternity Coverage</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>If opted for maternity cover, most of these plans cover both C-sections and normal deliveries, and some plans also provide coverage for newborns without a standard 90-day maternity period.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`pb-0 border-0 mt-4 mt-xl-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pb-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Negotiated Rates</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Negotiated Rates</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Insurance carriers negotiate rates with healthcare providers and facilities on behalf of the employer and employees. These negotiated rates are typically lower than what an individual would pay out-of-pocket, resulting in cost savings.</p>
                                                         </div>
                                                     </div>
@@ -405,11 +405,11 @@ export default function GroupHealth_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Group Health Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exceptions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exceptions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
+                                        <div data-tab className="place-content-center">
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
@@ -455,7 +455,7 @@ export default function GroupHealth_Insurance() {
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <div data-tab className="place-content-center">
+                                        <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>There are a few standard exclusions among all these plans:</div>
@@ -810,12 +810,12 @@ export default function GroupHealth_Insurance() {
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 26px;
-                        line-height: 38px;
+                        font-size: 28px;
+                        line-height: 40px;
                     }
                     .title-36 {
-                        font-size: 28px;
-                        line-height: 34px;
+                        font-size: 26px;
+                        line-height: 38px;
                     }
                     .title-32 {
                         font-size: 26px;

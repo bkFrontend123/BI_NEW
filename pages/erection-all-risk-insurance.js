@@ -189,7 +189,7 @@ export default function product() {
     return (
         <>
             <Head>
-                <title>D&O Insurance | BimaKavach Insurance for Directors and Officers</title>
+                <title>Erection All Risk Policy | BimaKavach Policy for Erection All Risk</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,9 +199,9 @@ export default function product() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Directors & Officers Liability Insurance"
-                        description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
-                        customClass="dAndoBnr"
+                        title="Erection All Risk Policy"
+                        description="The erection all risk policy (EAR) covers any loss or damage when installing machinery or equipment in a factory or office. It helps protect you financially in case something goes wrong during the installation process, which can be expensive. This type of insurance is important for the construction and manufacturing industries in India, where there are risks like fire, flood, or accidental damage when building residential or commercial structures, power plants, or automobile factories."
+                        customClass="erctnBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
@@ -271,67 +271,37 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
-                                    </div>
-                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>Advantages of D&O Insurance</div>
-                                        <Row className='g-lg-5'>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to Directors & Officers</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Saves personal assets from lawsuits</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Helps attract & retain the best talent</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Erection All Risk Policy?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>An erection all risk (EAR) policy is an insurance plan that protects you when you're setting up machinery or equipment in a factory or office. It covers any losses or damages that happen during the installation process. If anything goes wrong, this policy helps you financially, which could slow down the installation and increase costs.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The coverage of an EAR insurance policy starts from the moment materials are unloaded at the construction site and continues until the project is finished and handed over to the client.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A common misunderstanding is that plants or machinery can only be insured after being installed and tested. However, with an EAR policy, you can get protection while the equipment is being installed, whether it's a single machine or a big power plant.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The 3 Categories of D&O Insurance</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Erection All Risk Policy</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>1. Side A</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Direct Indemnification</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>The D&O policy offers liability cover for company managers, officials, and directors to protect them from claims which may arise from the decisions and actions taken within the scope of their regular managerial duties.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>It offers comprehensive insurance for the erection of projects and provides cover during storage, erection, and testing of heavy plant & machinery at the insured site.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>2. Side B</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Company Reimbursement</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>When a company indemnifies (provides financial protection) its directors or officers for a covered claim under the policy, Side B Coverage ensures that the company is reimbursed for the expenses they've incurred during the process.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>It provides coverage for the entire period of the project rather than on a yearly basis.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>3. Side C</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Coverage for Entity</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas: Employment Disputes & Security Related Issues.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Customers can add various features as needed.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -344,43 +314,14 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-Suite executives. Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <span className='d-none d-lg-block'></span>It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
-                                    </div>
-                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
-                                        <Row>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Risk appetite</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Financial background</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Company size</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Past lawsuit history</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Business Age</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Erection All Risk Policy?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Contractors and employers can take out the policy jointly and individually. Any of the following parties involved in the construction process may be covered:</p>
+                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                            <li>General contractors</li>
+                                            <li>Subcontractors</li>
+                                            <li>Suppliers and manufacturers of equipment</li>
+                                            <li>The purchaser or owner of the equipment</li>
+                                        </ul>
                                     </div>
                                 </Container>
                             </div>
@@ -388,68 +329,10 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A director or officer might face many types of financial risks as part of their job. D&O insurance provides an easy way to protect the interest of their senior officers and board members. The policy protects them from the following potential problems -</p>
-                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>Allegations by other stakeholders or shareholders</li>
-                                            <li>Allegations of sexual harassment, discrimination, and other employment violations</li>
-                                            <li>Accounting mistakes & exposure to mergers & acquisitions</li>
-                                            <li>Regulatory investigations initiated by the government, a professional, or a statutory body</li>
-                                            <li>Corporate governance lapses</li>
-                                        </ul>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Erection All Risk Policy?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>If you're in the construction business, the erection all risk policy is really helpful. It's a complete insurance policy that protects you from things going wrong when you're installing, testing, and starting up equipment or machinery during construction. At BimaKavach, they can give you a personalized price from the best insurance companies at a price that won't break the bank.</p>
                                     </div>
                                 </Container>
-
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Who can Sue the Directors or Officers of the organisation?</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-3 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Suppliers</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Employees</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Competitors</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Regulatory Bodies</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Clients</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Shareholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Other Stakeholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </Container>
-                                </div>
                             </div>
                             <div id="scrollspyHeading4" className={`pt-0 ${productStyle.coverage}`}>
                                 <Container>
@@ -467,174 +350,80 @@ export default function product() {
                                             </span>
                                             Coverages & Exceptions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Directors & Officers Liability Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'> Erection All Risk Policy</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exceptions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exceptions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
-                                        <Row>
+                                        <div data-tab className="place-content-center">
+                                            <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many benefits. Some of the major coverages in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>Once the first delivery arrives at the project site, the insurance coverage called EAR (Erection All Risks) starts. It lasts until the testing is finished or when the project is handed over to the main employer, whichever happens first. Here are some common things that are covered by this insurance.</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bail and Bond Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>D&O policy covers the costs of securing bail and bond for directors and officers, which may be in connection with any criminal proceedings arising from their duties as directors or officers of the company.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Storms, floods, cyclones, earthquakes, and allied perils</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It protects losses or damages that occur because of these covered perils during the installation period. It includes damage to the construction site, materials, equipment, or structures resulting from storms, overflowing rivers, heavy rainfall, or other flood-related events, cyclonic events, tremors, other earthquake-related factors, and other related perils.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Legal Representation Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It includes defense costs incurred by an insured on account of the attendance and/or provision of documents or information to any investigation, as required by the investigator.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Third-party liability</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on cover provides protection for legal liability related to accidental damage or loss to the property of a third person, arising out of the erection work of the insured. It also covers the legal liability for non-fatal and fatal injuries caused to a third person due to the work.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover reimburses the costs associated with managing and mitigating the negative impact on the company's reputation, arising out of duties performed by the directors and officers on behalf of the company.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Fire, explosion, lightning, and aircraft damage</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover refers to the protection provided for losses or damages that occur as a result of these specific perils during the construction or installation period. It includes damage to the construction site, materials, equipment, and structures due to fire-related incidents and explosions. This may be caused by factors such as gas leaks and chemical reactions, damage due to lightning-induced fires, electrical surges, and incidents where aircraft collide with the construction site, equipment, or structures, causing damage or destruction.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Extradition cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects a company if a director or officer is arrested or detained in a foreign country and the company needs to pay for the costs associated with his extradition back to the home country.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Negligence and human errors</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>EAR insurance policies often include coverage for loss originating from negligence and errors in the design, planning, or supervision of the erection work.  An EAR insurance policy may also cover liability claims in cases of negligence or human error resulting in third-party injuries or property damage. This includes legal defence costs and any settlements or judgments against the insured party due to their negligence or errors.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage provides protection from reasonable costs and expenses incurred by the insured due to required attendance at court proceedings, hearings, trials, and depositions related to the defense of a claim.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Burglary and theft</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage addresses the risk of theft or burglary-related incidents that may occur at the construction site or involve the insured property. It applies to theft incidents involving construction materials, equipment, tools, machinery, or other valuable items related to the project. It also provides coverage for losses or damages resulting from burglaries, which involve unauthorized entry or forced entry into locked premises or storage areas.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Kidnap and Ransom Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage provides relief from the costs associated with any event or connected series of events of kidnapping, seizing, or detaining an insured person by force or fraud, for the purpose of demanding a ransom.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Faults in the erection of a building</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage is designed to address issues related to construction defects, workmanship errors, or faulty installation during the project. It includes issues such as faulty design, improper construction methods, inadequate materials, or substandard workmanship that result in structural failures or defects. It may also include errors in measurements, installation, assembly, or other issues that may lead to defects or failures.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Self-reporting Expenses Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage helps to protect company directors and officers from the financial burden of expenses associated with self-reporting a potential violation or claim to the relevant Governmental, judiciary, or regulatory authorities.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Investigation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable fees, costs, and expenses incurred (with the insurer’s prior written consent) by or on behalf of an insured person, in relation to preparing for and attending an investigation.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable costs, charges, fees, and expenses incurred by an organization, in attaining the services of any public relations firm or crisis management firm to advise the organization for managing public communication.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated additional limit for Non-Executive Directors and Officers</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>With this add-on cover, you get an extra layer of protection that is added to the overall coverage limit for non-executive directors and officers of a company.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Riot & strike</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage covers damage to the construction site, materials, equipment, or structures caused by riots, demonstrations, protests, or other forms of public disturbance. It also includes damage resulting from strikes, lockouts, labor disputes, or other related events that may affect the construction project.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <div data-tab className="place-content-center">
+                                        <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>While the Erection All Risk Policy offers extensive coverage, there are certain situations that are typically not included in most Erection All Risk policies.</div>
                                                 </Col>
                                             </Row>
-                                            <Row className='justify-content-between g-4'>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>OFAC Sanction Clause</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>OFAC stands for Office of Foreign Assets Control and is a government agency of the US Treasury Department that enforces economic and trade sanctions against countries, organizations, and individuals. If a claim is made against a director or officer for something related to OFAC sanctions, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Product Liability</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The clause excludes any claims or losses that are related to product liability. Product liability refers to the legal responsibility of manufacturers, distributors, and sellers for any harm caused by a product they have produced or sold. If a claim is made against a director or officer for something related to product liability, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>ERISA</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The Employee Retirement Income Security Act (ERISA) of 1974 establishes minimum standards for pension plans in the private industry under U.S. federal tax and labor laws. It regulates employee benefit plans, including retirement plans, health plans, and other types of benefits. <span className='d-none d-lg-block'></span>If a claim is made against a director or officer for something related to ERISA, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Opioids and Narcotics</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Opioids are a class of drugs that are used to relieve pain and include drugs such as fentanyl, oxycodone, and morphine. Narcotics are a class of drugs that are used to relieve pain and include drugs such as cocaine and heroin. This means that if a claim is made against a director or officer for losses arising because of their decisions related to opioids or narcotics, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Asbestos</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Asbestos is a naturally occurring mineral that has been used in various products, including construction materials and has been linked to various diseases such as lung cancer, mesothelioma, and asbestosis. If a claim is made for something related to asbestos, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Financial Insolvency</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Financial insolvency refers to the inability of a company or individual to pay their debts as they come due. This means that if a claim is made against a director or officer for something related to the financial insolvency of the company, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>E-smoking Device</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>E-smoking Device Exclusions in Directors & Officers Insurance means exclusion for any claims or losses that are related to electronic smoking devices or e-cigarettes. If a claim is made for something related to electronic smoking devices, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>War</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>War exclusions in Directors' & Officers' Insurance is a type of coverage that excludes any claims or losses that are related to war. This means that if a claim is made against a director or officer for something that happened as a result of war, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Future Offering of Securities (IPO)</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It refers to excluding any claims or losses that are related to initial public offerings (IPOs) of securities. This means that if a claim is made against a director or officer for something related to an IPO, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>No Cover for Auditors Qualification, Emphasis Matter, a Contingent Liability, if any</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If any claims or losses arise against the Director and Officer and the same is related to auditors' qualifications, emphasis matters, or contingent liabilities, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
+                                            <ul className={`text-black title-20 ${productStyle.listData}`}>
+                                                <li>Loss or damage due to a wilful act or wilful negligence</li>
+                                                <li>Cessation of work</li>
+                                                <li>Manufacturing defects</li>
+                                                <li>Consequential loss</li>
+                                                <li>Inventory losses</li>
+                                                <li>Loss or damage due to nuclear reaction, nuclear radiation, or radioactive contamination</li>
+                                                <li>Loss or damage due to war or warlike operations</li>
+                                                <li>Losses due to normal wear and tear, gradual deterioration</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </Container>
@@ -651,7 +440,7 @@ export default function product() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Directors & Officers Claims Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Erection All Risk Policy Examples</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -660,21 +449,15 @@ export default function product() {
                                 <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>
                                 </div>
                                 <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
                                     <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees claim unpaid contract</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>During the installation process of a large industrial machine at a factory, an unfortunate incident occurs where the machinery collapses, causing damage to the surrounding property. If the contractor had an EAR Insurance policy, it would cover the damage caused to the surrounding property, such as adjacent buildings, infrastructure, or any other assets affected by the collapse of the machinery. <span className='d-none d-lg-block'></span>If the contractor has obtained an EAR Insurance policy to protect its project from various risks, including third-party liability, the policy would cover the financial liability of the insured contractor. It would cover the damage caused to the own & surrounding property, such as adjacent buildings, infrastructure, or any other assets affected by the collapse of the machinery.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -687,34 +470,9 @@ export default function product() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>FIR Filed for Alleged Unfair Practices</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>FIR filed by ex-employee against 7 directors for cheating and unfair trade practices. The matter is in litigation before the Trial Court.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The law firm handling the litigation is appointed by the insurer to manage the defense of directors and all the defense costs are being borne by the insurer.</div>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                        <Row className='g-4'>
-                                            <Col lg={7}>
-                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees File Legal Proceedings in China</div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Let's consider a construction project where a contractor is responsible for installing a new electrical system in a commercial building. During the installation process, a fire breaks out due to a faulty connection, causing significant damage to the building and the electrical equipment being installed. If the contractor has obtained an EAR Insurance policy to protect its project from various risks, including fire damage, the policy would cover the damage caused by the fire to the building and the electrical equipment being installed. It would pay for the cost of repairing or replacing the damaged property, including the building's structure, electrical wiring, panels, switches, and other related components.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -737,54 +495,97 @@ export default function product() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Directors & Officers Liability Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Erection All Risk Policy</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the jurisdiction/territory of the claim?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
+                                title="What is the difference between CAR and EAR Policies?"
+                                content={[<>
+                                    <span>CAR coverage typically protects constructions or contractors from all risks and is mostly utilized for the movement of debris and concrete building activity. CAR is better suited for civil construction projects such as buildings, bridges, roads, and ports.</span>
+                                    <span>On the other hand, EAR coverage is taken while installing machinery and equipment. EAR is more suited to engineering facilities and other construction projects that include erections and installations. EAR insurance policies, for example, cover the development of power plants, gas processing facilities, and other facilities.</span>
+                                </>]}
                             />
                             <Accordion
-                                title="What limits do you need?"
-                                content="Lorem ipsum dolor sit amet,"
+                                title="Who can take the EAR Policy?"
+                                content={[<>
+                                    <span>The policy can be purchased jointly by the contractor and the employer. All parties involved in any type of construction may be covered by insurance:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Contractors in general</li>
+                                        <li>Subcontractors</li>
+                                        <li>Equipment suppliers and manufacturers</li>
+                                        <li>Purchaser or proprietor</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
-                                title="What is tDoes D&O insurance cover owners?he jurisdiction/territory of the claim?
-                                "
-                                content="Lorem ipsum dolor sit amet,"
+                                title="What is the extended maintenance period in the EAR policy?"
+                                content="The extended maintenance period is an additional duration of coverage provided under an EAR policy. It begins immediately after the scheduled completion of the construction and continues for a specified period, typically ranging from several months to a year. This is a period in which the insured contractor complies with its obligations to complete outstanding work and remedy defects as per the provisions of the contract."
                             />
                             <Accordion
-                                title="Are directors vs directors disputes covered?"
-                                content="Lorem ipsum dolor sit amet,"
+                                title="Is the erection all risk policy compulsory?"
+                                content="In India, there is no specific law or regulation that mandates contractors to have an erection all risk policy (EAR insurance) policy. However, taking out an EAR policy is a good idea if you are involved in any construction or erection project. This is because there are many risks involved in these types of projects, and an EAR policy can help to protect you financially in the event of a loss. It is a small investment that can provide you with peace of mind, along with financial protection in the event of a loss."
                             />
                             <Accordion
-                                title="As a director or officer can you become personally liable for your actions?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
+                                title="Is there any specific time limit set for submitting claims under the erection all policy?"
+                                content={[<>
+                                    <span>Here are some common documents that are typically required while filing an EAR claim:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Detailed RFQ (Request for Quotation)</li>
+                                        <li>Details related to the Principal, Contractor, Sub-contractor</li>
+                                        <li>Estimated cost of the project</li>
+                                        <li>Projects start date and end date, including the Bar chart</li>
+                                        <li>Details related to Testing for EAR projects</li>
+                                        <li>Equipment details for EAR projects</li>
+                                        <li>Sum Insured breakup towards the different scope of works</li>
+                                        <li>Risk location details</li>
+                                        <li>In case of multiple locations- the names and coordinates of all locations</li>
+                                        <li>Complete/Detailed scope of works or contract copy</li>
+                                        <li>Wet work details, if involved</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content={[
-                                    <>
-                                        <span>
-                                            Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period.   The automatic coverage will start with effect from the date of such creation or acquisition except-
-                                        </span>
-                                        <ul>
-                                            <li>The new entity is based on or has any of its securities listed on any exchange in the USA </li>
-                                            <li>It is a financial institution</li>
-                                            <li>Such creation or acquisition increases the total consolidated assets of the principal company by more than 25% (as per the most recent audited, consolidated financial statements)</li>
-                                        </ul>
-                                    </>
-                                ]}
+                                title="Who can be insured under the EAR Policy?"
+                                content="Both contractors, as well as employers, can be insured in this policy either individually or in joint names. Several parties that can be insured under this policy include general contractors, subcontractors, equipment suppliers & manufacturers, and also the buyer or the owner."
                             />
                             <Accordion
-                                title="Who selects defense counsel for a covered D&O claim?"
-                                content="D&O policies typically allow the defendant insureds to choose their preferred defense counsel, subject to the prior consent of the insurer. Insurers, of course, would seek to pay only reasonable and necessary defense costs. Therefore, an insured should select a counsel experienced in the field of law that is related to the concerned litigation and whom the insured trusts."
+                                title="How is the premium computed for the erection all risk policy?"
+                                content="An insurance company examines several aspects while calculating risks and quoting the premium for the erection all risk insurance policy. These criteria include the scope, location, cost, and time frame for the construction work"
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content="Yes. Being a small business does not necessarily make a small business immune to potential lawsuits. A costly lawsuit can have a severe impact on the personal fortunes of its employees in a decision-making position. When a potentially damaging lawsuit comes in the way, a small business may not quite have the financial ‘muscle power’ enjoyed by the larger companies to deal with it. This is why, in the case of a small business, protection from D&O insurance becomes even more essential."
+                                title="Can the erection all risks insurance policy cover financial losses caused by delays in the completion of the project?"
+                                content="Yes. Most erection all risk policies provide coverage for financial losses during the erection process, including delays in the construction schedule."
+                            />
+                            <Accordion
+                                title="What do AOG perils mean?"
+                                content="In insurance, 'Act of God' (AOG) is a term used to describe perils or events that are beyond human control and are not caused by human action or negligence. These perils are typically covered under insurance policies to provide protection against losses. Acts of God's perils can include a wide range of events, such as earthquakes, hurricanes, floods, lightning strikes, volcanic eruptions, tsunamis, fires caused by natural factors, and other catastrophic events."
+                            />
+                            <Accordion
+                                title="How is the premium calculated for erection all risk?"
+                                content={[<>
+                                    <span>Here is how premium is calculated:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Sum Insured - The higher the sum insured, the higher the premium; and vice versa.</li>
+                                        <li>Project Duration - A longer installation period will result in a higher premium.</li>
+                                        <li>Type of Project: Projects with higher risks, such as large-scale infrastructure developments or projects involving environmental and location risk, may attract higher premium</li>
+                                        <li>Testing Period - As soon as the new machinery is installed, it is tested before being handed over to its owners. This period is used to calculate the premium.</li>
+                                        <li>Insureds seek voluntary access - A voluntary excess option, if availed as part of the policy, may result in a reduction in premiums.</li>
+                                    </ul>
+                                </>]}
+                            />
+                            <Accordion
+                                title="What is the claim procedure of EAR policy?"
+                                content={[<>
+                                    <span>The insured shall -</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Inform the broker, he will handhold and guide you throughout the claim settlement process.</li>
+                                        <li>Notify the police in case of theft or burglary losses or damages at the construction site</li>
+                                        <li>Cooperate with the surveyor of the company to make him inspect the affected parts.</li>
+                                        <li>Provide all information and documentation as requested by the company</li>
+                                    </ul>
+                                </>]}
                             />
                         </div>
                     </Container>
@@ -955,12 +756,12 @@ export default function product() {
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 26px;
-                        line-height: 38px;
+                        font-size: 28px;
+                        line-height: 40px;
                     }
                     .title-36 {
-                        font-size: 28px;
-                        line-height: 34px;
+                        font-size: 26px;
+                        line-height: 38px;
                     }
                     .title-32 {
                         font-size: 26px;

@@ -322,7 +322,7 @@ export default function GroupPersonalAccident_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Employee financial stability</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Employee financial stability</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>As accidents are unpredictable, you can provide financial stability for your team members by delivering GPA Insurance Policy.</p>
                                                         </div>
                                                     </div>
@@ -330,7 +330,7 @@ export default function GroupPersonalAccident_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Employee Retention</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Employee Retention</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>When you provide GPA Insurance to employees, they lead organizations to become responsible market leaders, according to HR leaders.</p>
                                                         </div>
                                                     </div>
@@ -338,7 +338,7 @@ export default function GroupPersonalAccident_Insurance() {
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Maintains employee well-being</h3>
+                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Maintains employee well-being</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Your team feels belonged when you provide benefits like GPA insurance. Happy minds are fertile minds, after all.</p>
                                                         </div>
                                                     </div>
@@ -367,11 +367,11 @@ export default function GroupPersonalAccident_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Group Personal Accident Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exceptions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exceptions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
+                                        <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>Here are some incidents covered under the policy</div>
@@ -428,7 +428,7 @@ export default function GroupPersonalAccident_Insurance() {
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <div data-tab className="place-content-center">
+                                        <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>Usually, group personal accident insurance does not offer coverage in the following cases :</div>
@@ -794,12 +794,12 @@ export default function GroupPersonalAccident_Insurance() {
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 26px;
-                        line-height: 38px;
+                        font-size: 28px;
+                        line-height: 40px;
                     }
                     .title-36 {
-                        font-size: 28px;
-                        line-height: 34px;
+                        font-size: 26px;
+                        line-height: 38px;
                     }
                     .title-32 {
                         font-size: 26px;

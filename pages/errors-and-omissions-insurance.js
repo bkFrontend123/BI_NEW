@@ -367,7 +367,7 @@ export default function EAndO_Insurance() {
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`pb-0 border-0 mt-4 mt-xl-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pb-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUser.svg' />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Personal and advertising injury</h3>
@@ -399,11 +399,11 @@ export default function EAndO_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Errors & Omissions Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exceptions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exceptions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
+                                        <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>Experience the convenience of Errors & Omissions (E&O) insurance with these key features:</div>
@@ -448,7 +448,7 @@ export default function EAndO_Insurance() {
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <div data-tab className="place-content-center">
+                                        <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>Important exclusions to note in Errors & Omissions (E&O) insurance:</div>
@@ -805,12 +805,12 @@ export default function EAndO_Insurance() {
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 26px;
-                        line-height: 38px;
+                        font-size: 28px;
+                        line-height: 40px;
                     }
                     .title-36 {
-                        font-size: 28px;
-                        line-height: 34px;
+                        font-size: 26px;
+                        line-height: 38px;
                     }
                     .title-32 {
                         font-size: 26px;

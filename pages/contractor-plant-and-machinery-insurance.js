@@ -189,7 +189,7 @@ export default function product() {
     return (
         <>
             <Head>
-                <title>D&O Insurance | BimaKavach Insurance for Directors and Officers</title>
+                <title>Contractor’s Plant and Machinery Insurance | BimaKavach Insurance for Contractor’s Plant and Machinery</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,9 +199,9 @@ export default function product() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Directors & Officers Liability Insurance"
-                        description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
-                        customClass="dAndoBnr"
+                        title="Contractor’s Plant and Machinery Insurance"
+                        description="A contractor’s plant and machinery insurance policy helps protect contractors, machinery owners, or investors from potential damage to their equipment. This insurance coverage ensures that if any harm occurs to the insured machinery or plant, the policy will compensate for the losses, preventing the insured from facing unnecessary financial burdens."
+                        customClass="cntrctrPlantBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
@@ -271,67 +271,88 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Contractor’s Plant and Machinery Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Contractor's plant and machinery insurance (CPM) is a specialized insurance for contractors and construction companies. It protects against damage or loss to the machinery and equipment used in construction sites and factories. It covers a wide range of both owned and hired-in equipment such as:</p>
                                     </div>
                                     <div className={`mt-4 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>Advantages of D&O Insurance</div>
-                                        <Row className='g-lg-5'>
+                                        <Row>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to Directors & Officers</p>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Bulldozers" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Bulldozers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Saves personal assets from lawsuits</p>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Loaders" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Loaders</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Helps attract & retain the best talent</p>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Cranes" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Cranes</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Compressors" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Compressors</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Generators" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Generatorss</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Excavators" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Excavators</p>
                                                 </div>
                                             </Col>
                                         </Row>
                                     </div>
+                                    <p className='title-20 mb-0 text-black font-weight-500 mt-4'>It also covers third-party claims against property damage and bodily injury caused at the insured construction site during the tenure of the policy.</p>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The 3 Categories of D&O Insurance</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Contractor’s Plant and Machinery Insurance</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>1. Side A</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Direct Indemnification</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>The D&O policy offers liability cover for company managers, officials, and directors to protect them from claims which may arise from the decisions and actions taken within the scope of their regular managerial duties.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed for covering loss or damage to various plants and machinery used on construction sites</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>2. Side B</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Company Reimbursement</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>When a company indemnifies (provides financial protection) its directors or officers for a covered claim under the policy, Side B Coverage ensures that the company is reimbursed for the expenses they've incurred during the process.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Most of the policies have the option to cover only selected machinery under the policy</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>3. Side C</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Coverage for Entity</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas: Employment Disputes & Security Related Issues.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>The insurance premium depends on the type of equipment, use of equipment, location, and risk you are entailing.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -344,43 +365,14 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-Suite executives. Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <span className='d-none d-lg-block'></span>It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
-                                    </div>
-                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
-                                        <Row>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Risk appetite</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Financial background</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Company size</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Past lawsuit history</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Business Age</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Contractor’s Plant and Machinery Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Anyone of the following parties can take CPM insurance, either individually or jointly</p>
+                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                            <li>Contractors and construction companies</li>
+                                            <li>Equipment rental companies</li>
+                                            <li>Individual equipment owners</li>
+                                            <li>Bank and financial institutions investing in the project</li>
+                                        </ul>
                                     </div>
                                 </Container>
                             </div>
@@ -388,68 +380,12 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A director or officer might face many types of financial risks as part of their job. D&O insurance provides an easy way to protect the interest of their senior officers and board members. The policy protects them from the following potential problems -</p>
-                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>Allegations by other stakeholders or shareholders</li>
-                                            <li>Allegations of sexual harassment, discrimination, and other employment violations</li>
-                                            <li>Accounting mistakes & exposure to mergers & acquisitions</li>
-                                            <li>Regulatory investigations initiated by the government, a professional, or a statutory body</li>
-                                            <li>Corporate governance lapses</li>
-                                        </ul>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Contractor’s Plant and Machinery Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Construction contractors rely heavily on machinery and equipment for their work. Some contractors choose to rent these machines, while others own them. However, if any of these machines get damaged or lost during construction, it can lead to a significant financial loss because these machines require a substantial investment.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A CPM (Construction Plant and Machinery) policy provides insurance coverage for the damage or loss of construction equipment such as compressors, cranes, bulldozers, and excavators. This coverage applies to accidents caused by external events like fires, riots, strikes, vandalism, storms, floods, earthquakes, and so on. Whether the equipment is actively being used, undergoing maintenance, or simply at rest, this insurance policy protects against both partial and total damage.</p>
                                     </div>
                                 </Container>
-
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Who can Sue the Directors or Officers of the organisation?</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-3 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Suppliers</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Employees</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Competitors</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Regulatory Bodies</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Clients</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Shareholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Other Stakeholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </Container>
-                                </div>
                             </div>
                             <div id="scrollspyHeading4" className={`pt-0 ${productStyle.coverage}`}>
                                 <Container>
@@ -467,171 +403,88 @@ export default function product() {
                                             </span>
                                             Coverages & Exceptions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Directors & Officers Liability Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Contractor’s Plant and Machinery Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exceptions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exceptions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
-                                        <Row>
+                                        <div data-tab className="place-content-center">
+                                            <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many benefits. Some of the major coverages in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>Contractor’s plant and machinery (CPM) insurance provides coverage for the risks associated with machinery and equipment used by contractors in construction projects. Here are some common coverages typically included in this insurance policy:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bail and Bond Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>D&O policy covers the costs of securing bail and bond for directors and officers, which may be in connection with any criminal proceedings arising from their duties as directors or officers of the company.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Clearance and removal of debris</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In the event of a covered loss, this add-on coverage provides reimbursement for the costs incurred in removing debris resulting from the damage to insured machinery and equipment.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Legal Representation Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It includes defense costs incurred by an insured on account of the attendance and/or provision of documents or information to any investigation, as required by the investigator.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Transit coverage</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage extends protection to the insured machinery and equipment during transit, including loading and unloading, between different project sites or locations.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover reimburses the costs associated with managing and mitigating the negative impact on the company's reputation, arising out of duties performed by the directors and officers on behalf of the company.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Extradition cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects a company if a director or officer is arrested or detained in a foreign country and the company needs to pay for the costs associated with his extradition back to the home country.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage provides protection from reasonable costs and expenses incurred by the insured due to required attendance at court proceedings, hearings, trials, and depositions related to the defense of a claim.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Kidnap and Ransom Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage provides relief from the costs associated with any event or connected series of events of kidnapping, seizing, or detaining an insured person by force or fraud, for the purpose of demanding a ransom.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Self-reporting Expenses Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage helps to protect company directors and officers from the financial burden of expenses associated with self-reporting a potential violation or claim to the relevant Governmental, judiciary, or regulatory authorities.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Investigation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable fees, costs, and expenses incurred (with the insurer’s prior written consent) by or on behalf of an insured person, in relation to preparing for and attending an investigation.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable costs, charges, fees, and expenses incurred by an organization, in attaining the services of any public relations firm or crisis management firm to advise the organization for managing public communication.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated additional limit for Non-Executive Directors and Officers</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>With this add-on cover, you get an extra layer of protection that is added to the overall coverage limit for non-executive directors and officers of a company.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Plant and machinery cover for physical damage</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects the insured contractor against accidental physical loss or damage to the insured machinery and equipment. It includes coverage for covered perils such as fire, theft, flood, vandalism, accidental damage, and more. This coverage applies to items in use or at rest, or when they are being dismantled or cleaned, or when they are subsequently erected.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <div data-tab className="place-content-center">
+                                        <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>Some common exclusions typically found in contractor’s plant and machinery (CPM) insurance policies in India:</div>
+                                                    <ul className={`text-black title-20 ${productStyle.listData}`}>
+                                                        <li>Mechanical or electrical failure or breakdown.</li>
+                                                        <li>Pre-existing flaws and damages.</li>
+                                                        <li>Losses resulting from the explosion of a pressure container or boiler.</li>
+                                                        <li>Vehicles developed and licensed for regular on-road use.</li>
+                                                        <li>When the factories or machinery are located on public highways.</li>
+                                                        <li>Deterioration of machinery owing to inactivity.</li>
+                                                        <li>Replaceable accessories and parts, such as knives, bits, drills, saws, cutting edge parts, molds, and so on, which have a greater rate of depreciation or wear by default.</li>
+                                                        <li>Crafts or vessels used on the water.</li>
+                                                        <li>Damage or loss caused by partial or total immersion in tidal surges.</li>
+                                                        <li>Nuclear threats, war, or war-like activity.</li>
+                                                        <li>When the machine is being tested.</li>
+                                                        <li>Underground machinery other than tunnel boring equipment.</li>
+                                                        <li>Any type of indirect loss.</li>
+                                                        <li>Damage caused by terrorism.</li>
+                                                        <li>Negligence or deliberate behavior by the insured or his representatives</li>
+                                                        <li>Any damage for which the supplier or manufacturer is accountable.</li>
+                                                    </ul>
                                                 </Col>
                                             </Row>
+                                            <div class="title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xxl-5">Add-on Coverage</div>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>OFAC Sanction Clause</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>OFAC stands for Office of Foreign Assets Control and is a government agency of the US Treasury Department that enforces economic and trade sanctions against countries, organizations, and individuals. If a claim is made against a director or officer for something related to OFAC sanctions, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Third-party liability</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on coverage protects the insured contractor against legal liabilities arising from bodily injury or property damage caused to third parties due to the insured machinery and equipment's operations. It includes coverage for legal defense costs and settlement amounts.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Product Liability</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The clause excludes any claims or losses that are related to product liability. Product liability refers to the legal responsibility of manufacturers, distributors, and sellers for any harm caused by a product they have produced or sold. If a claim is made against a director or officer for something related to product liability, they will not be covered.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Express freight cover</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on coverage compensates for the additional cost of express freight charges incurred to replace or repair insured machinery and equipment in the event of a covered loss. By providing this coverage, the policy ensures that the contractor can quickly obtain the necessary machinery or equipment to resume work and minimize project disruptions.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>ERISA</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The Employee Retirement Income Security Act (ERISA) of 1974 establishes minimum standards for pension plans in the private industry under U.S. federal tax and labor laws. It regulates employee benefit plans, including retirement plans, health plans, and other types of benefits. <span className='d-none d-lg-block'></span>If a claim is made against a director or officer for something related to ERISA, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Escalation of cost</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on cover ensures that in the event of a covered loss, the insured contractor is reimbursed for the increased expenses of repairing or replacing damaged machinery or equipment. As a result of inflation or price changes on the market, project costs may escalate.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Opioids and Narcotics</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Opioids are a class of drugs that are used to relieve pain and include drugs such as fentanyl, oxycodone, and morphine. Narcotics are a class of drugs that are used to relieve pain and include drugs such as cocaine and heroin. This means that if a claim is made against a director or officer for losses arising because of their decisions related to opioids or narcotics, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Asbestos</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Asbestos is a naturally occurring mineral that has been used in various products, including construction materials and has been linked to various diseases such as lung cancer, mesothelioma, and asbestosis. If a claim is made for something related to asbestos, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Financial Insolvency</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Financial insolvency refers to the inability of a company or individual to pay their debts as they come due. This means that if a claim is made against a director or officer for something related to the financial insolvency of the company, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>E-smoking Device</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>E-smoking Device Exclusions in Directors & Officers Insurance means exclusion for any claims or losses that are related to electronic smoking devices or e-cigarettes. If a claim is made for something related to electronic smoking devices, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>War</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>War exclusions in Directors' & Officers' Insurance is a type of coverage that excludes any claims or losses that are related to war. This means that if a claim is made against a director or officer for something that happened as a result of war, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Future Offering of Securities (IPO)</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It refers to excluding any claims or losses that are related to initial public offerings (IPOs) of securities. This means that if a claim is made against a director or officer for something related to an IPO, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>No Cover for Auditors Qualification, Emphasis Matter, a Contingent Liability, if any</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If any claims or losses arise against the Director and Officer and the same is related to auditors' qualifications, emphasis matters, or contingent liabilities, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Air freight</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on coverage compensates the cost of transporting insured machinery and equipment by air in the event of a covered loss. A good example of this coverage is when time is of utmost importance and the quickest way to minimize delays is to transport the machinery or equipment by air.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -651,7 +504,7 @@ export default function product() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Directors & Officers Claims Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Contractor’s Plant and Machinery Insurance Examples</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -660,21 +513,15 @@ export default function product() {
                                 <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>
                                 </div>
                                 <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
                                     <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees claim unpaid contract</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Damaged Machinery Claim at BMRCL Site</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Rudra, one of the Tunnel Boring Machines(TBMs) out of nine TBMs deployed by Bangalore Metro Rail Co. Ltd. faced unusual hurdles. A huge pile of garbage caught the cutter head of the machine, preventing it from moving because the area where the machine was stuck used to be a quarry land that was turned into a landfill in the 1980s. Luckily, 6 months later, the machine achieved a breakthrough and tunneled toward Langford Metro station. However, in such cases, there is a high probability that the machine can have severe damage. Not only this there could be multiple instances such as landslides, earthquakes, or fire incidents which can also lead to damage to the heavy machinery used in construction projects. Here, the Contractor's Plant & Machinery (CPM) Insurance Policy comes to the rescue of the contractor. The policy covers the cost of repairs or replacement of the damaged machinery.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -687,34 +534,9 @@ export default function product() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>FIR Filed for Alleged Unfair Practices</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Third-Party Property Damage Claim</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>FIR filed by ex-employee against 7 directors for cheating and unfair trade practices. The matter is in litigation before the Trial Court.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The law firm handling the litigation is appointed by the insurer to manage the defense of directors and all the defense costs are being borne by the insurer.</div>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                        <Row className='g-4'>
-                                            <Col lg={7}>
-                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees File Legal Proceedings in China</div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Let’s suppose a crane placed at a construction site accidentally drops a stone and damages a third-party car. If the contractor has obtained a CPM insurance policy to protect its project from various risks, including third-party liability, the policy would cover the liability of the insured contractor for the damage caused to the third-party car by the crane. This could include the cost of repairs, replacement parts, or, in severe cases, the total loss of the vehicle.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -737,54 +559,54 @@ export default function product() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Directors & Officers Liability Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Contractor’s Plant and Machinery Insurance</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the jurisdiction/territory of the claim?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
-                            />
-                            <Accordion
-                                title="What limits do you need?"
+                                title="What is the full form of CPM insurance?"
                                 content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="What is tDoes D&O insurance cover owners?he jurisdiction/territory of the claim?
-                                "
+                                title="What is floater cover in CPM policy?"
                                 content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="Are directors vs directors disputes covered?"
+                                title="What is the difference between peril and coverage?"
                                 content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="As a director or officer can you become personally liable for your actions?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
+                                title="What perils are covered under the contractor’s plant and machinery insurance?"
+                                content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content={[
-                                    <>
-                                        <span>
-                                            Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period.   The automatic coverage will start with effect from the date of such creation or acquisition except-
-                                        </span>
-                                        <ul>
-                                            <li>The new entity is based on or has any of its securities listed on any exchange in the USA </li>
-                                            <li>It is a financial institution</li>
-                                            <li>Such creation or acquisition increases the total consolidated assets of the principal company by more than 25% (as per the most recent audited, consolidated financial statements)</li>
-                                        </ul>
-                                    </>
-                                ]}
+                                title="What is the duration of the contractor plant and machinery insurance policy?"
+                                content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="Who selects defense counsel for a covered D&O claim?"
-                                content="D&O policies typically allow the defendant insureds to choose their preferred defense counsel, subject to the prior consent of the insurer. Insurers, of course, would seek to pay only reasonable and necessary defense costs. Therefore, an insured should select a counsel experienced in the field of law that is related to the concerned litigation and whom the insured trusts."
+                                title="Is plant and machinery a liability or asset?"
+                                content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content="Yes. Being a small business does not necessarily make a small business immune to potential lawsuits. A costly lawsuit can have a severe impact on the personal fortunes of its employees in a decision-making position. When a potentially damaging lawsuit comes in the way, a small business may not quite have the financial ‘muscle power’ enjoyed by the larger companies to deal with it. This is why, in the case of a small business, protection from D&O insurance becomes even more essential."
+                                title="Who can take the contractor's plant and machinery insurance policy?"
+                                content="Lorem ipsum dolor sit amet,"
+                            />
+                            <Accordion
+                                title="What are the additional add-ons one should purchase along with this policy?"
+                                content="Lorem ipsum dolor sit amet,"
+                            />
+                            <Accordion
+                                title="Is it necessary to always update my insurance provider when my contact information changes?"
+                                content="Lorem ipsum dolor sit amet,"
+                            />
+                            <Accordion
+                                title="How to make an insurance claim for Contractor’s Plant and Machinery?"
+                                content="Lorem ipsum dolor sit amet,"
+                            />
+                            <Accordion
+                                title="Should I inform the company if my old machine/equipment is replaced by a new machine of the same type and model?"
+                                content="Lorem ipsum dolor sit amet,"
                             />
                         </div>
                     </Container>
@@ -955,12 +777,12 @@ export default function product() {
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 26px;
-                        line-height: 38px;
+                        font-size: 28px;
+                        line-height: 40px;
                     }
                     .title-36 {
-                        font-size: 28px;
-                        line-height: 34px;
+                        font-size: 26px;
+                        line-height: 38px;
                     }
                     .title-32 {
                         font-size: 26px;

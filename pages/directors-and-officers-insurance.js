@@ -407,7 +407,7 @@ export default function DAndO_Insurance() {
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-3 g-lg-5'>
                                                 <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUser.svg' />
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Suppliers</h3>
@@ -470,12 +470,12 @@ export default function DAndO_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary'>Directors & Officers Liability Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exceptions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exceptions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
-                                        <Row>
+                                        <div data-tab className="place-content-center">
+                                            <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>D&O insurance offers many benefits. Some of the major coverages in the insurance policy are given below -</div>
                                                 </Col>
@@ -555,7 +555,7 @@ export default function DAndO_Insurance() {
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <div data-tab className="place-content-center">
+                                        <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
                                                     <div className='title-20 text-black mb-4'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
@@ -764,18 +764,14 @@ export default function DAndO_Insurance() {
                             />
                             <Accordion
                                 title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content={[
-                                    <>
-                                        <span>
-                                            Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period.   The automatic coverage will start with effect from the date of such creation or acquisition except-
-                                        </span>
-                                        <ul>
-                                            <li>The new entity is based on or has any of its securities listed on any exchange in the USA </li>
-                                            <li>It is a financial institution</li>
-                                            <li>Such creation or acquisition increases the total consolidated assets of the principal company by more than 25% (as per the most recent audited, consolidated financial statements)</li>
-                                        </ul>
-                                    </>
-                                ]}
+                                content={[<>
+                                    <span>Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period. The automatic coverage will start with effect from the date of such creation or acquisition except-</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>The new entity is based on or has any of its securities listed on any exchange in the USA </li>
+                                        <li>It is a financial institution</li>
+                                        <li>Such creation or acquisition increases the total consolidated assets of the principal company by more than 25% (as per the most recent audited, consolidated financial statements)</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
                                 title="Who selects defense counsel for a covered D&O claim?"
@@ -954,12 +950,12 @@ export default function DAndO_Insurance() {
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 26px;
-                        line-height: 38px;
+                        font-size: 28px;
+                        line-height: 40px;
                     }
                     .title-36 {
-                        font-size: 28px;
-                        line-height: 34px;
+                        font-size: 26px;
+                        line-height: 38px;
                     }
                     .title-32 {
                         font-size: 26px;
