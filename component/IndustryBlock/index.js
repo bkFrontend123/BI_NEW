@@ -4,35 +4,35 @@ import Image from 'next/image'
 
 export default function IndustryBlock() {
   const liabilityInsurance = [
-    { id: "l1", titleLink: "/directors-and-officers-insurance", img: "/productIcons/liability/dAndO_icon.png", title: "Directors & <br/>Officers Insurance" },
-    { id: "l2", titleLink: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.png", title: "Errors & Omissions <br/>Insurance" },
-    { id: "l3", titleLink: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.png", title: "General Liability <br/>Insurance" },
-    { id: "l4", titleLink: "/fidelity-insurance", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity <br/>Insurance" },
-    { id: "l5", titleLink: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability <br/>Insurance" },
-    { id: "l6", titleLink: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.png", title: "Workman’s <br/>Compensation" },
-    { id: "l7", titleLink: "/crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime <br/>Insurance" },
-    { id: "l8", titleLink: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber <br/>Insurance" },
+    { id: "l1", titleLink: "/directors-and-officers-insurance", img: "/productIcons/liability/dAndO_icon.png", title: "Directors &", subtitle: "Officers Insurance" },
+    { id: "l2", titleLink: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.png", title: "Errors & Omissions", subtitle: "Insurance" },
+    { id: "l3", titleLink: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.png", title: "General Liability", subtitle: "Insurance" },
+    { id: "l4", titleLink: "/fidelity-insurance", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity", subtitle: "Insurance" },
+    { id: "l5", titleLink: "/product-liability-insurance", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability", subtitle: "Insurance" },
+    { id: "l6", titleLink: "/workmens-compensation-insurance", img: "/productIcons/liability/workman_icon.png", title: "Workman’s", subtitle: "Compensation" },
+    { id: "l7", titleLink: "/crime-insurance", img: "/productIcons/liability/crime_icon.png", title: "Crime", subtitle: "Insurance" },
+    { id: "l8", titleLink: "/cyber-insurance", img: "/productIcons/liability/cyber_icon.png", title: "Cyber", subtitle: "Insurance" },
   ]
   const assetInsurance = [
-    { id: "a1", titleLink: "/", img: "/productIcons/asset/fire_icon.png", title: "Fire <br/>Machinery" },
-    { id: "a2", titleLink: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office <br/>Package" },
-    { id: "a3", titleLink: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop <br/>Owner’s" },
-    { id: "a4", titleLink: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant <br/>Hotels & Cafes" },
-    { id: "a5", titleLink: "/", img: "/productIcons/asset/educational_icon.png", title: "Educational <br/>Institutes" },
-    { id: "a6", titleLink: "/", img: "/productIcons/asset/hospitals_icon.png", title: "Hospitals <br/>Clinics" },
+    { id: "a1", titleLink: "/", img: "/productIcons/asset/fire_icon.png", title: "Fire", subtitle: "Machinery" },
+    { id: "a2", titleLink: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office", subtitle: "Package" },
+    { id: "a3", titleLink: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop", subtitle: "Owner’s" },
+    { id: "a4", titleLink: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant", subtitle: "Hotels & Cafes" },
+    { id: "a5", titleLink: "/", img: "/productIcons/asset/educational_icon.png", title: "Educational", subtitle: "Institutes" },
+    { id: "a6", titleLink: "/", img: "/productIcons/asset/hospitals_icon.png", title: "Hospitals", subtitle: "Clinics" },
   ]
   const engineeringInsurance = [
-    { id: "e1", titleLink: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.png", title: "Contractors <br/>All Risk" },
-    { id: "e2", titleLink: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.png", title: "Erection <br/>All Risk" },
-    { id: "e3", titleLink: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant <br/>& Machinery" },
+    { id: "e1", titleLink: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.png", title: "Contractors", subtitle: "All Risk" },
+    { id: "e2", titleLink: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.png", title: "Erection", subtitle: "All Risk" },
+    { id: "e3", titleLink: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant", subtitle: "& Machinery" },
   ]
   const employeeBenefits = [
-    { id: "eb1", titleLink: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.png", title: "Group Personal <br/>Accident" },
-    { id: "eb2", titleLink: "/group-health-insurance", img: "/productIcons/employeeBenefits/groupHealth_icon.png", title: "Group Health <br/>Insurance" },
+    { id: "eb1", titleLink: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.png", title: "Group Personal", subtitle: "Accident" },
+    { id: "eb2", titleLink: "/group-health-insurance", img: "/productIcons/employeeBenefits/groupHealth_icon.png", title: "Group Health", subtitle: "Insurance" },
   ]
   
   const marineInsurance = [
-    { id: "m1", titleLink: "/marine-insurance", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit <br/>Policy" },
+    { id: "m1", titleLink: "/marine-insurance", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit", subtitle: "Policy" },
   ]
   return (
     <>
@@ -58,7 +58,7 @@ export default function IndustryBlock() {
                     height={52}
                   />
                   <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title}</Link>
+                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function IndustryBlock() {
                     height={52}
                   />
                   <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title}</Link>
+                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
                   </div>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function IndustryBlock() {
                     height={52}
                   />
                   <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title}</Link>
+                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@ export default function IndustryBlock() {
                     height={52}
                   />
                   <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title}</Link>
+                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ export default function IndustryBlock() {
                     height={52}
                   />
                   <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title}</Link>
+                    <Link className='text-decoration-none text-black' href={item.titleLink}>{item.title} <br/>{item.subtitle}</Link>
                   </div>
                 </div>
               </div>

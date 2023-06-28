@@ -80,11 +80,73 @@ export default function ProductBanner(props) {
             <style jsx scope>
                 {`
                     .ProductBanner{
-                        padding: 125px 0 215px 0;
-                        background: url(/productHero.jpg) no-repeat center left/cover;
+                        padding: 125px 0 260px 0;
+                        background-repeat: no-repeat;
+                        background-position: center left;
+                        background-size: cover;
                         margin-top: -165px;
                         padding-top: 165px;
                         position: relative;
+                    }
+                    .dAndoBnr {
+                        background-image: url(/productBanners/dAndO_banner.jpg);
+                    }
+                    .eAndoBnr {
+                        background-image: url(/productBanners/eAndO_banner.jpg);
+                    }
+                    .gnrlBnr {
+                        background-image: url(/productBanners/general_liability_banner.jpg);
+                    }
+                    .fdltyBnr {
+                        background-image: url(/productBanners/fidelity_banner.jpg);
+                    }
+                    .prdctLlbtyBnr {
+                        background-image: url(/productBanners/product_liability_banner.jpg);
+                    }
+                    .wrkmnCmpBnr {
+                        background-image: url(/productBanners/workmen_banner.jpg);
+                    }
+                    .crimeBnr {
+                        background-image: url(/productBanners/commercial_crime_banner.jpg);
+                    }
+                    .cybrBnr {
+                        background-image: url(/productBanners/cyber_banner.jpg);
+                    }
+                    .fireBnr {
+                        background-image: url(/productBanners/fire_banner.jpg);
+                    }
+                    .ofcPckgBnr {
+                        background-image: url(/productBanners/office_package_banner.jpg);
+                    }
+                    .shopBnr {
+                        background-image: url(/productBanners/shop_insurance_banner.jpg);
+                    }
+                    .rstrntBnr {
+                        background-image: url(/productBanners/restaurant_banner.jpg);
+                    }
+                    .edctnlBnr {
+                        background-image: url(/productBanners/educational_banner.jpg);
+                    }
+                    .hsptlsClncsBnr {
+                        background-image: url(/productBanners/hospitals_clinics_banner.jpg);
+                    }
+                    .cntrctrBnr {
+                        background-image: url(/productBanners/contractor_risk_banner.jpg);
+                    }
+                    .erctnBnr {
+                        background-image: url(/productBanners/erection_banner.jpg);
+                    }
+                    .cntrctrPlantBnr {
+                        background-image: url(/productBanners/contractor_plant_banner.jpg);
+                    }
+                    .grpPrsnlBnr {
+                        background-image: url(/productBanners/group_personal_banner.jpg);
+                    }
+                    .grpHlthBnr {
+                        background-image: url(/productBanners/group_health_banner.jpg);
+                    }
+                    .marineBnr {
+                        background-image: url(/productBanners/marine_banner.jpg);
                     }
                     .ProductBannerBox{
                         margin-top: 100px;
@@ -194,7 +256,87 @@ export default function ProductBanner(props) {
                     }
                      @media only screen and (max-width: 767px) {
                         .ProductBanner{
-                            padding: 48px 0;
+                            padding: 48px 0 300px 48px;
+                        }
+                        .dAndoBnr {
+                            background-position: -832px;
+                            padding-bottom: 320px !important;
+                        }
+                        .eAndoBnr {
+                            background-position: -755px;
+                            padding-bottom: 300px !important;
+                        }
+                        .gnrlBnr {
+                            background-position: -740px;
+                            padding-bottom: 320px !important;
+                        }
+                        .fdltyBnr {
+                            background-position: -832px;
+                            padding-bottom: 320px !important;
+                        }
+                        .prdctLlbtyBnr {
+                            background-position: -570px;
+                            padding-bottom: 350px !important;
+                        }
+                        .wrkmnCmpBnr {
+                            background-position: -410px 120px;
+                            padding-bottom: 300px !important;
+                        }
+                        .crimeBnr {
+                            background-position: -640px;
+                            padding-bottom: 320px !important;
+                        }
+                        .cybrBnr {
+                            background-position: -720px;
+                            padding-bottom: 320px !important;
+                        }
+                        .fireBnr {
+                            background-position: -650px;
+                            padding-bottom: 300px !important;
+                        }
+                        .ofcPckgBnr {
+                            background-position: -50px;
+                            padding-bottom: 300px !important;
+                        }
+                        .shopBnr {
+                            background-position: -505px;
+                            padding-bottom: 300px !important;
+                        }
+                        .rstrntBnr {
+                            background-position: -520px;
+                            padding-bottom: 260px !important;
+                        }
+                        .edctnlBnr {
+                            background-position: 0 100px;
+                            padding-bottom: 300px !important;
+                        }
+                        .hsptlsClncsBnr {
+                            background-position: -50px 100px;
+                            padding-bottom: 300px !important;
+                        }
+                        .cnstrnBnr {
+                            background-position: -500px;
+                            padding-bottom: 300px !important;
+                        }
+                        .erctnBnr {
+                            background-position: -340px 80px;
+                            padding-bottom: 400px !important;
+                        }
+                        .cntrctrBnr {
+                            background-position: -880px;
+                            padding-bottom: 300px !important;
+                        }
+                        .grpPrsnlBnr {
+                            background-position: -832px;
+                            padding-bottom: 320px !important;
+                        }
+                        .grpHlthBnr {
+                            background-position: -832px;
+                            padding-bottom: 320px !important;
+                        }
+                        .marineBnr {
+                            background-position: -620px;
+                            padding-bottom: 300px !important;
                         }
                         .ProductBannerTextTitle{
                             margin-bottom: 10px;

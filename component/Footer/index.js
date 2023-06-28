@@ -238,6 +238,9 @@ export default function Footer() {
               .footerSocialIco{
                 margin-right: 36px;
               }
+              .footerSocialIco:last-child {
+                margin-right: 0;
+              }
               .backToTop{
                 font-size: 18px;
                 color: #0e2b72;
