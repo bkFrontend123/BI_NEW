@@ -42,12 +42,16 @@ export default function HowGetStarted(props) {
                                             <span className="ms-2"> Schedule a call</span>
                                         </a>
                                         <a href="tel:+91 9876543210" className="btnCommon bg-white d-none d-md-flex align-items-cet text-primary text-decoration-none  bordre2 mt-3 mt-md-0">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                             <WhatsApp iconColor="primary" width="18" height="18" />
                                             <span className="ms-2">Talk to Us</span>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         </a>
                                         <a href="tel:+91 9876543210" className="btnCommon bg-yellow d-flex d-md-none align-items-cet text-primary text-decoration-none ms-md-4 mt-3 mt-md-0">
+                                            &nbsp;&nbsp;
                                             <WhatsApp iconColor="primary" width="18" height="18" />
                                             <span className="ms-2">Talk to Us</span>
+                                            &nbsp;&nbsp;
                                         </a>
                                     </div>
                                     <p className="title-15 getStarted-rightBottomDescrip mb-0">Say hello to a spam-free zone! We respect your privacy, and we won't bombard you with unwanted calls.</p>
