@@ -10,10 +10,17 @@
     border-bottom: 1px solid var(--vt-c-yellow);
     padding: 0;
 }
+.ProductList {
+    justify-content: space-between;
+    width: 100%;
+}
 .ProductList li {
     margin-right: 16px;
     margin-bottom: 10px;
     position: relative;
+}
+.ProductList li:last-child {
+    margin-right: 0;
 }
 .ProductList li a {
     display: flex;
@@ -55,6 +62,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    max-width: 450px;
 }
 
 .lightYellowSecCards {
@@ -72,6 +80,24 @@
     padding-right: 24px;
 }
 
+.listData li {
+    position: relative;
+    padding-left: 20px; 
+}
+.listData li + li {
+    margin-top: 12px;
+}
+.listData li::before {
+    background-color: var(--black);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+}
+
 .whoNeed {
     margin-top: 80px;
 }
@@ -83,6 +109,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    max-width: 450px;
 }
 .coverage {
     margin-top: 80px;
@@ -120,6 +147,16 @@
     font-weight: 500;
 }
 
+.productStartupListSec {
+    position: relative;
+}
+.productStartupIcon {
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    width: 200px;
+}
+
 .productStartupBottom {
     margin-bottom: 80px;
 }
@@ -128,7 +165,7 @@
     padding-right: 48px;
 }
 
-@media only screen and (max-width: 1699px) {
+@media (max-width: 1699px) {
     .lightYellowSecCardBox {
         padding-right: 16px;
     }
@@ -152,7 +189,7 @@
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media (max-width: 991px) {
     .ProdMain {
         margin-top: 40px;
     }
@@ -168,7 +205,7 @@
         font-size: 50px;
         margin-right: 10px;
         margin-top: 4px;
-        margin-bottom: 3px;
+        margin-bottom: 6px;
     }
     .ProductList li a.active::after {
         bottom: -8px;
@@ -278,5 +315,27 @@
     }
     .productStartupBottom .btnCommon {
         padding: 14px 18px;
+    }
+    .productStartupListSec {
+        margin-bottom:  120px;
+    }
+    .productStartupIcon {
+        right: 30px;
+        bottom: -120px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 575px) {
+    .productStartupListSec {
+        margin: 0 -20px 120px -20px;
+    }
+    .productStartupIcon {
+        right: 40px;
+        bottom: -135px;
+        width: 150px;
+    }
+    .ProductList li {
+        margin-right: 6px;
     }
 }

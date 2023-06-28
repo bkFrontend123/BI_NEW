@@ -1,43 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import ReactHtmlParser from 'react-html-parser';
-import styles from "./HeroBanner.module.css";
+
+import IndustryBlock from '../../IndustryBlock'
 
 export default function HeroBanner(props) {
   const { title, subtitle, description } = props
-  
-  const liabilityInsurance = [
-    { id: "l1", titleLink: "/directors_and_officers", img: "/startup1.png", title: "Directors & <br/>Officers Insurance" },
-    { id: "l2", titleLink: "/errors_and_omissions", img: "/startup3.png", title: "Errors & Omissions <br/>Insurance" },
-    { id: "l3", titleLink: "/general_liability_insurance", img: "/startup2.png", title: "General Liability <br/>Insurance" },
-    { id: "l4", titleLink: "/fidelity_insurance", img: "/startup4.png", title: "Fidelity <br/>Insurance" },
-    { id: "l5", titleLink: "/product_liability", img: "/startup6.png", title: "Product Liability <br/>Insurance" },
-    { id: "l6", titleLink: "/workmans-compensation", img: "/startup1.png", title: "Workman’s <br/>Compensation" },
-    { id: "l7", titleLink: "/general_insurance", img: "/startup4.png", title: "Crime <br/>Insurance" },
-    { id: "l8", titleLink: "/crime_fidelity", img: "/startup5.png", title: "Cyber <br/>Insurance" }, 
-  ]
-  const assetInsurance = [
-    { id: "a1", titleLink: "/", img: "/productIcons/asset/fire_icon.png", title: "Fire <br/>Machinery" },
-    { id: "a2", titleLink: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office <br/>Package" },
-    { id: "a3", titleLink: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop <br/>Owner’s" },
-    { id: "a4", titleLink: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant <br/>Hotels & Cafes" },
-    { id: "a5", titleLink: "/", img: "/productIcons/asset/educational_icon.png", title: "Educational <br/>Institutes" },
-    { id: "a6", titleLink: "/", img: "/productIcons/asset/hospitals_icon.png", title: "Hospitals <br/>Clinics" },
-  ]
-  const engineeringInsurance = [
-    { id: "e1", titleLink: "/", img: "/productIcons/engineering/contractorsAllRisk_icon.png", title: "Contractors <br/>All Risk" },
-    { id: "e2", titleLink: "/", img: "/productIcons/engineering/erectionAllRisk_icon.png", title: "Erection <br/>All Risk" },
-    { id: "e3", titleLink: "/", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant <br/>& Machinery" },
-  ]
-  const employeeBenefits = [
-    { id: "eb1", titleLink: "/", img: "/productIcons/employeeBenefits/groupPersonal_icon.png", title: "Group Personal <br/>Accident" },
-    { id: "eb2", titleLink: "/", img: "/productIcons/employeeBenefits/groupHealth_icon.png", title: "Group Health <br/>Insurance" },
-  ]
-  
-  const marineInsurance = [
-    { id: "m1", titleLink: "/", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit <br/>Policy" },
-  ]
   return (
     <>
       <div className='homeHero'>
@@ -80,151 +48,7 @@ export default function HeroBanner(props) {
               </div>
             </div>
           </div>
-          <div className='homeBannerProduct container bg-white'>
-            <div className='row'>
-              <div className={`col-12`} >
-                <div className='homeBannerProduct-heading d-md-flex align-items-center'>
-                  <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Liability Insurance</div>
-                  <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
-                </div>
-              </div>
-            </div>
-            <div className='row g-4 g-lg-5 liabilityInsurance'>
-              {liabilityInsurance.map((item) =>
-                <div key={item.id} className="col-lg-3 col-6">
-                  <div className='onhoverAnimation'>
-                    <div className={`homeBannerProduct-card d-lg-flex w-100 align-items-center ${item.class}`}>
-                      <img
-                        // loader={myLoader}
-                        src={item.img}
-                        alt="Bimakavach"
-                      />
-                      <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                        <Link className='text-decoration-none text-black' href={item.titleLink}>{ReactHtmlParser(item.title)}</Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <div className='row'>
-              <div className={`col-12`} >
-                <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-                  <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Asset Insurance</div>
-                  <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
-                </div>
-              </div>
-            </div>
-            <div className='row g-4 g-lg-5 assetInsurance'>
-              {assetInsurance.map((item) =>
-                <div key={item.id} className="col-lg-3 col-6">
-                  <div className='onhoverAnimation'>
-                    <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                      <Image
-                        // loader={myLoader}
-                        src={item.img}
-                        alt="Bimakavach"
-                        width={77}
-                        height={64}
-                      />
-                      <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                        <Link className='text-decoration-none text-black' href={item.titleLink}>{ReactHtmlParser(item.title)}</Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <div className='row'>
-              <div className={`col-12`} >
-                <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-                  <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Engineering Insurance</div>
-                  <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
-                </div>
-              </div>
-            </div>
-            <div className='row g-4 g-lg-5 engineeringInsurance'>
-              {engineeringInsurance.map((item) =>
-                <div key={item.id} className="col-lg-3 col-6">
-                  <div className='onhoverAnimation'>
-                    <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                      <Image
-                        // loader={myLoader}
-                        src={item.img}
-                        alt="Bimakavach"
-                        width={77}
-                        height={64}
-                      />
-                      <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                        <Link className='text-decoration-none text-black' href={item.titleLink}>{ReactHtmlParser(item.title)}</Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <div className='row'>
-              <div className={`col-12`} >
-                <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-                  <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Employee Benefits</div>
-                  <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
-                </div>
-              </div>
-            </div>
-            <div className='row g-4 g-lg-5 employeeBenefits'>
-              {employeeBenefits.map((item) =>
-                <div key={item.id} className="col-lg-3 col-6">
-                  <div className='onhoverAnimation'>
-                    <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                      <Image
-                        // loader={myLoader}
-                        src={item.img}
-                        alt="Bimakavach"
-                        width={77}
-                        height={64}
-                      />
-                      <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                        <Link className='text-decoration-none text-black' href={item.titleLink}>{ReactHtmlParser(item.title)}</Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <div className='row'>
-              <div className={`col-12`} >
-                <div className='homeBannerProduct-heading d-md-flex align-items-center mt-4 mt-xl-5'>
-                  <div className='col-auto homeBannerProduct-headingText title24 text-primary text-decoration-none font-weight-600'>Marine Insurance</div>
-                  <div className='homeBannerProduct-headingDivider ms-4 h-1 bg-grayLight w-100'></div>
-                </div>
-              </div>
-            </div>
-            <div className='row g-4 g-lg-5 marineInsurance'>
-              {marineInsurance.map((item) =>
-                <div key={item.id} className="col-lg-3 col-6">
-                  <div className='onhoverAnimation'>
-                    <div className='homeBannerProduct-card d-lg-flex w-100 align-items-center'>
-                      <Image
-                        // loader={myLoader}
-                        src={item.img}
-                        alt="Bimakavach"
-                        width={77}
-                        height={64}
-                      />
-                      <div className='ms-lg-3 mt-3 mt-lg-0 title-20 text-black font-weight-500'>
-                        <Link className='text-decoration-none text-black' href={item.titleLink}>{ReactHtmlParser(item.title)}</Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-          </div>
+          <IndustryBlock />
           {/* <div className={`homeBannerBtn d-flex`}>
               <a className='btnCommon yellowBtn text-decoration-none'>
                 <span> Get Free Recommendations </span>

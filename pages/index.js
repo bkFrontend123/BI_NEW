@@ -8,13 +8,13 @@ import Footer from '../component/Footer'
 
 import HeroBanner from '../component/Home/HeroBanner'
 import TrustedBusiness from '../component/Home/TrustedBusiness'
-import Startup from '../component/Home/Startup'
+//import Startup from '../component/Home/Startup'
 import Partner from '../component/Home/Partner'
 import BusinessRisk from '../component/Home/Risk'
 import BusinessInsurance from '../component/Home/BusinessInsurance'
 import HowDo from '../component/Home/HowDo'
-import IndustryList from '../component/Home/IndustryList'
-// import CompaniesReview from '../component/Home/CompaniesReview'
+//import IndustryList from '../component/Home/IndustryList'
+//import CompaniesReview from '../component/Home/CompaniesReview'
 import CompaniesReview from '../component/Product/Review'
 import BestBacked from '../component/Home/BestBacked'
 import RecentActivity from '../component/Home/RecentActivity'
@@ -36,11 +36,10 @@ export default function Home() {
     <>
       <Navbar />
       <Head>
-        <title>Bimakavach | Home</title>
-        <meta name="description" content="BimaKavach" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        
+        <title>BimaKavach | Business Insurance Made Simple, Digital & Transparent</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="canonical" href="" />
       </Head>
       <main>
           <div className=''>

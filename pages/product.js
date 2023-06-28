@@ -1,156 +1,53 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Form, Button} from 'react-bootstrap';
+
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
-import gsap from 'gsap';
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import 'swiper/css';
-import { Link, animateScroll as scroll } from "react-scroll";
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
-import ProductBanner from '../component/Product/ProductBanner'
+import Banner from '../component/Product/ProductBanner'
+import ListGroup from 'react-bootstrap/ListGroup'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import WhatsApp from '../component/Icons/WhatsApp'
+import OurBlog from '../component/Product/OurBlog'
+import Review from '../component/Product/Review'
 import BestBacked from '../component/Product/BestBacked'
 import HowGetStarted from '../component/Home/HowGetStarted'
 import FAQ from '../component/Product/FAQ'
-import Accordion from '../component/Accordion'
+import { Link, animateScroll as scroll } from "react-scroll"
 
 import form from '@/assets/css/form.module.css'
-import productStyle from '@/assets/css/product.module.css'
 
 export default function product() {
     const navbarExample2Ref = useRef(null);
     const [activeC, setActiveC] = useState(1);
     useEffect(() => {
-
         AOS.init({
             offset: 200,
             duration: 600,
             easing: 'ease-in-sine',
             delay: 100,
         });
-
     });
-    useEffect(() => {
-        const btns = document.querySelectorAll('#tabBtn');
-        const tabs = document.querySelectorAll('[data-tab]');
-
-        btns.forEach((btn, btnIndex, btnArr) => {
-            btn.addEventListener('click', function () {
-                tabs.forEach((tab, tabIndex) => {
-                    if (btnIndex === tabIndex) {
-                        if (!tab.classList.contains('hidden')) {
-                            return;
-                        } else {
-                            tab.classList.remove('hidden');
-                            gsap.from(tab, { opacity: 0, scale: 0.95 });
-                        }
-                    } else {
-                        tab.classList.add('hidden');
-                    }
-                });
-
-                btnArr.forEach((b, bi) => {
-                    if (bi === btnIndex) {
-                        b.classList.add('active');
-                    } else {
-                        b.classList.remove('active');
-                    }
-                });
-            });
-        });
-    }, []);
-
-    useEffect(() => {
-        const btns = document.querySelectorAll('#inciTabBtn');
-        const tabs = document.querySelectorAll('[data-incitab]');
-
-        btns.forEach((btn, btnIndex, btnArr) => {
-            btn.addEventListener('click', function () {
-                tabs.forEach((tab, tabIndex) => {
-                    if (btnIndex === tabIndex) {
-                        if (!tab.classList.contains('hidden')) {
-                            return;
-                        } else {
-                            tab.classList.remove('hidden');
-                            gsap.from(tab, { opacity: 0, scale: 0.95 });
-                        }
-                    } else {
-                        tab.classList.add('hidden');
-                    }
-                });
-
-                btnArr.forEach((b, bi) => {
-                    if (bi === btnIndex) {
-                        b.classList.add('active');
-                    } else {
-                        b.classList.remove('active');
-                    }
-                });
-            });
-        });
-    }, []);
-
-
-    /**** accordion ***/
-
-    useEffect(() => {
-        const btns = document.querySelectorAll('#startupTabBtn');
-        const tabs = document.querySelectorAll('[data-startup]');
-
-        btns.forEach((btn, btnIndex, btnArr) => {
-            btn.addEventListener('click', function () {
-                tabs.forEach((tab, tabIndex) => {
-                    if (btnIndex === tabIndex) {
-                        if (!tab.classList.contains('hidden')) {
-                            return;
-                        } else {
-                            tab.classList.remove('hidden');
-                            gsap.from(tab, { opacity: 0, scale: 0.95 });
-                        }
-                    } else {
-                        tab.classList.add('hidden');
-                    }
-                });
-
-                btnArr.forEach((b, bi) => {
-                    if (bi === btnIndex) {
-                        b.classList.add('active');
-                    } else {
-                        b.classList.remove('active');
-                    }
-                });
-            });
-        });
-    }, []);
-
-
-    const [openIndex, setOpenIndex] = useState(null);
-
-    // ------ Acrodion -------
-
-    // ------ Acrodion End-------
-    // const Accordion = [
-    //     { title: "Simple1", content: "Answer a few simple questions to get instant recommendations.", btnText: 'Next: Digital' },
-    //     { title: "Simple2", content: "22Answer a few simple questions to get instant recommendations.", btnText: 'Next: Digital'},
-    //     { title: "Simple3", content: "33Answer a few simple questions to get instant recommendations.", btnText: 'Next: Digital' },
-    // ]
 
     const ProductList = [
         { id: "1", list: "What" },
         { id: "2", list: "Who" },
         { id: "3", list: "Why" },
         {
-            id: "4", list: "Coverages & Exceptions",
+            id: "4", list: "Coverage ",
             svg: "/icons/start.svg",
-            svgActive: "/icons/starYellow.svg",
+            svgActive: "/icons/startYellow.svg",
             uId: 'sep4'
         },
     ]
@@ -162,9 +59,11 @@ export default function product() {
         const handleScroll = () => {
             const scrollspyHeading4 = document.getElementById('sep4');
             if (scrollspyHeading4.classList.contains('active')) {
-                // navbarExample2Ref.current.classList.add('nav-yellow');
+                // Update internal CSS of navbarExample2Ref.current when scrollspyHeading4 is active
+                navbarExample2Ref.current.classList.add('nav-yellow');
             } else {
-                // navbarExample2Ref.current.classList.remove('nav-yellow');
+                // Reset internal CSS of navbarExample2Ref.current when scrollspyHeading4 is not active
+                navbarExample2Ref.current.classList.remove('nav-yellow');
             }
         };
 
@@ -186,14 +85,13 @@ export default function product() {
     };
     return (
         <>
-
-            <Navbar />
-            <div className={`productPage ${productStyle.productPage}`}>
+            <Navbar  />
+            <div>
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
-                    <ProductBanner
+                    <Banner
                         title="Directors & Officers Liability Insurance"
-                        description="Player-coach walk solutions deck baked low-hanging while cc teams. Six alarming activities yet out every where. Weapons prioritise day goto unlock products."
+                        description="Completely Immune to Fraud and Crime. Said No Business Ever"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
@@ -204,10 +102,10 @@ export default function product() {
                                     <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Work Email Address" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Phone Number" />
                                 </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
                                     <Button variant="primary" className='btnCommon yellowBtn' type="button" onClick={goToNextPage}>
@@ -217,750 +115,1069 @@ export default function product() {
                                 </div>
                             </Form>
                         </div>
-                    </ProductBanner>
+                    </Banner>
                 </div>
                 {/* product banner end */}
 
-                {/* product main start */}
-                <div className={`${productStyle.ProdMain}`}>
-                    <div className={`${productStyle.ProductNavbar}`}>
-                        <Container>
-                            <nav ref={navbarExample2Ref} className={`bg-white ${productStyle.navbar}`}>
-                                <ul className={`nav nav-pills ProductList ${productStyle.ProductList}`}>
-                                    {ProductList.map((item) => {
-                                        return (<li key={item.id} className={`nav-item ${activeC == item.id ? "activeList" : ""}`} onClick={() => activeList(item.id)}>
-                                            <Link
-                                                activeClass={`active ${productStyle.active}`}
-                                                className='nav-link text-blueGray'
-                                                to={`scrollspyHeading${item.id}`}
-                                                spy={true}
-                                                smooth={true}
-                                                offset={-350}
-                                                duration={500}
-                                                id={item?.uId && item?.uId}
-                                            >
-                                                {item.svg
-                                                    ?
-                                                    <>
-                                                        <img className={`me-2 ${productStyle.svg}`} src={item.svg} />
-                                                        <img className={`me-2 ${productStyle.svgActive}`} src={item.svgActive} />
-                                                    </>
-                                                    :
-                                                    null
-                                                }
-                                                {item.list}
-                                            </Link>
-                                        </li>)
-                                    }
-                                    )}
-                                </ul>
-                            </nav>
-                        </Container>
-                    </div>
-                    <div className={`${productStyle.ProductNavbarContent} ${productStyle.ProductTab}`}>
-                        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" className="scrollspy-example" tabIndex="0">
-                            <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
-                                <Container>
-                                    <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-600 text-yellow mb-0'>What is</h3>
-                                        <div className='title-28 font-black font-weight-600 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-primaryDark font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
-                                    </div>
-                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>Advantages of D&O Insurance</div>
-                                        <Row className='g-lg-5'>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-primaryDark font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to Directors & Officers</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-primaryDark font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Saves personal assets from lawsuits</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-primaryDark font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Helps attract & retainthe best talent</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
-                                        <h3 className='title-42 font-secondary font-weight-600 text-primary mb-0'>The 3 Categories of D&O Insurance</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='gx-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-primaryDark my-2'>1. Side A</h3>
-                                                            <div className='title-22 font-weight-600 text-primaryDark mb-3'>Direct Indemnification</div>
-                                                            <p className='title-18 font-weight-500 text-primaryDark m-0'>
-                                                                The D&O policy offers liability cover for company managers, officials, and directors to protect them from claims which may arise from the decisions and actions taken within the scope of their regular managerial duties.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-primaryDark my-2'>2. Side B</h3>
-                                                            <div className='title-22 font-weight-600 text-primaryDark mb-3'>Company Reimbursement</div>
-                                                            <p className='title-18 font-weight-500 text-primaryDark m-0'>
-                                                                When a company indemnifies (provides financial protection) its directors or officers for a covered claim under the policy, Side B Coverage ensures that the company is reimbursed for the expenses they've incurred during the process.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-primaryDark my-2'>3. Side C</h3>
-                                                            <div className='title-22 font-weight-600 text-primaryDark mb-3'>Coverage for Entity</div>
-                                                            <p className='title-18 font-weight-500 text-primaryDark m-0'>
-                                                                It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas:  Employment Disputes & Security Related Issues.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </Container>
-                                </div>
-                            </div>
-                            <div id="scrollspyHeading2" className={`${productStyle.whoNeed}`}>
-                                <Container>
-                                    <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-600 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-600 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-primaryDark font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-Suite executives.  Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <br></br> It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
-                                    </div>
-                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
-                                        <Row>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-primaryDark font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Risk appetite</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-primaryDark font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Financial background</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-primaryDark font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Company size</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-primaryDark font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Past lawsuit history</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-primaryDark font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Business Age</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                </Container>
-                            </div>
-                            <div id="scrollspyHeading3" className={`${productStyle.whyGet}`}>
-                                <Container>
-                                    <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-600 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-600 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-primaryDark font-weight-500 mt-4'>
-                                            A director or officer might face many types of financial risks as part of their job. D&O insurance provides an easy way to protect the interest of their senior officers and board members. The policy protects them from the following potential problems –
-                                        </p>
-                                        <ul className='text-black title-20 mt-4'>
-                                            <li>Allegations by other stakeholders or shareholders</li>
-                                            <li>Allegations of sexual harassment, discrimination, and other employment violations</li>
-                                            <li>Accounting mistakes & exposure to mergers & acquisitions</li>
-                                            <li>Regulatory investigations initiated by the government, a professional, or a statutory body</li>
-                                            <li>Corporate governance lapses</li>
-                                        </ul>
-                                    </div>
-                                </Container>
+                {/* product banner start */}
+                <div className='aboutProdMain text-white'>
+                    <div className='container'>
+                        <div className='aboutProduct'>
+                            <div className='row aboutProductNavbar'>
+                                <div className='col-md-12'>
+                                    <nav ref={navbarExample2Ref} className="navbar @justify-content-end ">
 
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
-                                    <Container className='position-relative'>
-                                        <h3 className='title-42 font-secondary font-weight-600 text-primary mb-0'>Who can sue the Directors or Officers of the organisation?</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-3 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-primaryDark mt-2 mb-0'>Suppliers</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-primaryDark mt-2 mb-0'>Employees</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-primaryDark mt-2 mb-0'>Competitors</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-primaryDark mt-2 mb-0'>Regulatory Bodies</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-primaryDark mt-2 mb-0'>Clients</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-primaryDark mt-2 mb-0'>Shareholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-primaryDark mt-2 mb-0'>Other Stakeholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </Container>
+                                        <ul className="nav nav-pills aboutProductList">
+                                            {ProductList.map((item) => {
+                                                return (<li key={item.id} className={`nav-item ${activeC == item.id ? "activeList" : ""}`} onClick={() => activeList(item.id)}>
+                                                    <Link
+                                                        activeClass="active"
+                                                        className='nav-link text-blueGray'
+                                                        to={`scrollspyHeading${item.id}`}
+                                                        spy={true}
+                                                        smooth={true}
+                                                        offset={-70}
+                                                        duration={500}
+                                                        id={item?.uId && item?.uId}
+                                                    >
+                                                        {item.svg
+                                                            ?
+                                                            <>
+                                                                <img className='svg' src={item.svg} />
+                                                                <img className='svgActive' src={item.svgActive} />
+                                                            </>
+                                                            :
+                                                            null
+                                                        }
+                                                        {item.list}
+                                                    </Link>
+                                                </li>)
+                                            }
+                                            )}
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-                            <div id="scrollspyHeading4" className={`pt-0 ${productStyle.coverage}`}>
-                                <Container>
-                                    <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-600 text-yellow mb-lg-4'>
-                                            <span className='d-none d-lg-inline-block me-2'>
-                                                <svg width="40" height="40" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.53333 1.03333C8.53333 0.738781 8.29455 0.5 8 0.5C7.70545 0.5 7.46667 0.738781 7.46667 1.03333V7.2124L4.22877 3.97451C4.02049 3.76623 3.68281 3.76623 3.47453 3.97451C3.26625 4.18279 3.26625 4.52047 3.47453 4.72875L6.71244 7.96667H0.533333C0.238782 7.96667 0 8.20545 0 8.5C0 8.79455 0.238782 9.03333 0.533333 9.03333H6.71244L3.47453 12.2712C3.26625 12.4795 3.26625 12.8172 3.47453 13.0255C3.68281 13.2338 4.0205 13.2338 4.22878 13.0255L7.46667 9.7876V15.9667C7.46667 16.2612 7.70545 16.5 8 16.5C8.29455 16.5 8.53333 16.2612 8.53333 15.9667V9.78756L11.7712 13.0255C11.9795 13.2338 12.3172 13.2338 12.5255 13.0255C12.7338 12.8172 12.7338 12.4795 12.5255 12.2712L9.2876 9.03333H15.4667C15.7612 9.03333 16 8.79455 16 8.5C16 8.20545 15.7612 7.96667 15.4667 7.96667H9.2876L12.5255 4.72877C12.7338 4.52049 12.7338 4.1828 12.5255 3.97452C12.3172 3.76624 11.9795 3.76624 11.7712 3.97452L8.53333 7.21244V1.03333Z" fill="#ffb400" />
-                                                </svg>
-                                            </span>
-                                            <span className='d-lg-none me-2'>
-                                                <svg width="32" height="32" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.53333 1.03333C8.53333 0.738781 8.29455 0.5 8 0.5C7.70545 0.5 7.46667 0.738781 7.46667 1.03333V7.2124L4.22877 3.97451C4.02049 3.76623 3.68281 3.76623 3.47453 3.97451C3.26625 4.18279 3.26625 4.52047 3.47453 4.72875L6.71244 7.96667H0.533333C0.238782 7.96667 0 8.20545 0 8.5C0 8.79455 0.238782 9.03333 0.533333 9.03333H6.71244L3.47453 12.2712C3.26625 12.4795 3.26625 12.8172 3.47453 13.0255C3.68281 13.2338 4.0205 13.2338 4.22878 13.0255L7.46667 9.7876V15.9667C7.46667 16.2612 7.70545 16.5 8 16.5C8.29455 16.5 8.53333 16.2612 8.53333 15.9667V9.78756L11.7712 13.0255C11.9795 13.2338 12.3172 13.2338 12.5255 13.0255C12.7338 12.8172 12.7338 12.4795 12.5255 12.2712L9.2876 9.03333H15.4667C15.7612 9.03333 16 8.79455 16 8.5C16 8.20545 15.7612 7.96667 15.4667 7.96667H9.2876L12.5255 4.72877C12.7338 4.52049 12.7338 4.1828 12.5255 3.97452C12.3172 3.76624 11.9795 3.76624 11.7712 3.97452L8.53333 7.21244V1.03333Z" fill="#ffb400" />
-                                                </svg>
-                                            </span>
-                                            Coverages & Exceptions in
-                                        </h3>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>Directors & Officers Liability Insurance?</div>
-                                    </div>
-                                    <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exceptions</span>
-                                    </div>
-                                    <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
-                                            <div className='title-20 text-black'>Coverages Coverages Coverages</div>
-                                        </div>
-                                        <div data-tab className="place-content-center">
-                                            <Row>
-                                                <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
-                                                </Col>
-                                            </Row>
-                                            <Row className='justify-content-between g-4'>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            OFAC Sanction Clause
+                            <div className='aboutProductNavbar-content'>
+                                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" className="scrollspy-example " tabIndex="0">
+                                    <div id="scrollspyHeading1" className='aboutProductSec pt-0'>
+                                        <div className='row'>
+                                            <div className='col-md-7'>
+                                                <div className='aboutProductSec-left'>
+                                                    <h2 className='aboutProductSec-leftSubTitle title-24 font-secondary font-weight-400 opacity-75' >What is</h2>
+                                                    <h3 className='aboutProductSec-leftTitle title-36 font-secondary font-weight-600 text-yellow'>Directors & Officers Liability Insurance?</h3>
+                                                    <p className='aboutProductSec-leftDecrip title-21 mb-0 text-blueGray font-weight-500 '>Also known as Directors Liability Insurance (or simply D&O Insurance), this policy is designed to cover the legal liabilities of directors, CXOs and board members in case they get indicted over the decisions they make to manage the business. Essentially, the D&O policy protects the personal assets of the  company’s directors and officers, and compensates for settlements  and legal expenses that result from the covered claims.</p>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-5'>
+                                                <div className='aboutProductSec-right' >
+                                                    <h2 className='aboutProductSec-rightTitle title-24 font-secondary font-weight-400 opacity-0'>dummy</h2>
+                                                    <p className='aboutProductSec-rightDescrip font-secondary title-24 font-primaryNormal font-weight-400 pe-lg-5 mb-4'>
+                                                        Directors and Officers Liability  Insurance Policy covers the  following exposures:
+                                                    </p>
+                                                    <div className='row aboutProductSec-rightIcoCard1st' >
+                                                        <div className='aboutProductSec-rightIcoCard order-md-1 order-1 col-md-12 col-6 d-flex align-items-center mb-3' >
+                                                            <img src='/icons/shieldWarning.svg' />
+                                                            <p className='ms-3 mb-0 font-primaryNormal font-weight-500 title-18 text-blueGray'>Breaches of Fiduciary Duties</p>
                                                         </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            OFAC stands for Office of Foreign Assets Control and is a government agency of the US Treasury Department that enforces economic and trade sanctions against countries, organizations, and individuals. If a claim is made against a director or officer for something related to OFAC sanctions, they will not be covered under this policy.
+                                                        <div className='aboutProductSec-rightIcoCard order-md-2 order-3 col-md-12 col-6 d-flex align-items-center mb-3' >
+                                                            <img src='/icons/shieldWarning.svg' />
+                                                            <p className='ms-3 mb-0 font-primaryNormal font-weight-500 title-18 text-blueGray'>Misrepresented Allegations</p>
+                                                        </div>
+                                                        <div className='aboutProductSec-rightIcoCard order-md-3 order-2 col-md-12 col-6 d-flex align-items-center mb-3'>
+                                                            <img src='/icons/shieldWarning.svg' />
+                                                            <p className='ms-3 mb-0 font-primaryNormal font-weight-500 title-18 text-blueGray'>Regulatory Actions</p>
+                                                        </div>
+                                                        <div className='aboutProductSec-rightIcoCard order-md-4 order-4 col-md-12 col-6 d-flex align-items-center mb-3'>
+                                                            <img src='/icons/shieldWarning.svg' />
+                                                            <p className='ms-3 mb-0 font-primaryNormal font-weight-500 title-18 text-blueGray'>Securities Litigation</p>
                                                         </div>
                                                     </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>
-                                                            Product Liability
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            The Employee Retirement Income Security Act (ERISA) of 1974 establishes minimum standards for pension plans in the private industry under U.S. federal tax and labor laws. It regulates employee benefit plans, including retirement plans, health plans, and other types of benefits.
-                                                            If a claim is made against a director or officer for something related to ERISA, they will not be covered under this policy.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            ERISA
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            OFAC stands for Office of Foreign Assets Control and is a government agency of the US Treasury Department that enforces economic and trade sanctions against countries, organizations, and individuals. If a claim is made against a director or officer for something related to OFAC sanctions, they will not be covered under this policy.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            Opioids and Narcotics
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            Opioids are a class of drugs that are used to relieve pain and include drugs such as fentanyl, oxycodone, and morphine. Narcotics are a class of drugs that are used to relieve pain and include drugs such as cocaine and heroin. This means that if a claim is made against a director or officer for losses arising because of their decisions related to opioids or narcotics, they will not be covered under this policy.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            Asbestos
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            Asbestos is a naturally occurring mineral that has been used in various products, including construction materials and has been linked to various diseases such as lung cancer, mesothelioma, and asbestosis. If a claim is made for something related to asbestos, they will not be covered.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            Financial Insolvency
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            Financial insolvency refers to the inability of a company or individual to pay their debts as they come due. This means that if a claim is made against a director or officer for something related to the financial insolvency of the company, they will not be covered under this policy.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            E Smoking Device
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            E-Smoking Device Exclusions in Directors & Officers Insurance means exclusion for any claims or losses that are related to electronic smoking devices or e-cigarettes. If a claim is made for something related to electronic smoking devices, they will not be covered.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            War
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            War exclusions in Directors' & Officers' Insurance is a type of coverage that excludes any claims or losses that are related to war. This means that if a claim is made against a director or officer for something that happened as a result of war, they will not be covered under this policy.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            Future Offering of Securities (IPO)
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            It refers to excluding any claims or losses that are related to initial public offerings (IPOs) of securities. This means that if a claim is made against a director or officer for something related to an IPO, they will not be covered under this policy.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            No Cover for Auditors Qualification, Emphasis Matter, Contingent Liability, if any
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            If any claims or losses arise against the Director and Officer and the same is related to auditors' qualifications, emphasis matters, or contingent liabilities, they will not be covered.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            Bribes and Commission
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            Directors & Officers policy excludes claims and losses arising from bribes and commissions.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>
-                                                            Money Laundering
-                                                        </div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>
-                                                            Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </Container>
+                                    <div className='secDivider bg-primary w-100 '></div>
+                                    <div id="scrollspyHeading2" className='aboutProductSec '>
+                                        <div className='row'>
+                                            <div className='col-md-7'>
+                                                <div className='aboutProductSec-left' >
+                                                    <h2 className='aboutProductSec-leftSubTitle title-24 font-secondary font-weight-400 opacity-75'>Who Needs</h2>
+                                                    <h3 className='aboutProductSec-leftTitle title-36 font-secondary font-weight-600 text-yellow'>Directors & Officers Liability Insurance?</h3>
+                                                    <p className='aboutProductSec-leftDecrip title-21 font-weight-500 mb-0 text-blueGray '>
+                                                        As the name suggests, D &amp; O insurance provides coverage for the directors (the founding members) of the organisation, along with employees in a management/supervisory capacity (the officers) against the potential liabilities that come with their decision making for the organisation. Any and every company that has been incorporated, wants to raise funds or has a corporate board should get D&O Insurance as it is one of those “must-have” policies for every business. Not only does it provide a safety net for the business, but it also safeguards the personal assets and legal liabilities of the directors and officers of the organisation.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-5 d-none d-md-block'>
+                                                <div className='aboutProductSec-right whoNeedRight mt-md-0 mt-4'>
+                                                    <Image
+                                                        // loader={myLoader}
+                                                        src="/who-prod1.png"
+                                                        alt="Bima"
+                                                        width={462}
+                                                        height={462}
+                                                        className="object-fit-cover"
+                                                    />
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='secDivider bg-primary w-100 '></div>
+                                    <div id="scrollspyHeading3" className='aboutProductSec '>
+                                        <div className='row '>
+                                            <div className='col-md-7'>
+                                                <div className='aboutProductSec-left'>
+                                                    <h2 className='aboutProductSec-leftSubTitle title-24 font-secondary font-weight-400 opacity-75'>Why Get</h2>
+                                                    <h3 className='aboutProductSec-leftTitle title-36 font-secondary font-weight-600 text-yellow'>Directors & Officers Liability Insurance?</h3>
+                                                    <h4 className='aboutProductSec-leftDecrip title-24 font-secondary pe-0'>In March 2021, Apple lost an early round in a discrimination lawsuit brought in the U.S. by a female engineer from India.</h4>
+                                                    <p className='@aboutProductSec-leftDecrip title-21 font-weight-500 mb-0 text-blueGray mt-2'>
+                                                        Lawsuits by employees, clients or shareholders are just the thin edge of the wedge. D&O insurance provides protection that isn’t offered by any other policy. You may want to get directors & officers liability insurance especially if you’re looking to raise funds for the business. What you may not realize is that this policy has more utility than simply letting you cross off an item on your VC mandated to-do list.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-5'>
+                                                <div className='aboutProductSec-right'>
+                                                    <h2 className='aboutProductSec-rightTitle title-24 font-secondary font-weight-400 opacity-0'>dummy</h2>
+                                                    <h4 className='title-24 font-secondary font-weight-400 mb-md-5'>Reasons other than raising funds to get Directors & Officers Liability Insurance:</h4>
+                                                    <p className='title-18 text-blueGray'>You may potentially have employees who may think that the decisions you make for the organization don’t align with their personal goals, or that they’re not being fairly treated. In either case, you risk such aggrieved parties taking legal actions against you and your organization.</p>
+                                                    <p className='title-18 text-blueGray'>You are filing for an IPO and want to go public. The regulatory bodies responsible insist on this to ensure no wrongful act is being committed by the company management.</p>
+                                                    <p className='title-18 text-blueGray'>There are common misconceptions that only public companies should be concerned about the SEBI when in reality, recent settlements demonstrate that privately funded or bootstrapped companies can face the same consequences.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="scrollspyHeading4" className='aboutProductSec pt-0 aboutProductSec-yellow'>
+                                        <div className='row '>
+                                            <div className='col-md-7'>
+                                                <div className='aboutProductSec-left aboutProductSec-leftYellow'>
+                                                    <h2 className='aboutProductSec-leftSubTitle title-24 font-secondary font-weight-400 opacity-75'>* Coverages in</h2>
+                                                    <h3 className='aboutProductSec-leftTitle title-36 font-secondary font-weight-600 text-black'>Directors & Officers Liability Insurance</h3>
+                                                    <h4 className='aboutProductSec-leftDecrip title-20 text-primary font-secondary '>D&O policy will generally either pay or reimburse the company the costs associated with the defence, investigation, negotiation and settlement (by way of a court determination or otherwise) of a covered claim. This includes attorneys' fees, court attendance costs, bail and bond costs etc.</h4>
+                                                    <h5 className='title-24 text-black font-weight-600 mt-4 mb-3'>The broad set of coverages also include:</h5>
+                                                    <ListGroup className="bg-transparent aboutProductSec-yellowList">
+                                                        <ListGroup.Item className="bg-transparent title-18 border-0"><img className='me-3' src="/icons/que.svg" /> Employer - Employee Disputes</ListGroup.Item>
+                                                        <ListGroup.Item className="bg-transparent title-18 border-0"><img className='me-3' src="/icons/que.svg" /> Pecuniary Penalties</ListGroup.Item>
+                                                        <ListGroup.Item className="bg-transparent title-18 border-0"><img className='me-3' src="/icons/que.svg" /> Extradition, Deportation Costs</ListGroup.Item>
+                                                        <ListGroup.Item className="bg-transparent title-18 border-0"><img className='me-3' src="/icons/que.svg" /> Kidnap & Response Costs   </ListGroup.Item>
+                                                        <ListGroup.Item className="bg-transparent title-18 border-0"><img className='me-3' src="/icons/que.svg" /> Crisis Communication Costs</ListGroup.Item>
+                                                        <ListGroup.Item className="bg-transparent title-18 border-0"><img className='me-3' src="/icons/que.svg" /> Emergency Costs</ListGroup.Item>
+                                                        <ListGroup.Item className="bg-transparent title-18 border-0"><img className='me-3' src="/icons/que.svg" /> Coverage for Outside Directors and Non-Executive Directors</ListGroup.Item>
+                                                    </ListGroup>
+                                                </div>
+                                            </div>
+                                            <div className='col-md-5'>
+                                                <div className='aboutProductSec-right position-relative h-100'>
+                                                    <h2 className='aboutProductSec-rightTitle title-24 font-secondary font-weight-400 opacity-0'>dummy</h2>
+
+                                                    <h4 className='title-24 font-secondary text-black mb-md-5'> It's important to note that D&O Insurance does not cover:</h4>
+                                                    <Swiper
+                                                        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+                                                        arrows="true"
+                                                        navigation={{
+                                                            nextEl: ".caverage-button-next",
+                                                            prevEl: ".caverage-button-prev",
+                                                            disabledClass: "swiper-button-disabled"
+                                                        }}
+                                                        className={``}
+                                                        spaceBetween={50}
+                                                        infinite="true"
+                                                        loop="true"
+                                                        speed={1000}
+                                                        // autoplay={{
+                                                        //     delay: 2000,
+                                                        //     disableOnInteraction: false
+                                                        // }}
+                                                        breakpoints={{
+                                                            // when window width is >= 640px
+                                                            1399: {
+                                                                slidesPerView: 1,
+                                                            },
+                                                            1200: {
+                                                                slidesPerView: 1,
+                                                            },
+                                                            992: {
+                                                                slidesPerView: 1,
+                                                            },
+                                                            0: {
+                                                                slidesPerView: 1,
+                                                            },
+
+                                                        }}
+                                                    >
+
+                                                        <SwiperSlide>
+                                                            <div className="aboutProductSec-yellowSlider">
+                                                                <h4 className='title-24 font-secondary@ text-primary mb-3'><img className='me-2' src="/icons/que.svg" /> Cyber Threats</h4>
+                                                                <p className='title-18 text-blueGray text-primary font-weight-500'>Data breaches and cyber attacks are covered in a separate policy <Link to="/"> (check Cyber Insurance)</Link></p>
+                                                            </div>
+                                                            <div className="aboutProductSec-yellowSlider">
+                                                                <h4 className='title-24 font-secondary@ text-primary mb-3'><img className='me-2' src="/icons/que.svg" /> Cyber Threats</h4>
+                                                                <p className='title-18 text-blueGray text-primary font-weight-500'>Professional Services Claims</p>
+                                                            </div>
+                                                        </SwiperSlide>
+                                                        <SwiperSlide>
+                                                            <div className="aboutProductSec-yellowSlider">
+                                                                <h4 className='title-24 font-secondary@ text-primary mb-3'><img className='me-2' src="/icons/que.svg" /> Cyber Threats</h4>
+                                                                <p className='title-18 text-blueGray text-primary font-weight-500'>Data breaches and cyber attacks are covered in a separate policy <Link className='text-primary' to="/"> (check Cyber Insurance)</Link></p>
+                                                            </div>
+                                                            <div className="aboutProductSec-yellowSlider">
+                                                                <h4 className='title-24 font-secondary text-primary mb-3'><img className='me-2' src="/icons/que.svg" /> Cyber Threats</h4>
+                                                                <p className='title-18 text-blueGray text-primary font-weight-500'>Professional Services Claims</p>
+                                                            </div>
+                                                        </SwiperSlide>
+                                                        <SwiperSlide>
+                                                            <div className="aboutProductSec-yellowSlider">
+                                                                <h4 className='title-24 font-secondary text-primary mb-3'><img className='me-2' src="/icons/que.svg" /> Cyber Threats</h4>
+                                                                <p className='title-18 text-blueGray text-primary font-weight-500'>Data breaches and cyber attacks are covered in a separate policy <Link className='text-primary' to="/"> (check Cyber Insurance)</Link></p>
+                                                            </div>
+                                                            <div className="aboutProductSec-yellowSlider">
+                                                                <h4 className='title-24 font-secondary text-primary mb-3'><img className='me-2' src="/icons/que.svg" /> Cyber Threats</h4>
+                                                                <p className='title-18 text-blueGray text-primary font-weight-500'>Professional Services Claims</p>
+                                                            </div>
+                                                        </SwiperSlide>
+
+                                                    </Swiper>
+                                                    <div className='d-flex caverage-button'>
+                                                        <div className='caverage-button-prev ' >
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M12.9648 6.41016L1.66173 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                <path d="M6.50391 1.11572L1.65971 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                <path d="M6.50781 11.7051L1.66362 6.41064" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                            </svg>
+
+
+                                                        </div>
+                                                        <div className='caverage-button-next '>
+                                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.28516 6.41016L12.5883 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                <path d="M7.74609 1.11572L12.5903 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                <path d="M7.74609 11.7051L12.5903 6.41064" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+
                     </div>
+
+                    {/* <AboutProduct /> */}
+                    {/* product banner end */}
+
+
+
                 </div>
-                {/* product main end */}
 
                 {/* --------claim example start---------- */}
-                <div className={`${productStyle.claimSec}`}>
-                    <Container>
-                        <Row>
-                            <Col md={6}>
-                                <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Directors & Officers Claims Examples</h3>
-                                    <h4 className='title-20 text-black mt-4 mb-4 mb-md-0'>Augue elit leo ut laoreet. Et erat in elementum justo aliquet enim dolor iaculis quis.</h4>
+                <div className='container'>
+                    <div className='prodContainer claimExample'>
+                        <div className='row '>
+                            <div className='col-md-7'>
+                                <div className='aboutProductSec-left '>
+                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500 '>Some Examples</div>
+                                    <h3 className='aboutProductSec-leftTitle title-64 font-secondary font-weight-600 text-primary'>Directors & Officers Claims Examples</h3>
+                                    <h4 className='title-24 text-black font-secondary@ mt-4 mb-4 mb-md-0 '>Augue elit leo ut laoreet. Et erat in elementum justo aliquet enim dolor iaculis quis.</h4>
                                 </div>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>
+                            </div>
+                            <div className='col-md-5'>
+                                <div className='aboutProductSec-right position-relative h-100'>
+
+                                    <div className='d-none d-md-block polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500 opacity-0'>Some Examples</div>
+                                    <Swiper
+                                        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+                                        arrows="true"
+                                        navigation={{
+                                            nextEl: ".caverage-button-next2",
+                                            prevEl: ".caverage-button-prev2",
+                                            disabledClass: "swiper-button-disabled"
+                                        }}
+                                        className={``}
+                                        spaceBetween={50}
+                                        infinite="true"
+                                        loop="true"
+                                        speed={1000}
+                                        // autoplay={{
+                                        //     delay: 2000,
+                                        //     disableOnInteraction: false
+                                        // }}
+
+                                        breakpoints={{
+                                            // when window width is >= 640px
+                                            1399: {
+                                                slidesPerView: 1,
+                                            },
+                                            1200: {
+                                                slidesPerView: 1,
+                                            },
+                                            992: {
+                                                slidesPerView: 1,
+                                            },
+                                            0: {
+                                                slidesPerView: 1,
+                                            },
+
+                                        }}
+                                    >
+
+                                        <SwiperSlide>
+                                            <div className="claimSlider">
+                                                <h3 className='title-20 font-gray text-gray mb-2'> Incident 1</h3>
+                                                <h4 className='title-24 font-secondary text-primary mb-4 font-weight-600'> Alleged Technology taken from Competitor</h4>
+                                                <h5 className='title-24 font-secondary text-black mb-1 font-weight-600'> Incident</h5>
+                                                <p className='title-18 text-blueGray' >A VR startup launches a new product that allows their customers to create and furnish virtual rooms . A competitor files a lawsuit alleging that  the technology used in the new product  was actually developed by the startup’s CPO  while he was working for the competitor.</p>
+                                                <h5 className='title-24 font-secondary text-black mb-1 font-weight-600'> Resolution</h5>
+                                                <p className='title-18 text-blueGray' >The D&O policy provides coverage for the cost of attorneys’ fees to defend the lawsuit.</p>
+                                            </div>
+                                        </SwiperSlide>
+
+                                        <SwiperSlide>
+                                            <div className="claimSlider">
+                                                <h3 className='title-20 font-gray text-gray mb-2'> Incident 1</h3>
+                                                <h4 className='title-24 font-secondary text-primary mb-4 font-weight-600 font-weight-600'> Alleged Technology taken from Competitor</h4>
+                                                <h5 className='title-24 font-secondary text-black mb-1 font-weight-600'> Incident</h5>
+                                                <p className='title-18 text-blueGray' >A VR startup launches a new product that allows their customers to create and furnish virtual rooms . A competitor files a lawsuit alleging that  the technology used in the new product  was actually developed by the startup’s CPO  while he was working for the competitor.</p>
+                                                <h5 className='title-24 font-secondary text-black mb-1 font-weight-600'> Resolution</h5>
+                                                <p className='title-18 text-blueGray' >The D&O policy provides coverage for the cost of attorneys’ fees to defend the lawsuit.</p>
+                                            </div>
+                                        </SwiperSlide>
+
+                                        <SwiperSlide>
+                                            <div className="claimSlider">
+                                                <h3 className='title-20 font-gray text-gray mb-2'> Incident 1</h3>
+                                                <h4 className='title-24 font-secondary text-primary mb-4 font-weight-600'> Alleged Technology taken from Competitor</h4>
+                                                <h5 className='title-24 font-secondary text-black mb-1 font-weight-600'> Incident</h5>
+                                                <p className='title-18 text-blueGray' >A VR startup launches a new product that allows their customers to create and furnish virtual rooms . A competitor files a lawsuit alleging that  the technology used in the new product  was actually developed by the startup’s CPO  while he was working for the competitor.</p>
+                                                <h5 className='title-24 font-secondary text-black mb-1 font-weight-600'> Resolution</h5>
+                                                <p className='title-18 text-blueGray' >The D&O policy provides coverage for the cost of attorneys’ fees to defend the lawsuit.</p>
+                                            </div>
+                                        </SwiperSlide>
+
+                                        <SwiperSlide>
+                                            <div className="claimSlider">
+                                                <h3 className='title-20 font-gray text-gray mb-2'> Incident 1</h3>
+                                                <h4 className='title-24 font-secondary text-primary mb-4 font-weight-600'> Alleged Technology taken from Competitor</h4>
+                                                <h5 className='title-24 font-secondary text-black mb-1 font-weight-600'> Incident</h5>
+                                                <p className='title-18 text-blueGray' >A VR startup launches a new product that allows their customers to create and furnish virtual rooms . A competitor files a lawsuit alleging that  the technology used in the new product  was actually developed by the startup’s CPO  while he was working for the competitor.</p>
+                                                <h5 className='title-24 font-secondary text-black mb-1 font-weight-600'> Resolution</h5>
+                                                <p className='title-18 text-blueGray' >The D&O policy provides coverage for the cost of attorneys’ fees to defend the lawsuit.</p>
+                                            </div>
+                                        </SwiperSlide>
+
+
+                                    </Swiper>
+                                    <div className='d-flex caverage-button position-relative'>
+                                        <div className='caverage-button-prev2 ' >
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.9648 6.41016L1.66173 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M6.50391 1.11572L1.65971 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M6.50781 11.7051L1.66362 6.41064" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div className='caverage-button-next2 '>
+                                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.28516 6.41016L12.5883 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M7.74609 1.11572L12.5903 6.41016" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M7.74609 11.7051L12.5903 6.41064" stroke="#0E2B72" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
-                                    <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
-                                        <Row className='g-4'>
-                                            <Col lg={7}>
-                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees claim unpaid contract</div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-primaryDark m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-primaryDark m-0'>
-                                                            Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.
-                                                        </div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-primaryDark m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-primaryDark m-0'>
-                                                            The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                        <Row className='g-4'>
-                                            <Col lg={7}>
-                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees claim unpaid contract</div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-primaryDark m-0'>Incident 2</div>
-                                                        <div className='title-18 font-weight-500 text-primaryDark m-0'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                        <Row className='g-4'>
-                                            <Col lg={7}>
-                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees claim unpaid contract</div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-28 font-weight-600 text-primaryDark m-0'>Incident 3</div>
-                                                        <div className='title-18 font-weight-500 text-primaryDark m-0'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
                 {/* --------claim example end---------- */}
 
-                {/* --------FAQ start---------- */}
-                <div className={`${productStyle.ProdFAQ}`}>
-                    <Container>
-                        <Row>
-                            <Col md={8}>
-                                <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500 '>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Directors & Officers Liability Insurance</h3>
-                                </div>
-                            </Col>
-                        </Row>
-                        <div className='mt-4'>
-                            <Accordion
-                                title="What is the jurisdiction/territory of the claim?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
-                            />
-                            <Accordion
-                                title="What limits do you need?"
-                                content="Lorem ipsum dolor sit amet,"
-                            />
-                            <Accordion
-                                title="Does D&O insurance cover owners?"
-                                content="Lorem ipsum dolor sit amet,"
-                            />
-                            <Accordion
-                                title="Does D&O insurance cover owners?"
-                                content="Lorem ipsum dolor sit amet,"
-                            />
-                            <Accordion
-                                title="Are directors vs directors disputes covered?"
-                                content="Lorem ipsum dolor sit amet,"
-                            />
-                            <Accordion
-                                title="As a director or officer can you become personally liable for your actions?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
-                            />
-                            <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content={[
-                                    <>
-                                        <span>
-                                            Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period.   The automatic coverage will start with effect from the date of such creation or acquisition except-
-                                        </span>
-                                        <ul>
-                                            <li>The new entity is based on or has any of its securities listed on any exchange in the USA </li>
-                                            <li>It is a financial institution</li>
-                                            <li>Such creation or acquisition increases the total consolidated assets of the principal company by more than 25% (as per the most recent audited, consolidated financial statements)</li>
-                                        </ul>
-                                    </>
-                                ]}
-                            />
-                            <Accordion
-                                title="Who selects defense counsel for a covered D&O claim?"
-                                content="D&O policies typically allow the defendant insureds to choose their preferred defense counsel, subject to the prior consent of the insurer. Insurers, of course, would seek to pay only reasonable and necessary defense costs. Therefore, an insured should select a counsel experienced in the field of law that is related to the concerned litigation and whom the insured trusts."
-                            />
-                            <Accordion
-                                title="Does a small business need liability insurance for Directors and Officers?"
-                                content="Yes. Being a small business does not necessarily make a small business immune to potential lawsuits. A costly lawsuit can have a severe impact on the personal fortunes of its employees in a decision-making position. When a potentially damaging lawsuit comes in the way, a small business may not quite have the financial ‘muscle power’ enjoyed by the larger companies to deal with it. This is why, in the case of a small business, protection from D&O insurance becomes even more essential."
-                            />
-                        </div>
-                    </Container>
-                </div>
-                {/* --------FAQ end---------- */}
 
                 {/* --------productStartup start---------- */}
-                <div className={`${productStyle.productStartup}`}>
-                    <Container>
-                        <div className={`${productStyle.prodContainer}`}>
-                            <div className='commonHeading text-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                <div className='productStartup '>
+                    <div className='container '>
+                        <div className='prodContainer'>
+                            <div className='row text-center'>
+                                <div className='col-md-12'>
+                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title16 font-weight-500 '>Our Products</div>
+                                    <h3 className='aboutProductSec-leftTitle title-64 font-secondary font-weight-600 text-primary'>Business Protection for Startups & SMEs</h3>
+                                    <h4 className='title-24 text-black font-weight-500 mt-4 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                </div>
                             </div>
-                            <div className={`${productStyle.productStartupListSec}`}>
-                                <div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
-                                    <span id='startupTabBtn' className="tabLink title-22 transition-all active">Liability Insurance</span>
-                                    <span id='startupTabBtn' className="tabLink title-22 transition-all">Asset Insurance</span>
-                                </div>
-                                <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
-                                    <div data-startup className={`${productStyle.inciTabPanelBox}`}>
-                                        <div className={`${productStyle.productStartupAsset}`}>
-                                            <Row className='g-4'>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup1.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>Directors & Officers Insurance</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Venenatis at at magna ut vestibulum odio sed at faucibus. Ultrices facilisis laoreet sed porta id duis sapien et. Enim sem facilisis suscipit.</p>
-                                                    </div>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup2.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>Cyber Crime  Insurance</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Diam at sit scelerisque nam. Vestibulum nunc gravida sed quisque. Nunc id diam non neque porttitor sed fermentum. Eu justo quis maecenas.</p>
-                                                    </div>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup3.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>Crime/Fidelty Insurance</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Non enim maecenas purus aliquet tincidunt arcu. Lacus mi ullamcorper bibendum sed risus eget. Orci facilisis sit sodales nibh purus sed habitant.</p>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={2} className='d-none d-lg-inline-block'></Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup4.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>Errors & Omissions Insurance</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Pulvinar nunc in sed malesuada congue. Dignissim sed aliquet vehicula facilisis natoque in ut. Urna ultrices vivamus quam vitae quam tortor.</p>
-                                                    </div>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup5.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>General Liability Insurance</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Morbi velit in quisque commodo enim penatibus. Dui posuere purus duis turpis integer ullamcorper. Arcu dignissim ultrices eu sapien.</p>
-                                                    </div>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup6.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>Product Liability Insurance</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Lorem ipsum dolor sit amet consectetur. In quam euismod vestibulum in commodo. Massa tellus sit interdum pulvinar. Mus imperdiet scelerisque.</p>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                        <div className={`${productStyle.productStartupAsset}`}>
-                                            <Row className='g-4'>
-                                                <Col md={5}>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup7.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>Fire Insurance</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Venenatis at at magna ut vestibulum odio sed at faucibus. Ultrices facilisis laoreet sed porta id duis sapien et. Enim sem facilisis suscipit.</p>
-                                                    </div>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup8.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>Marine Insurance</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Diam at sit scelerisque nam. Vestibulum nunc gravida sed quisque. Nunc id diam non neque porttitor sed fermentum. Eu justo quis maecenas.</p>
-                                                    </div>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup9.png" />
-                                                            <h4 className='title-24 font-weight-600 text-primary font-secondary mt-2 mb-0'>Machine Breakdown</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Non enim maecenas purus aliquet tincidunt arcu. Lacus mi ullamcorper bibendum sed risus eget. Orci facilisis sit sodales nibh purus sed habitant.</p>
-                                                    </div>
-                                                </Col>
-                                                <Col md={2}></Col>
-                                                <Col md={5}>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup10.png" />
-                                                            <h4 className='title-26 font-weight-600 text-primary font-secondary mb-0'>Contractors All Risk</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Ullamcorper elementum interdum pulvinar ut eget elit. Massa nibh eget morbi malesuada massa sed id sodales. Bibendum ipsum et a.</p>
-                                                    </div>
-                                                    <div className={`${productStyle.productStartupCard}`}>
-                                                        <div>
-                                                            <img src="/startup11.png" />
-                                                            <h4 className='title-26 font-weight-600 text-primary font-secondary mb-0'>Erection All Risk</h4>
-                                                        </div>
-                                                        <p className='title-18 text-blueGray mt-2 mb-0'>Morbi velit in quisque commodo enim penatibus. Dui posuere purus duis turpis integer ullamcorper. Arcu dignissim ultrices eu sapien.</p>
-                                                    </div>
-                                                </Col>
-                                            </Row>
+                            <div className='productStartup-listSec'>
+                                <div className='row '>
+                                    <div className='col-md-12'>
+                                        <div className='commnHeading'>
+                                            <h4 className='title-36 text-primary font-secondary font-weight-600 mt-4 '>Liability Insurance</h4>
+                                            <div className='productStartup-divider bg-gray w-100 mt-3'></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className={`mt-4 ${productStyle.productStartupBottom}`}>
-                                    <Row>
-                                        <Col>
-                                            <div className='text-center'>
-                                                <div className="d-flex justify-content-center flex-column flex-sm-row" >
-                                                    <a className="btnCommon btnBorder border-primary border2 text-primary me-lg-4 text-decoration-none">
-                                                        <img className='me-2' src='/icons/calender.svg' width="22px" />
-                                                        <span className='ms-2'>Schedule a call</span>
-                                                    </a>
-                                                    <a className={`btnCommon yellowBtn text-primary text-decoration-none mt-4 mt-sm-0 ${productStyle.yellowBtn}`}>
-                                                        <WhatsApp iconColor="primary" height="23" width="23" />
-                                                        <span className='ms-2'>WhatsApp us</span>
-                                                    </a>
-                                                </div>
-                                                <p className={`title-15 mt-4 mb-0 text-blueGray font-weight-500 ${productStyle.productStartupBottomDecrip}`}>Say hello to a spam-free zone! We respect your privacy and <span className='d-sm-inline d-none'><br></br></span> won't bombard you with unwanted calls.</p>
+                                <div className='row'>
+                                    <div className='col-md-5'>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup1.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Directors & Officers Insurance</h4>
                                             </div>
-                                        </Col>
-                                    </Row>
+                                            <p className='title-18 text-blueGray mt-2'>Venenatis at at magna ut vestibulum odio sed at faucibus. Ultrices facilisis laoreet sed porta id duis sapien et. Enim sem facilisis suscipit.</p>
+                                        </div>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup3.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Cyber Crime  Insurance</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Diam at sit scelerisque nam. Vestibulum nunc gravida sed quisque. Nunc id diam non neque porttitor sed fermentum. Eu justo quis maecenas.</p>
+                                        </div>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup5.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Crime/Fidelty Insurance</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Non enim maecenas purus aliquet tincidunt arcu. Lacus mi ullamcorper bibendum sed risus eget. Orci facilisis sit sodales nibh purus sed habitant.</p>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-2'></div>
+                                    <div className='col-md-5'>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup2.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Errors & Omissions Insurance</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Pulvinar nunc in sed malesuada congue. Dignissim sed aliquet vehicula facilisis natoque in ut. Urna ultrices vivamus quam vitae quam tortor.</p>
+                                        </div>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup4.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>General Liability Insurance</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Morbi velit in quisque commodo enim penatibus. Dui posuere purus duis turpis integer ullamcorper. Arcu dignissim ultrices eu sapien.</p>
+                                        </div>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup6.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Product Liability Insurance</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Lorem ipsum dolor sit amet consectetur. In quam euismod vestibulum in commodo. Massa tellus sit interdum pulvinar. Mus imperdiet scelerisque.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='row productStartup-assetRow'>
+                                    <div className='col-md-12'>
+                                        <div className='commnHeading mt-0'>
+                                            <h4 className='title-36 text-primary font-secondary font-weight-600 mt-5 mt-md-0'>Asset Insurance</h4>
+                                            <div className='productStartup-divider bg-gray w-100 mt-3'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='row productStartup-asset'>
+                                    <div className='col-md-5'>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup1.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Fire Insurance</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Venenatis at at magna ut vestibulum odio sed at faucibus. Ultrices facilisis laoreet sed porta id duis sapien et. Enim sem facilisis suscipit.</p>
+                                        </div>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup3.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Marine Insurance</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Diam at sit scelerisque nam. Vestibulum nunc gravida sed quisque. Nunc id diam non neque porttitor sed fermentum. Eu justo quis maecenas.</p>
+                                        </div>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup5.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Machine Breakdown</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Non enim maecenas purus aliquet tincidunt arcu. Lacus mi ullamcorper bibendum sed risus eget. Orci facilisis sit sodales nibh purus sed habitant.</p>
+                                        </div>
+                                    </div>
+                                    <div className='col-md-2'></div>
+                                    <div className='col-md-5'>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup2.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Contractors All Risk</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Ullamcorper elementum interdum pulvinar ut eget elit. Massa nibh eget morbi malesuada massa sed id sodales. Bibendum ipsum et a.</p>
+                                        </div>
+                                        <div className='productStartup-card'>
+                                            <div className='d-flex align-items-center'>
+                                                <img src="/icons/prodStartup4.svg" />
+                                                <h4 className='title-24 text-primary font-secondary ms-3 mb-0 '>Erection All Risk</h4>
+                                            </div>
+                                            <p className='title-18 text-blueGray mt-2'>Morbi velit in quisque commodo enim penatibus. Dui posuere purus duis turpis integer ullamcorper. Arcu dignissim ultrices eu sapien.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={`row productStartup-bottom mt-4 mt-md-0`}>
+                                    <div className={`col text-center`}>
+                                        <div className="d-flex justify-content-center flex-column flex-sm-row" >
+                                            <a className="btnCommon btnBorder border-primary border2 text-primary me-lg-5 text-decoration-none" type="submit"> <img className='me-2' src='/icons/calender.svg' width="22px" /> <span> Schedule a call </span> </a>
+                                            {/* <a className="btnCommon yellowBtn text-primary text-decoration-none mt-4 mt-sm-0" type="submit"> <img className='me-1' src='/icons/whatsapp.svg' width="22px"/><span> WhatsApp us</span></a> */}
+                                            <a className="btnCommon yellowBtn text-primary text-decoration-none mt-4 mt-sm-0" type="submit">
+                                                <WhatsApp iconColor="primary" height="23" width="23" />
+                                                <span className='ms-2'> WhatsApp us</span>
+                                            </a>
+                                        </div>
+                                        <p className='productStartup-bottomDecrip  title-15 mt-5 mb-0 text-blueGray font-weight-500 '> Say hello to a spam-free zone! We respect your privacy and <span className='d-sm-inline d-none'> <br></br></span> won't bombard you with unwanted calls. </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </Container>
+                    </div>
+
                 </div>
                 {/* --------productStartup end---------- */}
+                <OurBlog />
 
+                <Review />
                 <BestBacked />
-
+                <FAQ />
                 <HowGetStarted />
+                <div className="d-none d-md-block" style={{ height: "280px" }}></div>
+                <div className="d-blok d-md-none" style={{ height: "60px" }}></div>
 
-                <div className="d-none d-md-block" style={{ height: "100px" }}></div>
-                <div className="d-blok d-md-none" style={{ height: "40px" }}></div>
+
             </div>
-            <Footer />
+            <Footer  />
 
             <style jsx scope>
                 {`
-                .title-15 {
-                    font-size: 15px;
-                    line-height: 22.5px;
+         
+        .aboutProdMain{
+            background: rgb(7,22,57);
+            background: linear-gradient(180deg, rgba(7,22,57,1) 75%, rgba(255,180,0,1) 75%);
+        }
+        .container{
+            max-width: 1580px;
+        }
+        .title-36{
+            font-size: 36px;
+            line-height: 42px;
+        }
+        .aboutProduct{
+            padding: 105px 120px 0 0 ;
+            position: relative;
+        }
+        .aboutProduct::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            background: #ddd;
+            width: 1px; 
+            height: 100%;
+        }
+        
+        .aboutProductNavbar{
+            
+            position: sticky;
+            top: 0;
+            z-index: 222;
+        }
+        .aboutProductNavbar .navbar{
+            background: #071639;
+            border-left: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        .aboutProductNavbar-content, .prodContainer {
+        padding-left: 150px;
+        margin-top: 120px;           
+    }
+        .prodContainer {
+        padding-right: 120px;      
+    }
+        .aboutProductSec-left{
+            padding-right: 10px;
+        }
+        .aboutProductSec-leftDecrip{
+            padding-right: 90px;
+            margin-top: 40px;
+        }
+        .aboutProductSec-left::before{
+            position: absolute;
+            content: "";
+            left: -7px;
+            background: var(--vt-c-yellow);
+            width: 15px;
+            height: 15px;
+            margin-top: 7px;
+        }
+        .aboutProductSec-leftYellow::before{
+            position: absolute;
+            content: "";
+            left: -7px;
+            background: var(--vt-c-blue);
+            width: 15px;
+            height: 15px;
+            margin-top: 7px;
+        }
+        .aboutProductSec-leftSubTitle{
+            margin-bottom: 4px;
+        }
+        .aboutProductSec{
+            padding: 118px 0;
+        }
+        .aboutProductSec-yellow{
+        padding-top: 90px !important;
+        }
+        .aboutProductList li{
+            margin-right: 20px;
+            position: relative;
+        }
+        .aboutProductList li a{             
+            font-weight: 400;             
+            font-size: 18px;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;            
+        }
+        .aboutProductList li a.active{
+            background-color: transparent;
+        }
+        .aboutProductList li a img{
+            height: 16px;
+            margin-right: 5px;         
+        }
+        .aboutProductList li a img.svgActive{
+            display: none;
+        }
+        .aboutProductList li a.active img.svgActive{
+            display: inline;
+        }
+        .aboutProductList li a.active img.svg{
+            display: none;
+        }
+        
+         
+        .aboutProductList li a.active::after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            bottom: -18px;
+            background: #ddd;
+            left: 0;
+            width: 100%; 
+        }
+        .aboutProductList li a:hover,
+        .aboutProductList li a.active {
+            color: var(--vt-c-yellow);
+            opacity: 1;
+        }
+        .secDivider{
+            height: 1px;
+        }
+         .aboutProductSec-right{
+             padding-left: 50px; 
+         }
+         .aboutProductSec-rightIcoCard p{
+             max-width: 160px;
+         }
+         
+         .aboutProductSec-yellow .aboutProductSec-right img{
+             height: 30px;
+             width: 30px;
+         }
+         .caverage-button{
+             position: absolute;
+             bottom: 0;
+         }
+         .caverage-button > div,
+         .caverage-button > div{
+             font-size: 18px;
+             color: #0e2b72;
+             border: 2px solid #0e2b72;
+             width: 35px;
+             height: 35px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             cursor: pointer;  
+             margin-bottom: 40px;
+            }
+            .caverage-button-next, .caverage-button-next2 {
+                margin-left: 64px;
+            }
+            
+            .claimExample{
+                margin: 180px 0;
+                min-height: 700px;
+            }
+            .claimExample  .aboutProductSec-left::before{
+                display:none;
+            }
+            .claimExample  .caverage-button{
+                margin-top: 150px;
+            }
+            
+            .productStartup .commnHeading{
+                margin-top: 86px;
+            }
+            .productStartup-divider{
+                height: 1px;
+                margin-bottom: 60px;
+             }
+             .productStartup-card{
+                 margin-bottom: 80px;
+                 padding: 0 25px;
+                }
+                .productStartup-card p{
+                    font-weight: 500;
+                }
+             .productStartup-assetRow{
+                 margin-top: -30px;
+                }
+                .productStartup-bottom{
+                    margin-bottom: 180px;
+                }
+                .productStartup-bottom .btnCommon.yellowBtn{
+                    padding-left: 48px;
+                    padding-right: 48px;
+                }
+                .productStartup-bottom .border-primary{
+                    
+                }
+                .productStartup-bottomDecrip{
+
                 }
 
-                @media only screen and (max-width: 1699px) {
-                    .title-42 {
-                        font-size: 38px;
-                        line-height: 52px;
-                    }
-                    .title-32 {
-                        font-size: 28px;
-                        line-height: 36px;
-                    }
-                    .title-24 {
-                        font-size: 20px;
-                        line-height: 32px;
-                    } 
+         .title-64 {
+             font-size: 64px;
+             line-height: 78px;
+           }
+           
+           .title-60 {
+             font-size: 60px;
+             line-height: 80px;
+           }
+           
+           .title-48 {
+             font-size: 48px;
+             line-height: 60px;
+           }
+           
+           .title-32 {
+             font-size: 32px;
+             line-height: 48px;
+           }
+           
+           .title-30 {
+             font-size: 30px;
+             line-height: 44px;
+           }
+           
+           .title-25 {
+             font-size: 25px;
+             line-height: 33px;
+           }
+           
+           .title-24 {
+             font-size: 24px;
+             line-height: 33px;
+           }
+           
+           .title-22 {
+             font-size: 22px;
+             line-height: 32px;
+           }
+           
+           .title-21 {
+             font-size: 21px;
+             line-height: 31.5px;
+           }
+           .title-20 {
+             font-size: 20px;
+             line-height: 30px;
+           }
+           
+           .title-18 {
+             font-size: 18px;
+             line-height: 28px;
+           }
+           
+           .title-15 {
+             font-size: 15px;
+             line-height: 22.5px;
+           }
+           .title-16 {
+             font-size: 16px;
+             line-height: 20px;
+           }
+           
+           .title-14 {
+             font-size: 14px;
+             line-height: 20px;
+           }
+           
+           .title-12 {
+             font-size: 12px;
+             line-height: 18px;
+           }
+
+           @media only screen and (max-width: 1450px) {
+               .aboutProduct{
+                   padding: 75px 100px 0 0;
                 }
-                @media only screen and (max-width: 992px) {
-                    .title-42 {
-                        font-size: 26px;
-                        line-height: 38px;
-                    }
-                    .title-32 {
-                        font-size: 26px;
-                        line-height: 30px;
-                    }
-                    .title-28 {
-                        font-size: 22px;
-                        line-height: 30px;
-                    }
-                    .title-26 {
-                        font-size: 22px;
-                        line-height: 30px;
-                    }
-                    .title-24 {
-                        font-size: 20px;
-                        line-height: 26px;
-                    }
-                    .title-22 {
-                        font-size: 18px;
-                        line-height: 24px;
-                    }
-                    .title-20 {
-                        font-size: 16px;
-                        line-height: 24px;
-                    }
-                    .title-18 {
-                        font-size: 16px;
-                        line-height: 24px;
-                    }
+                .aboutProductSec{
+                    padding: 80px 0;
                 }
-            `}
+                .aboutProductSec-right{
+                    padding-left: 20px;
+                }
+                .aboutProductNavbar-content{
+                    padding-left: 150px;
+                    margin-top: 120px;                       
+                }
+                .title-64 {
+                    font-size: 52px;
+                    line-height: 64px;
+                }
+            }
+            @media only screen and (max-width: 575px) {
+                .aboutProduct{
+                    padding: 50px 0 0 0;
+                }
+                .aboutProduct::before{
+                    display: none;
+                }
+                .aboutProductNavbar-content{
+                    padding-left: 0;
+                }
+                .aboutProductSec-left:before{
+                    display: none;
+                }
+                .title-64{
+                    font-size: 36px;
+                    line-height: 38px;
+                }
+                .title-36{
+                    font-size: 30px;
+                    line-height: 
+                }
+                .aboutProductSec-leftDecrip{
+                    padding-right: 0;
+                    
+                }
+                .aboutProductSec-right{
+                    padding: 0;
+                }
+                .aboutProductSec-rightDescrip{
+                    font-size: 15px;
+                    line-height: 23px; 
+                }
+                .aboutProduct .navbar {
+                    width: 100%;
+                    border: 0;
+                }
+                .aboutProductList {
+                    justify-content: space-between;
+                    width: 100%;
+                }
+                .aboutProductList li:last-child{
+                    margin-right: 0;
+                }
+                .aboutProductList li a{
+                    padding: 0 5px;
+                    font-size: 15px;
+                }
+                .navbar .aboutProductList  li a:after{
+                    background: var(--vt-c-yellow);
+                }
+                
+                .aboutProductSec-rightIcoCard1st img{
+                    height: 30px;
+                }
+                .aboutProductSec-rightIcoCard1st .title-18{
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                .aboutProductNavbar-content{
+                    margin-top: 40px;
+                }
+                .aboutProductSec{
+                    padding: 40px 0;
+                }
+                .claimExample{
+                    margin: 50px 0;
+                }
+                .prodContainer{
+                    padding: 0;
+                }
+                .aboutProdMain{
+                    background: linear-gradient(180deg, rgba(7,22,57,1) 67%, rgba(255,180,0,1) 67%);
+                }
+                .caverage-button{
+                    position: relative;
+                    margin-top: 20px;
+                }
+                .aboutProductSec-leftYellow{
+                    margin-top: 50px;
+                }
+                .claimExample  .caverage-button{
+                    margin-top: 30px;
+                }
+
+
+                /******/
+                /******/
+                .aboutProductNavbar{
+                    top: 20px;
+                }
+                .aboutProductNavbar .navbar{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .aboutProductList li{
+                    margin-right: 10px;
+                }
+                .container{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                .title-24{
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+                .title-20{
+                    font-size: 15px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+                .title-21 {
+                    font-size: 15px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+                .title-18{
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 400;
+                }
+                .title-15 {
+                    font-size: 12px;
+                    line-height: 18px;
+                  }
+                .aboutProductList li a.active::after {
+                    bottom: -8px;
+                }
+                 .aboutProductNavbar-content{
+                    margin-top: 25px;
+                }
+                .aboutProductSec-leftDecrip{
+                    margin-top: 10px;
+                }
+                .list-group-item{
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                .aboutProductSec-yellow{
+                    margin-top: 0;
+                }
+                .productStartup .prodContainer {
+                    margin-top: 64px;
+                }
+                .productStartup .prodContainer > .row{
+                    text-align: left !important;
+                }
+                .claimExample .title-24{
+                    font-size: 18px;
+                    line-height: 27px;
+                }
+                .caverage-button-prev2,
+                .caverage-button-next2{
+                    margin-bottom: 0;   
+                }
+                .aboutProductSec-yellow {
+                    padding-bottom: 0px;
+                }
+                .aboutProductSec-yellowList .list-group-item {
+                    font-size: 12px !important;
+                    line-height: 18px !important;
+                }
+                .productStartup-card{
+                    margin-bottom: 20px;
+                    padding: 0px;
+               }
+               .productStartup .title-36{
+                    font-size: 21px;
+                    line-height: 29px;
+                    margin-bottom: -10px !important;
+                }
+                .productStartup-divider{
+                    height: 1px;
+                    margin-bottom: 25px;
+                }
+                .aboutProductSec-yellow{
+                    padding-bottom: 50px important;
+                }
+                .productStartup-card h4{
+                    font-weight: 600
+                }
+                
+            }
+            @media only screen and (min-width: 1450px) {
+                .productStartup-listSec{
+                    max-width: 1200px;
+                    margin: auto;
+                }
+                .aboutProduct{
+                    padding: 75px 0px 0 0;
+                }
+            }
+            @media only screen and (max-width: 370px) {
+                .aboutProductNavbar{
+                    top: 0
+                }
+                .aboutProdMain{
+                    background: linear-gradient(180deg, rgba(7,22,57,1) 68.5%, rgba(255,180,0,1) 68.5%);
+                }
+            }
+            @media only screen and (min-width: 1360px) and (max-width: 1370px){
+                .aboutProdMain{
+                    background: rgb(7,22,57);
+                    background: linear-gradient(180deg, rgba(7,22,57,1) 74%, rgba(255,180,0,1) 74%);
+                }
+            }
+            @media (min-width: 1300px){
+                
+                .aboutProdMain .container {
+                  max-width: 1170px !important;
+                }
+            }
+            @media (min-width: 1399px){
+                .container {
+                  max-width: 1280px !important;
+                }
+                .aboutProdMain .container {
+                    max-width: 1280px !important;
+                  }
+            }
+            @media (min-width:1600px) {
+                .container {
+                  max-width: 1420px !important;
+                }
+                .aboutProdMain .container {
+                    max-width: 1420px !important;
+                  }
+            }
+            @media (min-width:1650px) {
+                .container {
+                  max-width: 1500px !important;
+                }
+                .aboutProdMain .container {
+                    max-width: 1500px !important;
+                  }
+            }
+     `}
             </style>
         </>
     )

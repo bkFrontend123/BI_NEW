@@ -13,68 +13,62 @@ export default function ProductBanner(props) {
     return (
         <>
             <div className={`ProductBanner ${customClass}`}>
-                <div className='container ProductBannerBox px-3'>
-                    <div className='row g-4'>
-                        <div className='col-lg-6'>
-                            <div className='ProductBannerText'>
-                                <h1 className='title-60 ProductBannerTextTitle text-black font-weight-600 font-secondary'>{title}</h1>
-                                <p className='ProductBannerTextDescrip title20  text-primaryDark font-primaryNormal font-weight-500 pe-md-4'>
-                                    {description}
-                                    <Link className="d-block text-primary" href="/">Read More...</Link>
-                                </p>
-                                <div className='ProductBannerRibbon d-flex align-items-center position-relative'>
-                                    <div className='ProductBannerRibbon-left ProductBannerRibbonCol bg-white border-primary'>
-                                        <div className='ProductBannerRibbonBox'>
-                                            <img className='ribbonProduct' src='/ribbonProduct.svg' />
-                                            <div className='title-20 text-primary font-weight-500'>Insurance worth</div>
-                                            <div className='title-32 text-primary font-weight-600 mt-n2'> ₹ 3 Crore</div>
-                                        </div>
-                                    </div>
-                                    <div className='ProductBannerRibbon-right ProductBannerRibbonCol bg-primary'>
-                                        <div className='ProductBannerRibbonBox'>
-                                            <div className='title-20 text-yellow font-weight-500'> at just</div>
-                                            <div className='title-48 text-yellow font-weight-600 mt-n2'> ₹ 15,000</div>
-                                            <div className='bg-yellow h-3 mt-1'></div>
-                                        </div>
-                                    </div> 
-                                </div>
-                                <div className='mt-4'>
-                                    <RatingCard
-                                        reviews="400"
-                                        stars="4.5"
-                                        background="true"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-lg-6 pe-md-0'>
-                            <div className='ProductBanner-form'>
-                                <div className='bg-white ProductBanner-formBg p-4 p-xl-5'>
-                                    <div className='row'>
-                                        <p className='ProductBanner-formTopHeading title24 font-primaryNormal font-weight-500 '>Analyse your Business Risk. <span className='d-inlline d-md-none'><br></br></span>Buy the right Policy within 10 Minutes</p>
-                                        <div className='col-lg-12 mx-auto'>
-                                            <div className='ProductBanner-formTop  d-flex flex-md-row flex-column '>
-                                                <p className=' title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
-                                                    <Building iconColor="green " width="20" height="21" />
-                                                    <span className='ms-2 font-primaryNormal'>Trusted by 340 businesses</span>
-                                                </p>
-
-                                                <p className='title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
-                                                    <Clock iconColor="green stroke" width="20" height="21" />
-                                                    <span className='ms-2 font-primaryNormal'>Policy in Minutes</span>
-                                                </p>
-
-                                                {/* <p className='title20 font-weight-500 me-4 d-flex  align-items-center'>
-                                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fillRule="evenodd" clipRule="evenodd" d="M0 12.5C0 5.87258 5.37258 0.5 12 0.5C18.6274 0.5 24 5.87258 24 12.5C24 19.1274 18.6274 24.5 12 24.5C5.37258 24.5 0 19.1274 0 12.5ZM17.7604 9.53309C18.0799 9.21357 18.0799 8.69552 17.7604 8.376C17.4408 8.05648 16.9228 8.05648 16.6033 8.376L10.0909 14.8884L7.39672 12.1942C7.0772 11.8747 6.55916 11.8747 6.23964 12.1942C5.92012 12.5137 5.92012 13.0317 6.23964 13.3513L9.51237 16.624C9.83189 16.9435 10.3499 16.9435 10.6695 16.624L17.7604 9.53309Z" fill="#00916E" />
-                                                    </svg>
-                                                    <span className='ms-2 font-primaryNormal'>Suspendisse pharetra</span>
-                                                </p> */}
+                <div className='ProductBannerBox'>
+                    <div className='container'>
+                        <div className='row g-4'>
+                            <div className='col-lg-6'>
+                                <div className='ProductBannerText'>
+                                    <h1 className='title-60 ProductBannerTextTitle text-black font-weight-700 font-secondary'>{title}</h1>
+                                    <p className='ProductBannerTextDescrip title20  text-primaryDark font-primaryNormal font-weight-500 pe-md-4'>
+                                        {description}
+                                        {/*<Link className="d-block text-primary" href="/">Read More...</Link>*/}
+                                    </p>
+                                    <div className='ProductBannerRibbon d-flex align-items-center position-relative'>
+                                        <div className='ProductBannerRibbon-left ProductBannerRibbonCol bg-white border-primary'>
+                                            <div className='ProductBannerRibbonBox'>
+                                                <img className='ribbonProduct' src='/ribbonProduct.svg' />
+                                                <div className='title-20 text-primary font-weight-500'>Insurance worth</div>
+                                                <div className='title-32 text-primary font-weight-600 mt-n2'> ₹ 3 Crore</div>
                                             </div>
                                         </div>
+                                        <div className='ProductBannerRibbon-right ProductBannerRibbonCol bg-primary'>
+                                            <div className='ProductBannerRibbonBox'>
+                                                <div className='title-20 text-yellow font-weight-500'> at just</div>
+                                                <div className='title-48 text-yellow font-weight-600 mt-n2'> ₹ 15,000</div>
+                                                <div className='bg-yellow h-3 mt-1'></div>
+                                            </div>
+                                        </div> 
                                     </div>
-                                    <div className='ProductBanner-formBox'>
-                                        {children}
+                                    <div className='mt-4'>
+                                        <RatingCard
+                                            reviews="450"
+                                            stars="4.5"
+                                            background="true"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='col-lg-6'>
+                                <div className='ProductBanner-form'>
+                                    <div className='bg-white ProductBanner-formBg p-4 p-xl-5'>
+                                        <p className='ProductBanner-formTopHeading title22 font-primaryNormal font-weight-500'>Analyse your Business Risk. <span className='d-inlline d-md-none'><br></br></span>Buy the right Policy within 10 Minutes</p>
+                                        {/*<div className='row'>
+                                            <div className='col-lg-12 mx-auto'>
+                                                <div className='ProductBanner-formTop  d-flex flex-md-row flex-column '>
+                                                    <p className=' title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
+                                                        <Building iconColor="green " width="20" height="21" />
+                                                        <span className='ms-2 font-primaryNormal'>Trusted by 340 businesses</span>
+                                                    </p>
+                                                    <p className='title20 font-weight-500 me-4 mb-0 d-flex  align-items-center'>
+                                                        <Clock iconColor="green stroke" width="20" height="21" />
+                                                        <span className='ms-2 font-primaryNormal'>Policy in Minutes</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>*/}
+                                        <div className='ProductBanner-formBox'>
+                                            {children}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -86,14 +80,14 @@ export default function ProductBanner(props) {
             <style jsx scope>
                 {`
                     .ProductBanner{
-                        padding: 125px 0 135px 0;
+                        padding: 125px 0 215px 0;
                         background: url(/productHero.jpg) no-repeat center left/cover;
                         margin-top: -165px;
                         padding-top: 165px;
                         position: relative;
                     }
                     .ProductBannerBox{
-                        margin-top: 120px;
+                        margin-top: 100px;
                     }
                     .ProductBannerText{
                         padding-left: 30px;
@@ -205,10 +199,10 @@ export default function ProductBanner(props) {
                         .ProductBannerTextTitle{
                             margin-bottom: 10px;
                             font-size: 34px;
-                            line-height: 38px;
+                            line-height: 42px;
                         }
                         .ProductBannerText{
-                            padding: 36px 0;
+                            padding: 50px 0;
                         }
                         .ProductBannerTextDescrip{
                             margin-bottom: 34px;

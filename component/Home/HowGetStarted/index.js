@@ -32,17 +32,17 @@ export default function HowGetStarted(props) {
                                 </div>
                                 <div className="getStarted-rightBottom">
                                     <div className="d-flex justify-content-center flex-column flex-md-row pb-2" >
-                                        <a className="btnCommon  border-white btnBorder text-white font-weight-400 text-decoration-none" type="submit">
+                                        <a className="btnCommon  border-white btnBorder text-white font-weight-400 text-decoration-none">
                                             <Calender iconColor="white" width="18" height="18" />
                                             <span className="ms-2"> Schedule a call</span>
                                         </a>
-                                        <a className="btnCommon bg-white d-none d-md-flex align-items-cet text-primary text-decoration-none  bordre2 mt-3 mt-md-0" type="submit">
+                                        <a className="btnCommon bg-white d-none d-md-flex align-items-cet text-primary text-decoration-none  bordre2 mt-3 mt-md-0">
                                             <WhatsApp iconColor="primary" width="18" height="18" />
-                                            <span className="ms-2"> WhatsApp us</span>
+                                            <span className="ms-2"> Talk to Us</span>
                                         </a>
-                                        <a className="btnCommon bg-yellow d-flex d-md-none align-items-cet text-primary text-decoration-none ms-md-4 mt-3 mt-md-0" type="submit">
+                                        <a className="btnCommon bg-yellow d-flex d-md-none align-items-cet text-primary text-decoration-none ms-md-4 mt-3 mt-md-0">
                                             <WhatsApp iconColor="primary" width="18" height="18" />
-                                            <span className="ms-2"> WhatsApp us</span>
+                                            <span className="ms-2"> Talk to Us</span>
                                         </a>
                                     </div>
                                     <p className="title-15 getStarted-rightBottomDescrip mb-0">Say hello to a spam-free zone! We respect your privacy, and we won't bombard you with unwanted calls.</p>

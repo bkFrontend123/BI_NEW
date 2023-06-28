@@ -352,6 +352,9 @@ function Business() {
                       }
                     @media (max-width:575px) {
                         .businessInsurance-box{
+                            padding: 35x;
+                        }
+                        .businessInsurance-box{
                             overflow-y: hidden;
                          }
                         .businessInsurance table th,

@@ -20,57 +20,64 @@ function Navbar() {
   console.log(menuToggle)
 
   const LiabiltyInsurance = [
-    { id: "s1", link: "/directors_and_officers", img: "/startup1.png", title: "Directors & Officers Insurance" },
-    { id: "s1", link: "/errors_and_omissions", img: "/startup2.png", title: "Errors & Omissions Insurance" },
-    { id: "s1", link: "/cyber", img: "/startup3.png", title: "Cyber Crime Insurance" },
-    { id: "s1", link: "/general_insurance", img: "/startup4.png", title: "General Liability Insurance" },
-    { id: "s1", link: "/crime_fidelity", img: "/startup5.png", title: "Crime/Fidelty Insurance" },
-    { id: "s1", link: "/product_liability", img: "/startup6.png", title: "Product Liability Insurance" },
+    { id: "l1", link: "/directors-and-officers-insurance", img: "/productIcons/liability/dAndO_icon.png", title: "Directors & Officers Insurance" },
+    { id: "l2", link: "/errors-and-omissions-insurance", img: "/productIcons/liability/eAndO_icon.png", title: "Errors & Omissions Insurance" },
+    { id: "l3", link: "/general-liability-insurance", img: "/productIcons/liability/generalLiability_icon.png", title: "General Liability Insurance" },
+    { id: "l4", link: "/", img: "/productIcons/liability/fidelity_icon.png", title: "Fidelity Insurance" },
+    { id: "l5", link: "/", img: "/productIcons/liability/productLiability_icon.png", title: "Product Liability Insurance" },
+    { id: "l6", link: "/", img: "/productIcons/liability/workman_icon.png", title: "Workman’s Compensation" },
+    { id: "l7", link: "/", img: "/productIcons/liability/crime_icon.png", title: "Crime Insurance" },
+    { id: "l8", link: "/", img: "/productIcons/liability/cyber_icon.png", title: "Cyber Insurance" },
   ]
   const AssetInsurance = [
-    { id: "s1", link: "", img: "/startup7.png", title: "Fire Insurance" },
-    { id: "s2", link: "", img: "/startup8.png", title: "Marine Insurance" },
-    { id: "s1", link: "", img: "/startup9.png", title: "Contractors All Risk" },
-    { id: "s1", link: "", img: "/startup10.png", title: "Erection All Risk" },
-    { id: "s1", link: "", img: "/startup11.png", title: "Machinery Breakdown" },
+    { id: "a1", link: "/", img: "/productIcons/asset/fire_icon.png", title: "Fire Insurance" },
+    { id: "a2", link: "/", img: "/productIcons/asset/officePackage_icon.png", title: "Office Package" },
+    { id: "a3", link: "/", img: "/productIcons/asset/shopOwner_icon.png", title: "Shop Owner’s" },
+    { id: "a4", link: "/", img: "/productIcons/asset/restaurant_icon.png", title: "Restaurant, Hotels & Cafes" },
+    { id: "a5", link: "/", img: "/productIcons/asset/educational_icon.png", title: "Educational Institutes" },
+    { id: "a6", link: "/", img: "/productIcons/asset/hospitals_icon.png", title: "Hospitals & Clinics" },
   ]
-  const subMenu1 = [
-    { id: "s1", link: "/directors_and_officers", img: "/startup1.png", title: "Directors & Officers Insurance" },
-    { id: "s1", link: "/errors_and_omissions", img: "/startup2.png", title: "Errors & Omissions Insurance" },
-    { id: "s1", link: "/cyber", img: "/startup3.png", title: "Cyber Crime Insurance" },
-    { id: "s1", link: "/general_insurance", img: "/startup4.png", title: "General Liability Insurance" },
-    { id: "s1", link: "/crime_fidelity", img: "/startup5.png", title: "Crime/Fidelty Insurance" },
-    { id: "s1", link: "/product_liability", img: "/startup6.png", title: "Product Liability Insurance" },
+  const EngineeringInsurance = [
+    { id: "e1", link: "/contractor-all-risk-policy", img: "/productIcons/engineering/contractorsAllRisk_icon.png", title: "Contractors All Risk" },
+    { id: "e2", link: "/erection-all-risk-insurance", img: "/productIcons/engineering/erectionAllRisk_icon.png", title: "Erection All Risk" },
+    { id: "e1", link: "/contractor-plant-and-machinery-insurance", img: "/productIcons/engineering/contractorsPlant_icon.png", title: "Contractors Plant & Machinery" },
+  ]
+  const EmployeeInsurance = [
+    { id: "eb1", link: "/group-personal-accident-insurance", img: "/productIcons/employeeBenefits/groupPersonal_icon.png", title: "Group Personal Accident" },
+    { id: "eb2", link: "/group-health-insurance", img: "/productIcons/employeeBenefits/groupHealth_icon.png", title: "Group Health Insurance" },
+  ]
+  const MarineInsurance = [
+    { id: "m1", link: "/marine-insurance", img: "/productIcons/marine/marine_icon.png", title: "Marine Transit Policy" },
   ]
   const industryTechnology = [
-    { link: "/industry", title: "E-Commerce" },
-    { link: "/industry", title: "Ed-Tech" },
-    { link: "/industry", title: "E-Sports" },
-    { link: "/industry", title: "Fintech" },
-    { link: "/industry", title: "MSPs" },
-    { link: "/industry", title: "SAAS" },
-    { link: "/industry", title: "Startups" },
+    { id: "it1", link: "/industry", title: "E-Commerce" },
+    { id: "it2", link: "/industry", title: "Ed-Tech" },
+    { id: "it3", link: "/industry", title: "E-Sports" },
+    { id: "it4", link: "/industry", title: "Fintech" },
+    { id: "it5", link: "/industry", title: "MSPs" },
+    { id: "it6", link: "/industry", title: "SAAS" },
+    { id: "it7", link: "/industry", title: "Startups" },
   ]
   const industryTraditional = [
-    { link: "/industry", title: "Financial Services" },
-    { link: "/industry", title: "Financial Services" },
-    { link: "/industry", title: "Manufacturing" },
-    { link: "/industry", title: "Media & Advertising" },
+    { id: "ita1", link: "/industry", title: "Financial Services" },
+    { id: "ita2", link: "/industry", title: "Financial Services" },
+    { id: "ita3", link: "/industry", title: "Manufacturing" },
+    { id: "ita4", link: "/industry", title: "Media & Advertising" },
   ]
   const industryEmerging = [
-    { link: "/industry", title: "Blockchain" },
-    { link: "/industry", title: "Cannabis" },
-    { link: "/industry", title: "Cryptocurrency" },
-    { link: "/industry", title: "Influencers" },
-    { link: "/industry", title: "Electric Mobility" },
-    { link: "/industry", title: "On-Demand Delivery" },
-    { link: "/industry", title: "Robotics" },
+    { id: "ie1", link: "/industry", title: "Blockchain" },
+    { id: "ie2", link: "/industry", title: "Cannabis" },
+    { id: "ie3", link: "/industry", title: "Cryptocurrency" },
+    { id: "ie4", ink: "/industry", title: "Influencers" },
+    { id: "ie5", link: "/industry", title: "Electric Mobility" },
+    { id: "ie6", link: "/industry", title: "On-Demand Delivery" },
+    { id: "ie7", link: "/industry", title: "Robotics" },
   ]
   const Resources = [
-    { link: "/industry", title: "More Blogs" },
-    { link: "/industry", title: "Webinars" },
-    { link: "/industry", title: "Resource Hub" },
-    { link: "/industry", title: "White Papers" },
+    { id: "r1", link: "/", title: "More Blogs" },
+    { id: "r2", link: "/", title: "Webinars" },
+    { id: "r3", link: "/", title: "Resource Hub" },
+    { id: "r4", link: "/", title: "White Papers" },
   ]
   const handleMouseEnter = () => {
     document.body.classList.add('DropdownOverlay');
@@ -139,29 +146,28 @@ function Navbar() {
                       <div className='mega-menuBox'>
                         <div className='container'>
                           <div className='row'>
-
-                            <div className='col-md-9 offset-md-3'>
+                            <div className='col-md-10 offset-md-1'>
                               <div className='row'>
                                 {/* -------Liability Insurance------- */}
-                                <div className='col-md-12'>
+                                <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
-                                    <div className='title-24 font-weight-600 text-primary'>Liability Insurance</div>
-                                    <hr className='bg-gray mb-md-4 mt-2'/>
+                                    <div className='title-24 font-weight-600 text-primary fst-italic'>Liability Insurance</div>
+                                    <hr className='bg-gray mb-md-3 mt-2'/>
                                   </div>
-                                  <div className='row'>
+                                  <div className='startupColsList'>
                                     {LiabiltyInsurance.map((item) =>
-                                      <div className='col-md-6 startupCols-cardCol'>
+                                      <div className='startupCols-cardCol'>
                                         <div className='startupCols-cardBox pe-md-3 '>
                                           <div className='d-flex align-items-center'>
                                             <Image
                                               // loader={myLoader}
                                               src={item.img}
                                               alt="Bimakavach"
-                                              width={50}
-                                              height={50}
+                                              width={48}
+                                              height={48}
                                               className='d-none d-md-block '
                                             />
-                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none  text-primary @mt-md-3 font-weight-600 ms-2'>{item.title}</Link>
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary @mt-md-3 font-weight-600 ms-2'>{item.title}</Link>
                                           </div>
                                         </div>
                                       </div>
@@ -169,25 +175,96 @@ function Navbar() {
                                   </div>
                                 </div>
                                 {/* -------Asset Insurance------- */}
-                                <div className='col-md-12'>
+                                <div className='col-md-4'>
                                   <div className='mega-menuBox-title'>
-                                    <div className='title-24 font-weight-600 text-primary'>Asset Insurance</div>
-                                    <hr className='bg-gray mb-md-5 mt-2' />
+                                    <div className='title-24 font-weight-600 text-primary fst-italic'>Asset Insurance</div>
+                                    <hr className='bg-gray mb-md-3 mt-2' />
                                   </div>
-                                  <div className='row'>
+                                  <div className='startupColsList'>
                                     {AssetInsurance.map((item) =>
-                                      <div className='col-md-6 startupCols-cardCol'>
+                                      <div className='startupCols-cardCol'>
                                         <div className='startupCols-cardBox pe-md-3 '>
                                           <div className='d-flex align-items-center'>
                                             <Image
                                               // loader={myLoader}
                                               src={item.img}
                                               alt="Bimakavach"
-                                              width={50}
-                                              height={50}
+                                              width={48}
+                                              height={48}
                                               className='d-none d-md-block '
                                             />
-                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none  text-primary  font-weight-600 ms-2'>{item.title}</Link>
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-2'>{item.title}</Link>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                                <div className='col-md-4'>
+                                  <div className='mega-menuBox-title'>
+                                    <div className='title-24 font-weight-600 text-primary fst-italic'>Engineering</div>
+                                    <hr className='bg-gray mb-md-3 mt-2' />
+                                  </div>
+                                  <div className='startupColsList'>
+                                    {EngineeringInsurance.map((item) =>
+                                      <div className='startupCols-cardCol'>
+                                        <div className='startupCols-cardBox pe-md-3 '>
+                                          <div className='d-flex align-items-center'>
+                                            <Image
+                                              // loader={myLoader}
+                                              src={item.img}
+                                              alt="Bimakavach"
+                                              width={48}
+                                              height={48}
+                                              className='d-none d-md-block '
+                                            />
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-2'>{item.title}</Link>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    )}
+                                  </div>
+                                  <div className='mega-menuBox-title'>
+                                    <div className='title-24 font-weight-600 text-primary fst-italic'>Employee</div>
+                                    <hr className='bg-gray mb-md-3 mt-2' />
+                                  </div>
+                                  <div className='startupColsList'>
+                                    {EmployeeInsurance.map((item) =>
+                                      <div className='startupCols-cardCol'>
+                                        <div className='startupCols-cardBox pe-md-3 '>
+                                          <div className='d-flex align-items-center'>
+                                            <Image
+                                              // loader={myLoader}
+                                              src={item.img}
+                                              alt="Bimakavach"
+                                              width={48}
+                                              height={48}
+                                              className='d-none d-md-block '
+                                            />
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-2'>{item.title}</Link>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    )}
+                                  </div>
+                                  <div className='mega-menuBox-title'>
+                                    <div className='title-24 font-weight-600 text-primary fst-italic'>Marine</div>
+                                    <hr className='bg-gray mb-md-3 mt-2' />
+                                  </div>
+                                  <div className='startupColsList'>
+                                    {MarineInsurance.map((item) =>
+                                      <div className='startupCols-cardCol'>
+                                        <div className='startupCols-cardBox pe-md-3 '>
+                                          <div className='d-flex align-items-center'>
+                                            <Image
+                                              // loader={myLoader}
+                                              src={item.img}
+                                              alt="Bimakavach"
+                                              width={48}
+                                              height={48}
+                                              className='d-none d-md-block '
+                                            />
+                                            <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none text-primary font-weight-600 ms-2'>{item.title}</Link>
                                           </div>
                                         </div>
                                       </div>
@@ -236,7 +313,7 @@ function Navbar() {
                                   </div>
                                   <div className='row'>
                                     {industryTechnology.map((item) =>
-                                      <div className='col-md-12 startupCols-cardCol'>
+                                      <div key={item.id} className='col-md-12 startupCols-cardCol'>
                                         <div className='startupCols-cardBox pe-md-3 mb-md-2'>
                                           <div className='d-none d-md-block '>
                                             <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
@@ -254,7 +331,7 @@ function Navbar() {
                                   </div>
                                   <div className='row'>
                                     {industryTraditional.map((item) =>
-                                      <div className='col-md-12 startupCols-cardCol'>
+                                      <div key={item.id} className='col-md-12 startupCols-cardCol'>
                                         <div className='startupCols-cardBox pe-md-3 mb-md-2'>
                                           <div className='d-none d-md-block '>
                                             <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
@@ -272,7 +349,7 @@ function Navbar() {
                                   </div>
                                   <div className='row'>
                                     {industryEmerging.map((item) =>
-                                      <div className='col-md-12 startupCols-cardCol'>
+                                      <div key={item.id} className='col-md-12 startupCols-cardCol'>
                                         <div className='startupCols-cardBox pe-md-3 mb-md-2'>
                                           <div className='d-none d-md-block '>
                                             <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
@@ -311,7 +388,7 @@ function Navbar() {
                                   </div>
                                   <div className='row'>
                                     {industryTechnology.map((item) =>
-                                      <div className='col-md-12 startupCols-cardCol'>
+                                      <div key={item.id} className='col-md-12 startupCols-cardCol'>
                                         <div className='startupCols-cardBox pe-md-3 mb-md-2'>
                                           <div className='d-none d-md-block '>
                                             <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
@@ -329,7 +406,7 @@ function Navbar() {
                                   </div>
                                   <div className='row'>
                                     {industryTraditional.map((item) =>
-                                      <div className='col-md-12 startupCols-cardCol'>
+                                      <div key={item.id} className='col-md-12 startupCols-cardCol'>
                                         <div className='startupCols-cardBox pe-md-3 mb-md-2'>
                                           <div className='d-none d-md-block '>
                                             <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
@@ -369,8 +446,7 @@ function Navbar() {
                       <div className='mega-menuBox'>
                         <div className='container'>
                           <div className='row'>
-
-                            <div className='col-md-8 offset-md-4'>
+                            <div className='col-md-10 offset-md-1'>
                               <div className='row'>
                                 {/* -------Technology------- */}
                                 <div className='col-md-12'>
@@ -382,7 +458,7 @@ function Navbar() {
                                     <div className='col-md-3'>
                                       <div className='row'>
                                         {Resources.map((item) =>
-                                          <div className='col-md-12 startupCols-cardCol'>
+                                          <div key={item.id} className='col-md-12 startupCols-cardCol'>
                                             <div className='startupCols-cardBox pe-md-3 mb-md-2'>
                                               <div className='d-none d-md-block '>
                                                 <Link href={item.link} className='startupCols-cardBoxTitle text-decoration-none title24 text-primary mt-md-3 font-weight-600'>{item.title}</Link>
@@ -464,13 +540,11 @@ function Navbar() {
                 <a className="btnCommon scheduleCallBtn me-md-4 btnBorder border-primary  text-primary mb-2 mb-md-0 text-decoration-none" type="submit"> <img className='me-2' src='/icons/calender.svg' width="16px" /> <span> Schedule a call </span></a>
                 <a className="btnCommon yellowBtn text-primary text-decoration-none " type="submit"> 
                 <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M6.40923 4.75927L5.24962 6.23368C5.65317 6.80974 6.11223 7.35881 6.62676 7.87341C7.14136 8.38794 7.69043 8.84701 8.26649 9.25054L9.74089 8.09094L13.6668 9.30248V12.2954C13.6643 12.8467 13.4221 13.3695 13.0033 13.728C12.6571 14.0243 12.2155 14.1919 11.7608 14.1635C8.8947 13.9845 6.07996 12.8001 3.89002 10.6101C1.70011 8.42021 0.515669 5.6055 0.336609 2.7394C0.308202 2.28466 0.475875 1.84305 0.772142 1.49689C1.1306 1.07808 1.6535 0.835884 2.20476 0.833344H5.19772L6.40923 4.75927ZM10.0157 9.57114L12.3335 10.2863V12.2915C12.3321 12.4545 12.2602 12.609 12.1363 12.7151C12.0218 12.813 11.9132 12.8371 11.8439 12.8328C9.2895 12.6732 6.7843 11.6188 4.83283 9.66734C2.88137 7.71588 1.82694 5.21065 1.66735 2.65626C1.66302 2.587 1.68714 2.47835 1.78512 2.36388C1.89118 2.23995 2.0457 2.16805 2.20874 2.16668H4.2138L4.92906 4.48446L3.5895 6.18761L4.15754 6.99861C4.60538 7.63794 5.11434 8.24654 5.68396 8.81621C6.25363 9.38581 6.86223 9.89481 7.50156 10.3426L8.31256 10.9107L10.0157 9.57114Z" fill="#0E2E7D"/>
+                  <path fillRule="evenodd" clipRule="evenodd" d="M6.40923 4.75927L5.24962 6.23368C5.65317 6.80974 6.11223 7.35881 6.62676 7.87341C7.14136 8.38794 7.69043 8.84701 8.26649 9.25054L9.74089 8.09094L13.6668 9.30248V12.2954C13.6643 12.8467 13.4221 13.3695 13.0033 13.728C12.6571 14.0243 12.2155 14.1919 11.7608 14.1635C8.8947 13.9845 6.07996 12.8001 3.89002 10.6101C1.70011 8.42021 0.515669 5.6055 0.336609 2.7394C0.308202 2.28466 0.475875 1.84305 0.772142 1.49689C1.1306 1.07808 1.6535 0.835884 2.20476 0.833344H5.19772L6.40923 4.75927ZM10.0157 9.57114L12.3335 10.2863V12.2915C12.3321 12.4545 12.2602 12.609 12.1363 12.7151C12.0218 12.813 11.9132 12.8371 11.8439 12.8328C9.2895 12.6732 6.7843 11.6188 4.83283 9.66734C2.88137 7.71588 1.82694 5.21065 1.66735 2.65626C1.66302 2.587 1.68714 2.47835 1.78512 2.36388C1.89118 2.23995 2.0457 2.16805 2.20874 2.16668H4.2138L4.92906 4.48446L3.5895 6.18761L4.15754 6.99861C4.60538 7.63794 5.11434 8.24654 5.68396 8.81621C6.25363 9.38581 6.86223 9.89481 7.50156 10.3426L8.31256 10.9107L10.0157 9.57114Z" fill="#0E2E7D"/>
                 </svg>
-
                 <span className='ms-2'> Talk to us </span></a>
               </div>
             </div>
-
           </div>
         </nav >
       </div >
@@ -480,7 +554,7 @@ function Navbar() {
             text-decoration: none;
           }
           .startupCols-cardBox{
-            margin-bottom: 20px;
+            margin-bottom: 16px;
            }
           @media (min-width: 1300px){
             .nabbarStrip {

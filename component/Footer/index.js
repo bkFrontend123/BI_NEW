@@ -14,12 +14,9 @@ export default function Footer() {
 
   return (
     <>
-  <Head>
-    <title>BimaKavach</title>
-    <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" />
-  </Head>
-  
-  
+    <Head>
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" />
+    </Head>
     <div className="footer ">
       <div className="container">
         <div className="row">

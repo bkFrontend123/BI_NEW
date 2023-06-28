@@ -32,12 +32,12 @@ export default function BestBacked(props) {
                     <Row className={`text-center`}>
                         <Col md={8} className={`mx-auto`}>
                             <div className='commnHeading'>
-                                <div className='polyBox border-primary bg-blueLight mb-md-4 mb-2 text-primary title16 font-weight-500'>Our Investors</div>
-                                <div className={`title-48 font-secondary text-primary font-weight-600 mb-0 ${props.titleClass}`}>Backed by the best</div>
+                                <div className='polyBox border-primary bg-blueLight text-primary title12 text-uppercase font-weight-600 mb-3'>Our Investors</div>
+                                <div className={`title-36 font-secondary mb-md-4 text-primary font-weight-700 ${props.titleClass}`}>Backed by <span className="text-yellow fst-italic">The Best</span></div>
                             </div>
                         </Col>
                     </Row>
-                    <Row className="pt-md-5">
+                    <Row className="pt-md-4 pt-2">
                         <Col md={10} className="mx-auto">
                             <Swiper
                                 modules={[Navigation, Pagination, Autoplay, Grid]}
@@ -87,20 +87,16 @@ export default function BestBacked(props) {
                             </Swiper>
                         </Col>
                     </Row>
-                    <div className="d-none d-md-block" style={{height: "80px"}}></div>
-                    <div className="d-blok d-md-none" style={{height: "60px"}}></div>
+                    <div className="d-none d-md-block" style={{height: "90px"}}></div>
+                    <div className="d-blok d-md-none" style={{height: "50px"}}></div>
                 </Container>
             </div>
             <style jsx scope>
                 {`
-                      @media only screen and (max-width: 575px) {
-                        .title-64{
+                    @media (max-width: 575px) {
+                        .title-36{
                             font-size: 30px;
                             line-height: 36px;
-                        }
-                        .title-48 {
-                            font-size: 26px;
-                            line-height: 38px;
                         }
                     }
                 `}

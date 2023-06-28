@@ -13,8 +13,6 @@ import "swiper/css";
 // import "swiper/css/effect-cards";
 import { Navigation, Pagination, EffectCards, Autoplay } from 'swiper';
 
-
-
 export default function HowDo() {
 
   const tinderRef = useRef(null);
