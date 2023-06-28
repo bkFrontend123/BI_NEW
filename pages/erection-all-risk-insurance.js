@@ -27,7 +27,7 @@ import Accordion from '../component/Accordion'
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
 
-export default function DAndO_Insurance() {
+export default function product() {
     const navbarExample2Ref = useRef(null);
     const [activeC, setActiveC] = useState(1);
     useEffect(() => {
@@ -274,8 +274,8 @@ export default function DAndO_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
                                     </div>
-                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Advantages of D&O Insurance</div>
+                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
+                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>Advantages of D&O Insurance</div>
                                         <Row className='g-lg-5'>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
@@ -347,8 +347,8 @@ export default function DAndO_Insurance() {
                                         <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-Suite executives. Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <span className='d-none d-lg-block'></span>It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
                                     </div>
-                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
+                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
+                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
                                         <Row>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
@@ -751,7 +751,8 @@ export default function DAndO_Insurance() {
                                 content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="What is tDoes D&O insurance cover owners?he jurisdiction/territory of the claim?"
+                                title="What is tDoes D&O insurance cover owners?he jurisdiction/territory of the claim?
+                                "
                                 content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
