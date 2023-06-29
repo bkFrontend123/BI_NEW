@@ -319,7 +319,7 @@ export default function GroupHealth_Insurance() {
                                     <Container className='position-relative'>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Group Health Insurance Benefits for Employers</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='gx-lg-5'>
+                                            <Row className='g-3 g-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
@@ -348,7 +348,7 @@ export default function GroupHealth_Insurance() {
                                         </div>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0 mt-4 mt-xl-5'>Group Health Insurance Benefits for Employees</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='gx-lg-5'>
+                                            <Row className='g-3 g-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
@@ -374,7 +374,7 @@ export default function GroupHealth_Insurance() {
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`pb-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pb-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <h3 className='title-24 font-secondary font-weight-600 text-black mb-2'>Negotiated Rates</h3>
                                                             <p className='title-18 font-weight-500 text-black m-0'>Insurance carriers negotiate rates with healthcare providers and facilities on behalf of the employer and employees. These negotiated rates are typically lower than what an individual would pay out-of-pocket, resulting in cost savings.</p>

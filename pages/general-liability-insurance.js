@@ -276,7 +276,7 @@ export default function GeneralLiability_Insurance() {
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
                                         <div className='title-28 font-black font-weight-700 text-black font-secondary mb-4'>Features of General Liability Insurance</div>
-                                        <Row className='gx-lg-5'>
+                                        <Row className='g-3 g-lg-5'>
                                             <Col lg={4}>
                                                 <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                     <div className={`${productStyle.lightYellowSecCardBox}`}>

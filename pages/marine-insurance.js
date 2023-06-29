@@ -283,9 +283,9 @@ export default function product() {
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Types of Marine Cargo Insurance</h3>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There are various kinds of marine insurance policies. Our insurance experts can help you secure the most appropriate type of policy for your business.</p>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='gx-lg-5'>
+                                            <Row className='g-4 g-lg-5'>
                                                 <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/importIcon.svg' width="100" height="100" alt="Import Marine Insurance" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Import Marine Insurance</h3>
@@ -294,7 +294,7 @@ export default function product() {
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/exportIcon.svg' width="100" height="100" alt="Export Marine Insurance" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Export Marine Insurance</h3>
@@ -303,7 +303,7 @@ export default function product() {
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/inlandIcon.svg' width="100" height="100" alt="Inland Marine Insurance" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Inland Marine Insurance</h3>
@@ -311,10 +311,8 @@ export default function product() {
                                                         </div>
                                                     </div>
                                                 </Col>
-                                            </Row>
-                                            <Row className='gx-lg-5'>
                                                 <Col lg={4}>
-                                                    <div className={`pt-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/alopIcon.svg' width="100" height="100" alt="ALOP Insurance" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>ALOP Insurance</h3>
@@ -323,7 +321,7 @@ export default function product() {
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/eProductIcon.svg' width="100" height="100" alt="E-product Specific Voyage" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>E-product Specific Voyage</h3>
@@ -332,7 +330,7 @@ export default function product() {
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`pb-0 border-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/coverIcon.svg' width="100" height="100" alt="Open Cover Agreement" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Open Cover Agreement</h3>
@@ -340,10 +338,8 @@ export default function product() {
                                                         </div>
                                                     </div>
                                                 </Col>
-                                            </Row>
-                                            <Row className='gx-lg-5'>
                                                 <Col lg={4}>
-                                                    <div className={`pt-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/lossIcon.svg' width="100" height="100" alt="Direct Loss" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Direct Loss</h3>
@@ -352,7 +348,7 @@ export default function product() {
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/voyageIcon.svg' width="100" height="100" alt="Specific Voyage Policy" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Specific Voyage Policy</h3>
@@ -361,7 +357,7 @@ export default function product() {
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
-                                                    <div className={`pb-0 border-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol} ${productStyle.lightYellowSecCardColNew}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <Image src='/icons/policyIcon.svg' width="100" height="100" alt="nnual Policy" />
                                                             <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Annual Policy</h3>

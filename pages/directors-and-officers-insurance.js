@@ -304,7 +304,7 @@ export default function DAndO_Insurance() {
                                     <Container className='position-relative'>
                                         <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The 3 Categories of D&O Insurance</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='gx-lg-5'>
+                                            <Row className='g-3 g-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
