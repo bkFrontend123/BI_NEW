@@ -320,13 +320,13 @@ export default function GeneralLiability_Insurance() {
                                                     <span>
                                                         <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Retail store owners" />
                                                     </span>
-                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Retail store owners</p>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Restaurants and cafes</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                     <span>
-                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Retail store owners" />
+                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="Restaurants and cafes" />
                                                     </span>
                                                     <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Retail store owners</p>
                                                 </div>
