@@ -189,7 +189,7 @@ export default function product() {
     return (
         <>
             <Head>
-                <title>D&O Insurance | BimaKavach Insurance for Directors and Officers</title>
+                <title>Marine Cargo Insurance | BimaKavach Insurance for Marine Cargo</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,8 +199,8 @@ export default function product() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Directors & Officers Liability Insurance"
-                        description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
+                        title="Marine Cargo Insurance"
+                        description="Damage to valuable cargo while in transit can lead to significant losses for any business. Marine Cargo Insurance safeguards your goods during transit, whether by sea, road, rail, or air. With customizable coverage based on the nature of goods and their travel routes, this policy ensures peace of mind during transportation."
                         customClass="marineBnr"
                     >
                         <div className={`${form.commonForm}`}>
@@ -271,67 +271,101 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
-                                    </div>
-                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>Advantages of D&O Insurance</div>
-                                        <Row className='g-lg-5'>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to Directors & Officers</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Saves personal assets from lawsuits</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Helps attract & retain the best talent</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Marine Cargo Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Marine Cargo Insurance is designed to safeguard your business against losses incurred during the transportation of goods. It's not limited to sea transport — it encompasses all modes, including air, land (road and rail), and inland waterways. It offers coverage for a wide array of risks, including container damage, cargo loss, liability for third-party property damage or personal injury.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Companies that regularly transport valuable or fragile goods need this insurance policy for their shipments.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The 3 Categories of D&O Insurance</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Types of Marine Cargo Insurance</h3>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>There are various kinds of marine insurance policies. Our insurance experts can help you secure the most appropriate type of policy for your business.</p>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>1. Side A</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Direct Indemnification</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>The D&O policy offers liability cover for company managers, officials, and directors to protect them from claims which may arise from the decisions and actions taken within the scope of their regular managerial duties.</p>
+                                                            <Image src='/icons/importIcon.svg' width="100" height="100" alt="Import Marine Insurance" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Import Marine Insurance</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>This policy provides comprehensive coverage for any kind of import, from any global location to any destination in India. The primary modes of transit covered under this policy typically include air and sea transport.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodGlobe.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>2. Side B</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Company Reimbursement</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>When a company indemnifies (provides financial protection) its directors or officers for a covered claim under the policy, Side B Coverage ensures that the company is reimbursed for the expenses they've incurred during the process.</p>
+                                                            <Image src='/icons/exportIcon.svg' width="100" height="100" alt="Export Marine Insurance" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Export Marine Insurance</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Specifically designed for exporters, this policy offers protection for any form of export, emanating from any part of India to destinations worldwide. The key transit methods incorporated in this policy are air and sea transport.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={4}>
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUShield.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>3. Side C</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Coverage for Entity</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas: Employment Disputes & Security Related Issues.</p>
+                                                            <Image src='/icons/inlandIcon.svg' width="100" height="100" alt="Inland Marine Insurance" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Inland Marine Insurance</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Catering to domestic transportation needs, this policy ensures coverage for the transfer of goods across India, predominantly by road and rail. This insurance type is ideal for mitigating risks associated with inland goods transportation.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <Row className='gx-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/alopIcon.svg' width="100" height="100" alt="ALOP Insurance" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>ALOP Insurance</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>It stands for Advanced Loss of Profit and is a particular type of business interruption insurance. It relates to the financial consequences of a project delay due to the occurrence of material damage to critical equipment during shipment. It is also known by the various names like Delay in Start-up, and Project-Cargo Marine/Consequential loss</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/eProductIcon.svg' width="100" height="100" alt="E-product Specific Voyage" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>E-product Specific Voyage</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>This insurance covers any manufactured e-product or device or any component of the same, and other interests from various losses and damages, such as fire, collisions, earthquakes, and lightning during a specific voyage.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/coverIcon.svg' width="100" height="100" alt="Open Cover Agreement" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Open Cover Agreement</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>It is an agreement (not a policy) in which the insurer will accept responsibility for the insurance of all shipments for a fixed period, usually 12 months, within the terms of the cover. Here, the insured party does not need to arrange separate insurance for each individual shipment.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <Row className='gx-lg-5'>
+                                                <Col lg={4}>
+                                                    <div className={`pt-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/lossIcon.svg' width="100" height="100" alt="Direct Loss" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Direct Loss</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Unlike other marine policies that cover the value of items, this policy covers the sales turnover of a company. In this case, the insured receives coverage for all transits required to achieve sales. In this policy, imports & customs duties, raw materials, consumables, inter-factory, inter-depot, and job worker movement are covered. Along with that, export transit and temporary storage at intermediary locations such as ports and C&F facilities are covered also. Therefore, an annual turnover policy can satisfy all the requirements of a marine cargo insurance policy.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/voyageIcon.svg' width="100" height="100" alt="Specific Voyage Policy" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Specific Voyage Policy</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>It provides coverage for a specific single transit, from one location to another. It typically includes protection against various perils and risks that may occur during the transportation of goods. This policy concludes upon the journey's completion.</p>
+                                                        </div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={4}>
+                                                    <div className={`pb-0 border-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
+                                                            <Image src='/icons/policyIcon.svg' width="100" height="100" alt="nnual Policy" />
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Annual Policy</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>This policy is issued to cover marine cargo shipments from all potential perils for a period of 12 months.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -344,40 +378,58 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-Suite executives. Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <span className='d-none d-lg-block'></span>It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Marine Cargo Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Obtaining a marine cargo insurance policy is highly recommended for any company involved in the transportation of goods, whether it's by sea, air, land, or inland waterways. It is highly sought after by shippers, cargo owners, logistic service providers, operators, freight forwarders, importers and exporters, etc. It protects shipping companies and couriers from potential losses stemming from natural disasters, cross-border conflicts, water transportation issues, inland & air transportation issues or cargo mishandling. It is an indemnity contract in which the insurer agrees to compensate the insured, within the policy's limits, for any loss or damage to property caused by specified perils.</p>
                                     </div>
-                                    <div className={`mt-4 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-600 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
+                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Which factors are considered when determining the premium for Marine Cargo Insurance?</div>
                                         <Row>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Risk appetite</p>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/retailIcon.svg' width="100" height="100" alt="Nature of the goods being transported" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Nature of the goods being transported</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Financial background</p>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/retailIcon1.svg' width="100" height="100" alt="The modes of transportation" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>The modes of transportation</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Company size</p>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/contractorsIcon.svg' width="100" height="100" alt="Type of packaging" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of packaging</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Past lawsuit history</p>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/fitnessIcon.svg' width="100" height="100" alt="Geographical trading restrictions" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Geographical trading restrictions</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Business Age</p>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/cleaningIcon.svg' width="100" height="100" alt="Type of Chosen insurance coverage" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Type of Chosen insurance coverage</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
+                                                    <span>
+                                                        <Image src='/icons/eventIcon.svg' width="100" height="100" alt="Ownership and contractual terms" />
+                                                    </span>
+                                                    <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Ownership and contractual terms</p>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -388,66 +440,23 @@ export default function product() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A director or officer might face many types of financial risks as part of their job. D&O insurance provides an easy way to protect the interest of their senior officers and board members. The policy protects them from the following potential problems -</p>
-                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>Allegations by other stakeholders or shareholders</li>
-                                            <li>Allegations of sexual harassment, discrimination, and other employment violations</li>
-                                            <li>Accounting mistakes & exposure to mergers & acquisitions</li>
-                                            <li>Regulatory investigations initiated by the government, a professional, or a statutory body</li>
-                                            <li>Corporate governance lapses</li>
-                                        </ul>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Marine Cargo Insurance ?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Business shipments often hold significant value, and any damage can directly affect a company's bottom line. Marine cargo insurance policies can provide coverage for theft, malicious damage, shortages, non-delivery of goods, damages during loading and unloading, and cargo mishandling. You can tailor marine cargo insurance coverage to meet your specific business requirements, and it is available for a broad range of cargo and goods.</p>
                                     </div>
                                 </Container>
 
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Who can Sue the Directors or Officers of the organisation?</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-3 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Suppliers</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Employees</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Competitors</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Regulatory Bodies</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Clients</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Shareholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Other Stakeholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-black mb-0'>How to File a Claim Under Marine Cargo Insurance?</h3>
+                                        <ol className={`text-black title-20 mt-4 mt-xl-5 ${productStyle.listOrderData}`}>
+                                            <li>Provide a copy of the insurance policy as proof of coverage.</li>
+                                            <li>Submit the surveyor's report detailing the extent of damage or loss.</li>
+                                            <li>Produce a copy of the bill of lading as proof of the shipping contract.</li>
+                                            <li>Present a claim bill, specifying the incurred losses or damages.</li>
+                                            <li>Share the original invoice list to provide details of shipped items and their values.</li>
+                                            <li>Any correspondence with carriers demonstrating efforts to resolve the issue.</li>
+                                        </ol>
                                     </Container>
                                 </div>
                             </div>
@@ -467,66 +476,66 @@ export default function product() {
                                             </span>
                                             Coverages & Exceptions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Directors & Officers Liability Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Marine Cargo Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all">Coverages</span>
-                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Exceptions</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
+                                        <span id='tabBtn' className="tabLink title-22 transition-all">Exceptions</span>
                                     </div>
                                     <div className={`overflow-hidden ${productStyle.coverageTabPanel}`}>
-                                        <div data-tab className="hidden place-content-center">
-                                        <Row>
+                                        <div data-tab className="place-content-center">
+                                            <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many benefits. Some of the major coverages in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>Whether the cargo is being transported by sea, air, land, or inland waterways, marine insurance protects it against various risks and perils that may occur throughout the journey. Major accidents covered under marine insurance include:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bail and Bond Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>D&O policy covers the costs of securing bail and bond for directors and officers, which may be in connection with any criminal proceedings arising from their duties as directors or officers of the company.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Collision</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover refers to the protection provided for physical damage or loss to cargo resulting from a collision or accident during transit. For example, If the vessel carrying the insured goods collides with another vessel, resulting in damage or loss to the cargo, the policy will provide coverage for the resulting expenses. It may also be extended to include collisions or accidents that may occur during the inland transportation of goods or cargo, by truck, train, or other forms of inland transport.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Legal Representation Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It includes defense costs incurred by an insured on account of the attendance and/or provision of documents or information to any investigation, as required by the investigator.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Fire accident</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects against damages to any cargo or property on board that may be affected by a fire accident. It also covers additional expenses related to the fire, such as firefighting efforts or damages caused by smoke or water used to extinguish the fire.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover reimburses the costs associated with managing and mitigating the negative impact on the company's reputation, arising out of duties performed by the directors and officers on behalf of the company.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Sinking</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Sinking coverage includes damages to any cargo or property on board resulting from the sinking or capsizing of the carrier. It also covers additional expenses incurred due to the sinking, such as salvage and recovery efforts, and liability for damages caused to other vessels or properties.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Extradition cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects a company if a director or officer is arrested or detained in a foreign country and the company needs to pay for the costs associated with his extradition back to the home country.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Natural calamities</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects against damages or losses to the cargo caused by natural disasters like storms, hurricanes, earthquakes, or tsunamis. It covers losses to cargo or property on board and includes costs associated with salvage and recovery efforts, as well as liability for damages caused to other carriers or properties.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage provides protection from reasonable costs and expenses incurred by the insured due to required attendance at court proceedings, hearings, trials, and depositions related to the defense of a claim.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Reconditioning cost</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Reconditioning cost coverage provides reimbursement for expenses incurred to repair or restore a carrier to its original condition following a covered loss or damage. This may include repairs to the machinery, equipment as well as replacement of damaged or lost items. It also covers labor and materials costs for reconditioning, along with related expenses like shipping and storage</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Kidnap and Ransom Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage provides relief from the costs associated with any event or connected series of events of kidnapping, seizing, or detaining an insured person by force or fraud, for the purpose of demanding a ransom.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Overturning</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects against damages or losses to cargo or property on board, as well as additional expenses related to the overturning, such as salvage and recovery efforts.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Self-reporting Expenses Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage helps to protect company directors and officers from the financial burden of expenses associated with self-reporting a potential violation or claim to the relevant Governmental, judiciary, or regulatory authorities.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Explosion</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Explosion coverage protects against damages to the shipment and any cargo or property on board resulting from an explosion or similar event. It also covers additional expenses incurred due to the explosion, such as salvage and recovery efforts, and liability for damages caused to other carrier or property.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Investigation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable fees, costs, and expenses incurred (with the insurer’s prior written consent) by or on behalf of an insured person, in relation to preparing for and attending an investigation.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Stranding</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Stranding coverage protects against damages or losses to a shipment caused by it becoming stranded on a shoal, reef, or other obstruction. This coverage also includes damages to any cargo or property on board affected by the stranding.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
@@ -555,65 +564,65 @@ export default function product() {
                                                 </Col>
                                             </Row>
                                         </div>
-                                        <div data-tab className="place-content-center">
+                                        <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>There are specific scenarios that a standard Marine Cargo insurance policy does not cover, including but not limited to:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>OFAC Sanction Clause</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>OFAC stands for Office of Foreign Assets Control and is a government agency of the US Treasury Department that enforces economic and trade sanctions against countries, organizations, and individuals. If a claim is made against a director or officer for something related to OFAC sanctions, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Willful acts by the insured</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes losses or damages arising from intentional or willful acts by the insured or its representatives, such as causing intentional damage to their own cargo and filing a fraudulent insurance claim.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Product Liability</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The clause excludes any claims or losses that are related to product liability. Product liability refers to the legal responsibility of manufacturers, distributors, and sellers for any harm caused by a product they have produced or sold. If a claim is made against a director or officer for something related to product liability, they will not be covered.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Weight loss, volume loss, liquid leakage, or normal wear and tear:</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Coverage is excluded for losses or damages resulting from weight loss, volume loss, liquid leakage, or normal wear and tear of the insured item.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>ERISA</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The Employee Retirement Income Security Act (ERISA) of 1974 establishes minimum standards for pension plans in the private industry under U.S. federal tax and labor laws. It regulates employee benefit plans, including retirement plans, health plans, and other types of benefits. <span className='d-none d-lg-block'></span>If a claim is made against a director or officer for something related to ERISA, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Inadequate packaging</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes losses arising from the insured's negligence or failure to take reasonable precautions in packaging or preparing the insured item for transport.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Opioids and Narcotics</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Opioids are a class of drugs that are used to relieve pain and include drugs such as fentanyl, oxycodone, and morphine. Narcotics are a class of drugs that are used to relieve pain and include drugs such as cocaine and heroin. This means that if a claim is made against a director or officer for losses arising because of their decisions related to opioids or narcotics, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Inherent vice or nature</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Losses or damages arising from inherent defects or characteristics of the insured item are excluded.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Asbestos</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Asbestos is a naturally occurring mineral that has been used in various products, including construction materials and has been linked to various diseases such as lung cancer, mesothelioma, and asbestosis. If a claim is made for something related to asbestos, they will not be covered.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Inadequate packaging</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes losses arising from the insured's negligence or failure to take reasonable precautions in packaging or preparing the insured item for transport.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Financial Insolvency</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Financial insolvency refers to the inability of a company or individual to pay their debts as they come due. This means that if a claim is made against a director or officer for something related to the financial insolvency of the company, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Inherent vice or nature</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Losses or damages arising from inherent defects or characteristics of the insured item are excluded.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>E-smoking Device</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>E-smoking Device Exclusions in Directors & Officers Insurance means exclusion for any claims or losses that are related to electronic smoking devices or e-cigarettes. If a claim is made for something related to electronic smoking devices, they will not be covered.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Damages arising from riots, strikes, or war</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>There is exclusion for losses or damages resulting from insured party's cargo being damaged or lost during events like riots, civil commotions, or war. However, some of these perils can be covered under certain conditions with an additional premium.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>War</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>War exclusions in Directors' & Officers' Insurance is a type of coverage that excludes any claims or losses that are related to war. This means that if a claim is made against a director or officer for something that happened as a result of war, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Delay in the delivery of goods</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes losses or damages resulting from a delay in the delivery of the insured goods, which doesn't result in any physical damage or loss to the goods themselves.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Future Offering of Securities (IPO)</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It refers to excluding any claims or losses that are related to initial public offerings (IPOs) of securities. This means that if a claim is made against a director or officer for something related to an IPO, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Default on financial obligation</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It excludes coverage for losses or damages caused by the financial failure or default (such as failure of loan payments) of a party involved in the transportation or delivery of the insured goods. For example, this exclusion typically applies when the loss or damage to the cargo results from the financial inability of a party (such as a Freight Forwarder) to fulfill his contractual obligations related to the transportation or delivery of the goods.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
@@ -651,7 +660,7 @@ export default function product() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Directors & Officers Claims Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Marine Cargo Examples</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -660,21 +669,15 @@ export default function product() {
                                 <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>
                                 </div>
                                 <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
                                     <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees claim unpaid contract</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>A company manufacturing electronics ships a cargo worth Rs 5 crore from India to Myanmar. During the voyage, a severe storm damages the shipment, causing the electronic goods to become inoperable and leading to a total loss. If the company had obtained marine cargo insurance before shipping the goods, they could have filed a claim with their insurer and received compensation for the damages incurred.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -687,34 +690,9 @@ export default function product() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>FIR Filed for Alleged Unfair Practices</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>FIR filed by ex-employee against 7 directors for cheating and unfair trade practices. The matter is in litigation before the Trial Court.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The law firm handling the litigation is appointed by the insurer to manage the defense of directors and all the defense costs are being borne by the insurer.</div>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                        <Row className='g-4'>
-                                            <Col lg={7}>
-                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees File Legal Proceedings in China</div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>A 35 yr old young entrepreneur runs an e-commerce store exporting wallets to customers worldwide, using a third-party courier for shipping. Regrettably, the entrepreneur didn't secure marine insurance, resulting in lost goods during transit. This loss led to financial difficulties and dissatisfied customers. With an appropriate insurance policy in place, the entrepreneur might have been able to recover the losses from the misplaced shipments.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -737,54 +715,46 @@ export default function product() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Directors & Officers Liability Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Marine Cargo Insurance</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the jurisdiction/territory of the claim?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
-                            />
-                            <Accordion
-                                title="What limits do you need?"
+                                title="What are the most common types of marine cargo insurance?"
                                 content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="What is tDoes D&O insurance cover owners?he jurisdiction/territory of the claim?
-                                "
+                                title="What is inland marine insurance?"
                                 content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="Are directors vs directors disputes covered?"
+                                title="What is the general average in marine insurance?"
                                 content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="As a director or officer can you become personally liable for your actions?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
+                                title="What is an insurable interest in marine cargo insurance?"
+                                content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content={[
-                                    <>
-                                        <span>
-                                            Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period.   The automatic coverage will start with effect from the date of such creation or acquisition except-
-                                        </span>
-                                        <ul>
-                                            <li>The new entity is based on or has any of its securities listed on any exchange in the USA </li>
-                                            <li>It is a financial institution</li>
-                                            <li>Such creation or acquisition increases the total consolidated assets of the principal company by more than 25% (as per the most recent audited, consolidated financial statements)</li>
-                                        </ul>
-                                    </>
-                                ]}
+                                title="What is marine cargo insurance?"
+                                content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="Who selects defense counsel for a covered D&O claim?"
-                                content="D&O policies typically allow the defendant insureds to choose their preferred defense counsel, subject to the prior consent of the insurer. Insurers, of course, would seek to pay only reasonable and necessary defense costs. Therefore, an insured should select a counsel experienced in the field of law that is related to the concerned litigation and whom the insured trusts."
+                                title="What is a constructive total loss in marine insurance?"
+                                content="Lorem ipsum dolor sit amet,"
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content="Yes. Being a small business does not necessarily make a small business immune to potential lawsuits. A costly lawsuit can have a severe impact on the personal fortunes of its employees in a decision-making position. When a potentially damaging lawsuit comes in the way, a small business may not quite have the financial ‘muscle power’ enjoyed by the larger companies to deal with it. This is why, in the case of a small business, protection from D&O insurance becomes even more essential."
+                                title="What is jettison in marine insurance?"
+                                content="Lorem ipsum dolor sit amet,"
+                            />
+                            <Accordion
+                                title="What is a marine survey for insurance?"
+                                ccontent="Lorem ipsum dolor sit amet,"
+                            />
+                            <Accordion
+                                title="What are the 5 principles of Marine Insurance?"
+                                ccontent="Lorem ipsum dolor sit amet,"
                             />
                         </div>
                     </Container>

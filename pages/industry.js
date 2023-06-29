@@ -30,7 +30,6 @@ export default function Industry() {
               <div className='col-md-12'>
                 <div className='breadcrumb '>
                 <ul
-
                   // onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
                   >
                     <li>
