@@ -206,19 +206,19 @@ export default function product() {
                         <div className={`${form.commonForm}`}>
                             <Form>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
                                 </Form.Group>
+                                <Form.Group className="mb-4">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button" onClick={goToNextPage}>
+                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -566,47 +566,77 @@ export default function product() {
                         <div className='mt-4'>
                             <Accordion
                                 title="What is the full form of CPM insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="The full form of CPM insurance is Contractor Plant & Machinery Insurance. It is also known as Construction Plant and Machinery Insurance."
                             />
                             <Accordion
                                 title="What is floater cover in CPM policy?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="The 'floater cover' typically refers to a type of coverage that provides protection for a contractor's movable machinery and equipment. This coverage is designed to safeguard the insured items located at different places against various risks and perils they may be exposed to."
                             />
                             <Accordion
                                 title="What is the difference between peril and coverage?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content={[<>
+                                    <span>A peril refers to a specific event or circumstance that may cause damage, loss, or harm to the insured property or individual. Perils can include natural disasters like fire, flood, and earthquake, as well as human-caused events like theft, vandalism, or accidents.</span>
+                                    <span className='mt-3 d-block'>Coverage, on the other hand, refers to the protection provided by an insurance policy against specific perils. It outlines the scope and extent of financial reimbursement or assistance that an insurance company will offer in the event of a covered loss or damage.</span>
+                                </>]}
                             />
                             <Accordion
                                 title="What perils are covered under the contractor’s plant and machinery insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content={[<>
+                                    <span>The typical perils that may be covered under CPM insurance include:</span>
+                                    <ul className={`${productStyle.listData}`}>
+                                        <li>Accidental damage</li>
+                                        <li>Earthquake</li>
+                                        <li>Fire and lightning</li>
+                                        <li>Theft and burglary</li>
+                                        <li>Flood and inundation</li>
+                                        <li>Storms, cyclones, and tempests</li>
+                                        <li>Damage caused by intentional acts of vandalism, sabotage, or malicious actions by third Parties</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
                                 title="What is the duration of the contractor plant and machinery insurance policy?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Typically, CPM insurance policies are issued for a specific period known as the policy term. Generally, this depends on how long the project will last, or how long the equipment and machinery will be in use. It can range from short-term policies that cover a specific small project over a specified time frame, to long-term policies that provide coverage for long-term projects/ contract periods."
                             />
                             <Accordion
                                 title="Is plant and machinery a liability or asset?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="In general, plant and machinery are grouped into the category of assets, more precisely, tangible assets. The term tangible asset refers to an asset that has physical substance, including inventory, a building, rolling stock, manufacturing equipment, and office furniture."
                             />
                             <Accordion
                                 title="Who can take the contractor's plant and machinery insurance policy?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="The policy can be taken by the Owner, Lessor, or Hirer (responsible either legally or through a leasing agreement) of the Machinery/Equipment. Banks and institutions investing on a construction project can also take this policy."
                             />
                             <Accordion
                                 title="What are the additional add-ons one should purchase along with this policy?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content={[<>
+                                    <ul className={`${productStyle.listData}`}>
+                                        <li>Owners surrounding property</li>
+                                        <li>Third-party liability</li>
+                                        <li>Escalation</li>
+                                        <li>Removal of debris</li>
+                                        <li>Inclusion of express freight, overhead charges, air freight charges, and overtime wages</li>
+                                        <li>Additional customs duty</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
                                 title="Is it necessary to always update my insurance provider when my contact information changes?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes. It is always important to inform the insurer of any changes in your contact information. This will ensure that you will receive all correspondence promptly."
                             />
                             <Accordion
                                 title="How to make an insurance claim for Contractor’s Plant and Machinery?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content={[<>
+                                    <span>Please follow the steps mentioned below-</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Inform your broker instantly. They will handhold and guide you through the entire claim settlement process.</li>
+                                        <li>Give the surveyor of the insurer your complete cooperation.</li>
+                                        <li>Submit a completed claim form along with any necessary documents to show the financial loss caused by the accident.</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
                                 title="Should I inform the company if my old machine/equipment is replaced by a new machine of the same type and model?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes. When the CPM insurance is issued, the insured needs to provide the serial numbers of the machines at his disposal. If the machines are replaced, the insurer must be informed immediately."
                             />
                         </div>
                     </Container>

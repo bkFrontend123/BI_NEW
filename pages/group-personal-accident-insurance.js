@@ -205,19 +205,19 @@ export default function GroupPersonalAccident_Insurance() {
                         <div className={`${form.commonForm}`}>
                             <Form>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
                                 </Form.Group>
+                                <Form.Group className="mb-4">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button" onClick={goToNextPage}>
+                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>

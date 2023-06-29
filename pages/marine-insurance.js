@@ -206,19 +206,19 @@ export default function product() {
                         <div className={`${form.commonForm}`}>
                             <Form>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
                                 </Form.Group>
+                                <Form.Group className="mb-4">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button" onClick={goToNextPage}>
+                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -718,39 +718,56 @@ export default function product() {
                         <div className='mt-4'>
                             <Accordion
                                 title="What are the most common types of marine cargo insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content={[<>
+                                    <span>The most common types of marine insurance are:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Marine Cargo Insurance - Cargo owners incur the risk of cargo mishandling both at the terminal and on the ship's voyage. Their shipment could possibly be damaged, misplaced or lost as well.  Marine cargo insurance is provided to protect the cargo owner from financial losses caused by such accidents. It also includes third-party liability cover, which compensates for any damage to the port, ship, railway track, other cargo, or individuals caused by your cargo.</li>
+                                        <li>Machinery Insurance - All essential machinery is covered under this marine insurance policy, as well as any operational damages (subject to post-survey approval by the surveyor).</li>
+                                        <li>Liability Insurance - In cases of collisions, crashings, or other persuaded attacks, compensation is required.</li>
+                                        <li>Freight Insurance - The purpose of freight insurance is to provide companies with financial security in case they lose money due to an unforeseeable event or accident.</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
                                 title="What is inland marine insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Inland marine insurance is a type of insurance policy that covers property and goods while they are being transported over land. Inland marine insurance is actually designed to protect goods that are transported over land, including those that are shipped by truck, train, or airplane."
                             />
                             <Accordion
                                 title="What is the general average in marine insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="General average is a principle of maritime law that applies in situations where a shipowner intentionally sacrifices part of the vessel or its cargo to prevent a larger loss or damage to the vessel or other cargo on board. In such situations, the loss or damage is shared proportionally among all parties with an interest in the vessel or the cargo, including the owners of the cargo and the vessel itself."
                             />
                             <Accordion
                                 title="What is an insurable interest in marine cargo insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Insurable interest is a fundamental principle of insurance that requires the insured to have a financial or other kind of interest in the subject matter of the insurance policy. In the context of marine insurance, insurable interest refers to the legal or financial interest that a person or entity has in cargo. In order to purchase marine insurance, the insured must have an insurable interest in the cargo being insured."
                             />
                             <Accordion
                                 title="What is marine cargo insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Cargo owners face the danger of cargo mishandling at the terminal as well as during the ship's voyage. It is also possible that your cargo has been misplaced, damaged, or lost.  Marine cargo insurance is offered to safeguard the cargo owner from financial damages resulting from such incidents. It includes third-party liability insurance, which covers any damage caused by your cargo to the port, ship, railway track, other cargo, or individuals."
                             />
                             <Accordion
                                 title="What is a constructive total loss in marine insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="In marine insurance, a constructive total loss is a term used to describe a situation where the insured cargo is damaged to the extent that the cost of repair is more than the actual value of the cargo itself. Usually, when the cost of repairing the damaged cargo exceeds a certain percentage of its value, typically around 75% to 90%, the cargo is considered a constructive total loss. In this case, the insurer will usually pay the insured the full value of the cargo/shipment, less any deductible, instead of paying for the repairs."
                             />
                             <Accordion
                                 title="What is jettison in marine insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Jettison refers to the deliberate throwing overboard of cargo or other items from a vessel in distress in order to lighten the load and save the vessel, crew, and remaining cargo. In marine insurance, jettison is important because it can affect the claims settlement process. If the jettisoned cargo was insured, the insurer may be responsible for reimbursing the owner or consignee for the value of the lost cargo."
                             />
                             <Accordion
                                 title="What is a marine survey for insurance?"
-                                ccontent="Lorem ipsum dolor sit amet,"
+                                content="A marine survey for insurance may include the evaluation of the cargo's condition, quality, packaging, storage, and overall suitability for transportation. The surveyor examines the cargo to identify any pre-existing damage, signs of improper handling, or packaging. Then, the surveyor verifies that the cargo conforms to any relevant regulations, standards, or industry-specific requirements."
                             />
                             <Accordion
                                 title="What are the 5 principles of Marine Insurance?"
-                                ccontent="Lorem ipsum dolor sit amet,"
+                                ccontent={[<>
+                                    <ul className={`${productStyle.listData}`}>
+                                        <li>Utmost good faith -  Under this principle, the insured is required to disclose all material facts that could affect the insurer's decision to accept or reject the risk, while the insurer is required to provide all relevant information about the policy terms and conditions.</li>
+                                        <li>Insurable interest - A policy cannot be issued unless you have an insurable interest in buying it.</li>
+                                        <li>Indemnity -The principle of indemnity requires an insured to be compensated for the actual amount of loss suffered as a result of an insured event, but not more than that.</li>
+                                        <li>Subrogation - The principle of subrogation is based on the idea that the insurer should be able to recover the amount of the claim from any third party that is responsible for the loss or damage.</li>
+                                        <li>Contribution - The principle of contribution requires that each insurer contributes to the cost of the claim in proportion to the amount of coverage they provide.</li>
+                                        <li>Loss minimization - This principle is based on the idea that the insured has a duty to mitigate their losses and to take reasonable steps to prevent further damage or loss from occurring.</li>
+                                    </ul>
+                                </>]}
                             />
                         </div>
                     </Container>

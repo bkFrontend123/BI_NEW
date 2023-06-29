@@ -206,19 +206,19 @@ export default function DAndO_Insurance() {
                         <div className={`${form.commonForm}`}>
                             <Form>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
                                 </Form.Group>
+                                <Form.Group className="mb-4">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button" onClick={goToNextPage}>
+                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -679,7 +679,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/dAndO_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -699,7 +699,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='incident/dAndO_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -719,7 +719,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/dAndO_incident3.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -744,30 +744,30 @@ export default function DAndO_Insurance() {
                         <div className='mt-4'>
                             <Accordion
                                 title="What is the jurisdiction/territory of the claim?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
+                                content="The jurisdiction limit of a claim indicates that the policy will cover only the claims lodged in the courts of the listed countries. The territorial limit relates to the location where the act, error, or omission takes place."
                             />
                             <Accordion
                                 title="What limits do you need?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="An insured business can opt for any limit of the D&O liability insurance, depending on its needs, business model, and financial position. Some of the factors that can influence the limit include the size of the business, financial background, time spent in the business, risk appetite, and so on."
                             />
                             <Accordion
-                                title="What is tDoes D&O insurance cover owners?he jurisdiction/territory of the claim?"
-                                content="Lorem ipsum dolor sit amet,"
-                            />
-                            <Accordion
-                                title="Are directors vs directors disputes covered?"
-                                content="Lorem ipsum dolor sit amet,"
+                                title="Does D&O insurance cover owners?"
+                                content="Yes. The Side B Coverage in D&O insurance provides coverage for losses that the company (or the business owner) incurs as a result of paying for damages and defense costs for claims brought against its directors and officers. Here, the owner/ company is insured and its corporate assets are at risk."
                             />
                             <Accordion
                                 title="As a director or officer can you become personally liable for your actions?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
+                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
+                            />
+                            <Accordion
+                                title="Are directors vs directors disputes covered?"
+                                content="If one director sues another within the same organization, this is considered an 'insured v. insured' situation, and a D&O policy would typically not cover that dispute. However, there may be certain exceptions and these may vary from one insurance provider to another."
                             />
                             <Accordion
                                 title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
                                 content={[<>
                                     <span>Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period. The automatic coverage will start with effect from the date of such creation or acquisition except-</span>
                                     <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>The new entity is based on or has any of its securities listed on any exchange in the USA </li>
+                                        <li>The new entity is based on or has any of its securities listed on any exchange in the USA</li>
                                         <li>It is a financial institution</li>
                                         <li>Such creation or acquisition increases the total consolidated assets of the principal company by more than 25% (as per the most recent audited, consolidated financial statements)</li>
                                     </ul>
@@ -778,8 +778,59 @@ export default function DAndO_Insurance() {
                                 content="D&O policies typically allow the defendant insureds to choose their preferred defense counsel, subject to the prior consent of the insurer. Insurers, of course, would seek to pay only reasonable and necessary defense costs. Therefore, an insured should select a counsel experienced in the field of law that is related to the concerned litigation and whom the insured trusts."
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
+                                title="Does a small business need liability insurance for Directors and Officers?"
                                 content="Yes. Being a small business does not necessarily make a small business immune to potential lawsuits. A costly lawsuit can have a severe impact on the personal fortunes of its employees in a decision-making position. When a potentially damaging lawsuit comes in the way, a small business may not quite have the financial ‘muscle power’ enjoyed by the larger companies to deal with it. This is why, in the case of a small business, protection from D&O insurance becomes even more essential."
+                            />
+                            <Accordion
+                                title="What are the most common D&O claims?"
+                                content={[<>
+                                    <span>Some of the most common D&O insurance claims include:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Breach of fiduciary duty</li>
+                                        <li>Misrepresentation</li>
+                                        <li>Insider trading</li>
+                                        <li>Failure to comply with laws or regulations</li>
+                                        <li>Mismanagement</li>
+                                        <li>Securities fraud</li>
+                                        <li>Employment practices</li>
+                                    </ul>
+                                </>]}
+                            />
+                            <Accordion
+                                title="What are directors personally liable for?"
+                                content={[<>
+                                    <span>Directors can be held personally liable for a variety of actions or omissions in their roles, such as:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li><span className='font-weight-600'>Breach of fiduciary duty:</span><span className='d-block'></span>If the directors fail in their duty to act in the best interests of the company they can be held personally liable for any resulting financial damage.</li>
+                                        <li><span className='font-weight-600'>Negligence:</span><span className='d-block'></span> If the directors fail to exercise reasonable care and skill in carrying out their duties, they can be held personally liable for any resulting financial damage.</li>
+                                        <li><span className='font-weight-600'>Mismanagement:</span><span className='d-block'></span> Directors are responsible for overseeing the management of the company. If they fail to do so and this results in financial damage, they can be held personally liable.</li>
+                                        <li><span className='font-weight-600'>Wrongful acts:</span><span className='d-block'></span> Directors can be held personally liable for any wrongful acts committed in their roles, such as fraud, misrepresentation, or insider trading.</li>
+                                        <li><span className='font-weight-600'>Failure to comply with laws or regulations:</span><span className='d-block'></span> Directors are responsible for ensuring that the company complies with all applicable laws and regulations. If they fail to do so, they can be held personally liable for any resulting financial damage.</li>
+                                    </ul>
+                                </>]}
+                            />
+                            <Accordion
+                                title="What are directors personally liable for?"
+                                content={[<>
+                                    <span>Certain differences between the two are as follows-</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li><span className='font-weight-600'>Coverage:</span> D&O insurance is specifically designed to protect directors and officers from claims arising from their roles in the company. Management liability insurance, on the other hand, provides broader coverage for claims against the company's management, including claims for employment practices liability, fiduciary liability, and crime.</li>
+                                        <li><span className='font-weight-600'>Policy terms:</span> D&O insurance policies are often designed with specific limits for each insured person and may have separate limits for defense costs and indemnification. Management liability policies may have aggregate limits that apply to all insureds and may include sub-limits for specific types of claims.</li>
+                                        <li><span className='font-weight-600'>Triggering of Claims:</span> D&O insurance is typically triggered by claims made against the directors and officers during the policy period. On the other hand,  management liability insurance can be triggered by a wider range of events, such as regulatory investigations or employee lawsuits.</li>
+                                    </ul>
+                                </>]}
+                            />
+                            <Accordion
+                                title="Does Directors & Officers' liability insurance covers breach of contract?"
+                                content="A breach of a contract (for example, one that is promised by the company to its client) does not fall under the coverage of a D&O policy. For example, if a company has a contract with a client that states that if there is any kind of a breach of contract, the company will be liable for Rs 10 lakh in compensation. If such a breach occurs, the D&O insurance provider is not obligated to pay the compensation amount."
+                            />
+                            <Accordion
+                                title="Can a director of the company be sued for negligence?"
+                                content="Yes. If the directors fail to exercise reasonable care and skill in carrying out their duties, they can be held personally liable for any resulting financial damage and can be sued for negligence. Negligence claims against directors can arise from other situations as well such as failure to properly oversee the management of the company, failure to comply with laws or regulations, failure to disclose material information to shareholders, or failure to act in the best interests of the company."
+                            />
+                            <Accordion
+                                title="Who is insured in D&O insurance?"
+                                content="The insured person is the individual or business entity that receives financial support after an insurance claim is filed and verified. He is covered under the policy. "
                             />
                         </div>
                     </Container>

@@ -206,19 +206,19 @@ export default function GeneralLiability_Insurance() {
                         <div className={`${form.commonForm}`}>
                             <Form>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
                                 </Form.Group>
+                                <Form.Group className="mb-4">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button" onClick={goToNextPage}>
+                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -631,43 +631,43 @@ export default function GeneralLiability_Insurance() {
                         <div className='mt-4'>
                             <Accordion
                                 title="What is the difference between Commercial General Liability and Commercial Umbrella?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Commercial General Liability (CGL) insurance covers liability claims related to bodily injury, property damage, and personal and advertising injury. On the other hand, Commercial Umbrella Insurance provides excess liability coverage beyond the limits of primary insurance policies, such as CGL or professional liability insurance. For instance, if a business faces a liability claim that exceeds its CGL policy limits, an umbrella policy can offer additional coverage to help cover the costs of the claim."
                             />
                             <Accordion
                                 title="What is General Liability Insurance for contractors?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="General Liability Insurance for contractors protects contractors and their businesses from financial losses due to liability claims. This insurance typically covers claims for bodily injury, property damage, and personal and advertising injury. It can also cover legal defense costs and any damages awarded to the claimant."
                             />
                             <Accordion
                                 title="Does General Liability Insurance protect my store, office, or physical location?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes. General Liability Insurance covers claims arising from third-party bodily injury or property damage occurring on your business premises. For example, if a customer slips and falls in your store, your General Liability Insurance may cover their medical expenses and any damages they may seek as a result of the injury."
                             />
                             <Accordion
                                 title="What protection does General Liability Insurance provide against social media risks?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="General Liability Insurance can cover advertising injury claims, including certain types of claims related to social media use. For instance, if your business faces a libel or slander claim due to a social media post, your General Liability Insurance may cover legal defense costs and any damages awarded. Some policies may also offer additional coverage for claims related to hacked social media accounts or leaked personal information through social media channels."
                             />
                             <Accordion
                                 title="How much General Liability Insurance do I need?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="The amount of General Liability Insurance you need depends on various factors, such as your business size, type, location, and the level of risk you're willing to assume. Consider these factors when calculating the insurance coverage you need."
                             />
                             <Accordion
                                 title="Can I customize my Commercial General Liability Insurance policy?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes, you can tailor your Commercial General Liability (CGL) Insurance policy to suit your specific business needs and risk profile. Common customizations include increasing policy limits, adding endorsements, removing exclusions, and adding additional insureds."
                             />
                             <Accordion
                                 title="What happens if I have a claim that exceeds my Commercial General Liability Insurance coverage?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="If a claim exceeds your Commercial General Liability (CGL) Insurance coverage, you may need to pay the remaining amount out of pocket. This amount, called the 'coverage gap,' is not covered by your policy."
                             />
                             <Accordion
                                 title="Does Commercial General Liability Insurance cover damages to my property?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="No, Commercial General Liability (CGL) Insurance doesn't cover damages to your property. CGL insurance protects your business from liability claims for bodily injury or property damage caused by you or your employees to others."
                             />
                             <Accordion
                                 title="Does Commercial General Liability Insurance cover customer or client injuries?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes, Commercial General Liability (CGL) Insurance covers bodily injury to customers or clients occurring on your business premises or as a result of your business operations. It also covers bodily injury caused by your products or services."
                             />
                             <Accordion
                                 title="Does Commercial General Liability Insurance cover damages from my advertising?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes, Commercial General Liability (CGL) Insurance covers damages resulting from your advertising. It includes coverage for personal and advertising injury, which refers to harm caused by offenses such as libel, slander, or copyright infringement in your advertising."
                             />
                         </div>
                     </Container>

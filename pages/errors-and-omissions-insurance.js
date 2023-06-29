@@ -206,19 +206,19 @@ export default function EAndO_Insurance() {
                         <div className={`${form.commonForm}`}>
                             <Form>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
                                 </Form.Group>
                                 <Form.Group className="mb-4">
                                     <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
                                 </Form.Group>
+                                <Form.Group className="mb-4">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
+                                </Form.Group>
                                 <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button" onClick={goToNextPage}>
+                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
                                         <span className='me-2'>Buy Now</span>
                                         <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
                                     </Button>
@@ -602,7 +602,7 @@ export default function EAndO_Insurance() {
                         <div className='mt-4'>
                             <Accordion
                                 title="What is the jurisdiction/territory of the claim?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="The jurisdiction limit of a claim indicates that the policy will cover only claims lodged in the courts of the listed countries. The territorial limit relates to the location where the act, error, or omission takes place."
                             />
                             <Accordion
                                 title="What limits do you need?"
@@ -610,31 +610,76 @@ export default function EAndO_Insurance() {
                             />
                             <Accordion
                                 title="Do I need E&O if I already have D&O, general liability, and product liability insurance?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="An insured business can opt for any limit of E&O coverage depending on its needs, business model, and financial position. Some factors that can influence the limit include the size of the business, financial background, time spent in the business, risk appetite, and so on."
+                            />
+                            <Accordion
+                                title="Do I need E&O if I already have D&O, general liability, and product liability insurance?"
+                                content="The necessity of Errors and Omissions (E&O) insurance can depend on various factors, even if you already have Directors and Officers (D&O), general liability, and product liability insurance. For businesses operating in the financial services sector, including venture capital firms, private equity groups, and investment advisors, it's common to amalgamate both E&O and D&O insurance into a single policy. This combined coverage provides a comprehensive safeguard against claims stemming from either category of risk. Furthermore, if your business involves investors, operates within a regulated industry, or belongs to a sector frequently subject to management litigation, the need for D&O insurance becomes more pronounced."
                             />
                             <Accordion
                                 title="Is errors and omissions insurance required by law?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Errors and omissions insurance is not mandatory by law in India. However, some professional bodies and regulatory authorities may require certain professionals to carry this type of insurance as a condition of their membership or licensing. For example, the Institute of Chartered Accountants of India (ICAI) recommends its members to carry professional indemnity insurance. Similarly, the Insurance Regulatory and Development Authority of India (IRDAI) mandates insurance brokers to have professional indemnity insurance."
                             />
                             <Accordion
                                 title="What are the most common reasons for claims in E&O policies?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content={[<>
+                                    <ul className={`${productStyle.listData}`}>
+                                        <li>Some of the most common reasons for E&O claims are as follows:</li>
+                                        <li>Breach of Confidentiality</li>
+                                        <li>Breach of Privacy</li>
+                                        <li>Defamation, Libel, and Slander</li>
+                                        <li>IPR Infringement</li>
+                                        <li>Breach of Contract</li>
+                                    </ul>
+                                </>]}
                             />
                             <Accordion
                                 title="Does E&O cover negligence?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes, E&O insurance typically covers negligence on the part of professionals in the services they provide to clients. Negligence here is a legal term that refers to the failure to exercise reasonable care or skill in the performance of one's duties or responsibilities. E&O insurance provides protection to insured professionals against claims of negligence, errors, or mistakes that result in financial losses to their clients."
+                            />
+                            <Accordion
+                                title="Is E&O insurance paid monthly or yearly?"
+                                content="E&O insurance premiums are payable only on an annual basis. Monthly payment options are not available for this type of insurance."
                             />
                             <Accordion
                                 title="Is E&O insurance tax deductible?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes, E&O insurance premiums paid by professionals in India are generally tax-deductible as a business expense. This means that the premiums paid for E&O insurance can be claimed as a deduction against the income earned by the professional, thereby reducing their taxable income and lowering their tax liability."
                             />
                             <Accordion
                                 title="Does E&O insurance have a deductible?"
-                                content="Lorem ipsum dolor sit amet,"
+                                content="Yes, E&O insurance policies typically have a deductible during the claim.which is the amount that the policyholder must pay out of pocket before the insurance coverage kicks in. The amount of the deductible can vary depending on the policy and the insurer, and it may be expressed as a specific rupee amount or as a percentage of the coverage limit. Generally, higher deductibles will result in lower premiums."
                             />
                             <Accordion
-                                title="Does Commercial General Liability Insurance cover damages from my advertising?"
-                                content="Lorem ipsum dolor sit amet,"
+                                title="What are the two types of limits offered in E&O policies?"
+                                content={[<>
+                                    <span>The two types of limits offered in E&O policies are:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Aggregate limit: This is the total amount your insurance provider will cover for the policy term (normally one year).</li>
+                                        <li>Per occurrence limit: This is the amount your provider will cover in a single claim.</li>
+                                    </ul>
+                                </>]}
+                            />
+                            <Accordion
+                                title="Does E&O insurance cover breach of contract?"
+                                content="No insurance policy can protect you if you knowingly breach a business contract. However, a breach of contract caused by your error or oversight may be protected by errors and omissions insurance (E&O). E&O insurance can cover breach of contract claims involving errors and omissions at work, services that have not been delivered, missed deadlines, budget overruns, incomplete work, and negligence allegations."
+                            />
+                            <Accordion
+                                title="When should E&O claims be reported?"
+                                content="You should report claims to your provider in writing as soon as you become aware of the situation. Include any pertinent paperwork with your written report or chronological account of the occurrence. Notify the provider if you receive a summons or other legal process notice. Also, notify them if you receive a written demand, a written demand for money or services, or if you are asked to produce a recorded statement or documentation."
+                            />
+                            <Accordion
+                                title="Why do insurance claims get rejected?"
+                                content={[<>
+                                    <span>Insurance claims may get rejected for several reasons, including:</span>
+                                    <ul className={`mt-3 ${productStyle.listData}`}>
+                                        <li>Policy exclusions</li>
+                                        <li>Non-disclosure of material information</li>
+                                        <li>Inadequate documentation</li>
+                                        <li>Failure to meet policy conditions</li>
+                                        <li>Non-payment of premiums</li>
+                                        <li>Fraud or misrepresentation</li>
+                                    </ul>
+                                </>]}
                             />
                         </div>
                     </Container>
