@@ -202,7 +202,7 @@ export default function EAndO_Insurance() {
                         title="Commercial Crime Insurance"
                         description="Crime Insurance is designed to protect your business from losses resulting from criminal activities. It acknowledges the unfortunate reality that not all risks come from outside your business - some come from within.
                         An innovative ‘white-collar crime’ policy, it offers compensation for financial losses due to dishonest activities originating from an employee, a third party, or a vendor. These activities could be related to accounting, cash fraud, theft, vandalism, or digital crimes like email spoofing."
-                        customClass="eAndoBnr"
+                        customClass="crimeBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
@@ -280,99 +280,74 @@ export default function EAndO_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Apart from financial compensation, a Crime Insurance policy provides you the ability to respond promptly to crimial incidents, ensuring that your business's reputation remains intact.</p>
                                     </div>
                                 </Container>
-                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
-                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
-                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
-                                    <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>E&O insurance provides coverage for errors such as:</h3>
-                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>Copyright infringement</li>
-                                            <li>Defamation</li>
-                                            <li>Errors, mistakes, or oversights incurred during the course of work</li>
-                                            <li>Failure to meet a deadline or deliver a specific service promised to a client</li>
-                                            <li>Professional negligence</li>
-                                            <li>Failure to meet a specific standard of care, especially if outlined by a given profession</li>
-                                        </ul>
-                                    </Container>
-                                </div>
                             </div>
                             <div id="scrollspyHeading2" className={`${productStyle.whoNeed}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Errors & Omissions Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>If your company performs a professional service, you run the risk of your client claiming that they suffered financial loss due to a faulty tech product or failure in your service. Errors & Omissions insurance is designed for companies that sell tech products and professional services.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The types of businesses that need professional liability coverage to mitigate their risk include:</p>
-                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>SaaS, PaaS, IaaS</li>
-                                            <li>Banks, NBFCs, FinTech</li>
-                                            <li>EdTech</li>
-                                            <li>E-Commerce</li>
-                                            <li>IT Services</li>
-                                            <li>B2B Consulting</li>
-                                            <li>Media & Advertising</li>
-                                            <li>Doctors, Lawyers, Architects, etc</li>
-                                        </ul>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The highest number of E&O claims in India are filed against architects, engineers, and lawyers.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Commercial Crime Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Simply put every business. <span className='d-none d-lg-block'></span>Whether you are a private company, a public company, or an NGO, an employee can steal from your cash reserves, or fall victim to an email phishing attack. They could obey fraudulent instructions to transfer your company funds to another bank account. Worse, they could collaborate with a third party to steal your company’s stock gradually over a period of time. <span className='d-none d-lg-block'></span>E-mail spoofing, phishing, theft, employee dishonesty, third-party fraud, forgery, and embezzlement impacts businesses of all types and sizes</p>
                                     </div>
                                 </Container>
+                                <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
+                                    <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
+                                    <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
+                                    <Container className='position-relative'>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>When are you vulnerable to digital theft and manipulation?</h3>
+                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                            <li>You do electronic transactions regularly</li>
+                                            <li>Your company has sensitive financial records</li>
+                                            <li>You have lots of customer information</li>
+                                            <li>Your team has part-time workers</li>
+                                            <li>Your office equipment is expensive</li>
+                                        </ul>
+                                    </Container>
+                                </div>
                             </div>
                             <div id="scrollspyHeading3" className={`${productStyle.whyGet}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Errors & Omissions Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In a tech company, the majority of work involves creating software, developing applications, managing data, and providing professional services. These activities come with inherent risks that can lead to financial losses and legal disputes. Errors and Omissions insurance is vital for your tech company because it provides protection against:</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Claims from Clients: <span className='d-block'></span>Despite your best efforts, errors, software bugs, or unintentional omissions can occur, potentially causing harm to your clients' businesses. E&O insurance provides coverage for claims arising from financial losses, property damage, or business interruptions caused by your products, services, or advice.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Legal Defense: <span className='d-block'></span>Defending your tech company against claims or lawsuits can be financially burdensome. E&O insurance not only covers settlements but also includes legal defense costs. This means you'll have the necessary resources to hire legal experts who specialize in technology-related litigation, ensuring a robust defense for your business.</p>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Professional Services Coverage: <span className='d-block'></span>If your tech company provides professional services, such as consulting or implementation support, E&O insurance can protect you from claims related to errors, delays, or inadequate performance. This coverage ensures that your clients are financially compensated for any harm caused by mistakes or shortcomings in your professional services.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Commercial Crime Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>83% of all the organizations in India saw a rise in email phishing/spoofing attacks during the pandemic. <span className='d-none d-lg-block'></span>It doesn’t matter if your organization is growing steadily or exponentially - monitoring everything and everyone can be extremely challenging irrespective of the size of your company. <span className='d-none d-lg-block'></span>Having crime insurance ensures that your organization doesn’t suffer financially, and speeds up the recovery times for any business by reimbursing for losses of money, securities, and other tangible property.</p>
                                     </div>
                                 </Container>
 
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Why is Errors & Omissions Insurance essential?</h3>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Cases involving allegations of copyright infringement, negligence in work, and defamation have increased by more than 50% in India in the recent years.</p>
-
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>As clients challenge any deficiency in service delivery mechanisms, the risk of facing financial loss claims is on the rise. Regardless of the quality of your offering, mistakes and dissatisfied customers are a part of doing business.</p>
-
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Errors & Omissions (E&O) insurance provides financial security, preserves your reputation, and instills confidence in clients. With E&O insurance, you can focus on delivering exceptional service without worrying about potential legal repercussions.</p>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Policy costs are affected by a variety of factors:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='gx-lg-5'>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Operational accidents</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It covers legal fees, settlements, or judgment costs for accidents, injuries, and damages arising from your business operations, products, or services.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Number of employees in your business have an effect on your crime insurance premium</p>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
+                                                <Col lg={3}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodGlobe.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Third-party property damage</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It safeguards your business in instances where your company or employees cause damage to a third party's property, whether through direct actions or negligence.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>A higher revenue flow means higher insurance premium</p>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
+                                                <Col lg={3}>
+                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUShield.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Bodily injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It protects your business from claims related to bodily injuries resulting from accidents on your premises or due to your business operations</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>If your premiums are lower, your deductible will be higher, and vice versa</p>
                                                         </div>
                                                     </div>
                                                 </Col>
-                                                <Col lg={4}>
-                                                    <div className={`pb-0 mt-lg-5 ${productStyle.lightYellowSecCardCol}`}>
+                                                <Col lg={3}>
+                                                    <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black my-2'>Personal and advertising injury</h3>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It covers claims involving defamation, libel, slander, copyright infringement, or invasion of privacy associated with your business activities, including advertising efforts that may cause harm to others.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0 mt-2'>Basic security measures like strategically placed and unobtrusive cameras help underwriters assess risk better</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -397,7 +372,7 @@ export default function EAndO_Insurance() {
                                             </span>
                                             Coverages & Exceptions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Errors & Omissions Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Commercial Crime Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
@@ -407,44 +382,60 @@ export default function EAndO_Insurance() {
                                         <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>Experience the convenience of Errors & Omissions (E&O) insurance with these key features:</div>
+                                                    <div className='title-20 text-black mb-4'>In addition to dishonest acts like theft, funds transfer fraud, burglary, and property damage, crime insurance has now evolved to cover acts like email phishing, spoofing, and social engineering fraud. Here is the detailed coverages of crime insurance:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Automatic Subsidiary Coverage</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Newly created or acquired subsidiaries will be seamlessly incorporated into the policy, requiring only a minimal amount of additional paperwork. However, this inclusion is contingent upon the acquired company being not more than one-fourth the size of the company implementing the policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Theft</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage will protect your company from thefts committed by the employees of your business's assets. For example - an office boy stealing sample products from a store or a warehouse.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Professional Inquiry Investigation</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If an investigation or inquiry is conducted by a professional regulatory body, such as an industry association or government agency, this coverage indemnifies the loss incurred by the insured. It covers the costs of legal fees, settlements, fines, or judgments that may arise from such an investigation.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Fraud and Forgery</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This includes stealing money or assets from an employer or organization that one is legally entrusted with. For example – an accountant or a cashier knowingly embezzling funds from the bank account or the cash register. Or a secretary signing your name on a document or a cheque.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Mitigation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In case of errors and omissions, you might need to take steps to reduce or prevent further damage or loss. The policy can help cover the cost of repairs, replacements, and other expenses incurred in such cases</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Stealing from Customers</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>You are covered if your employee has stolen money or assets from a customer. For example – if an employee of a legal company collects extra money for company registration from clients.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Fees</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Cover losses for attending court due to an E&O lawsuit, including lawyer's fees, travel expenses, and lost wages.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Email Phishing</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>A spoofing attack on your employees that tricks people into giving out credit card numbers or bank account credentials, in order to steal money.</div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Losses caused by employees or third-party hackers committing fraud or theft via computers are frequently covered by commercial crime insurance. However, data breaches are often not covered by crime insurance. This is separately covered by the cyber liability insurance policy. <span className='d-none d-lg-block'></span>The policy also includes losses outside the business premises brought upon by a third-party criminal act.</p>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>In all such situations, the following costs can be claimed under the crime insurance policy:</p>
+                                            <Row className='justify-content-between g-4'>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>These are defense costs incurred by the insured for providing documents or information required by the investigator during an investigation.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Loss of Documents</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In case of a lawsuit alleging loss or destruction of important documents, this policy will cover the legal and claim charges</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It includes costs associated with managing and mitigating the negative impact on the company's reputation, arising out of the acts or incidents mentioned above.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Error in Service</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If an employee makes an error while providing a service then E&O insurance covers resulting claims.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It provides protection from reasonable costs and expenses incurred by the insured due to required attendance at court proceedings, hearings, trials, and depositions related to the defense of a claim. .</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This includes reasonable costs incurred by an insured organization in attaining the services of any public relations (PR) or crisis management firm. This might be required to manage the public image of the business in such situations as fraud or lawsuits.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -452,48 +443,35 @@ export default function EAndO_Insurance() {
                                         <div data-tab className="hidden place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>Important exclusions to note in Errors & Omissions (E&O) insurance:</div>
+                                                    <div className='title-20 text-black mb-4'>Commercial Crime insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Malicious Acts & Intentional Wrongdoing</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This insurance doesn't pay for any losses or damages if you purposely do something wrong or harmful. For example, if you lie about something important (that's called "intentional misrepresentation"), steal something (that's "theft"), or cheat in some way (that's "fraud"), and these actions cause harm or loss, the insurance won't cover it. These are considered intentional or malicious acts, which means you did them on purpose knowing they could cause harm.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Loss of income due to a criminal act by the insured themselves</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If a criminal act committed by the insured themselves results in a loss of income for the insured, then such losses are not covered by the crime policy.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Directors & Officers (D&O) Claims</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims related to breaches of fiduciary duty, mismanagement, or any other wrongful acts committed by your company's directors and officers are not covered under this policy. It is recommended to consider a separate Directors & Officers (D&O) insurance policy to safeguard against such claims.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Property damage caused by fire</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This type of loss is typically covered separately under fire or property insurance policies. Crime insurance also excludes coverage for any loss of income resulting from a fire.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Employee Illness or Injury</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The policy does not extend to claims arising from bodily injury or illness sustained by an employee. To ensure protection against such claims, a dedicated Workers' Compensation insurance policy might be necessary.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Cybercrime losses such as trade secrets and patents</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Loss of intangible assets such as trade secrets, patents, copyrights, and other forms of intellectual property are not covered in this policy. Businesses may opt for other specialized policies that are designed specifically to provide coverage for these types of losses, such as intellectual property insurance.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Cyber Threats</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>E&O policy does not cover claims resulting from cyber risks, such as data breaches and cyber-attacks. This is covered separately when you purchase Cyber insurance.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Fines & Contractual Penalties</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Claims related to fines, penalties levied by a court or governmental agency, or arising from contractual breaches or negligence on part of the insured are not covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bodily Injury to Third Parties</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This policy does not provide coverage for any third-party bodily injury claims arising from alleged or actual negligence during the provision of your business services.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crimes committed by CXOs or company management</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Losses resulting from criminal acts committed by any of the CXOs or other members of the company management are not covered under this policy.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
-                                            <p className='title-20 font-weight-500 text-black mt-4'>Be aware of these exclusions to ensure your coverage aligns with your specific needs and risks.</p>
                                         </div>
                                     </div>
                                 </Container>
@@ -510,7 +488,7 @@ export default function EAndO_Insurance() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Errors & Omissions Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Crime Insurance Claim Examples</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -526,19 +504,19 @@ export default function EAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Design Drawings Errors by Insured Result in Flawed Fabrication & Erection of Structure</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Accountant of an overseas subsidiary of the policyholder commits fraud</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insured provided multiple inaccurate design drawings, leading to improper fabrication and consequently necessitating re-fabrication. The principal incurred additional expenses and was required to employ extra manpower to address these issues.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>A member of senior management shared his credentials with the accountant for undertaking transactions in his absence. These credentials were misused to divert funds into his personal account and these transactions were also disguised in the book of accounts which went undetected.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer demonstrated a proactive approach by assuming control of the situation and successfully proving that the policyholder was not responsible for all the errors. This strategic intervention allowed for a substantial reduction in the damages ultimately borne by the policyholder and the compensation was paid by the Insurer.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer assisted the policyholder in filing recovery proceedings in overseas locations and appointed a loss investigator by utilizing its global network to confirm the extent of loss and expedite settlement.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/crime_incident1.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -546,39 +524,39 @@ export default function EAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Medical Negligence Allegations Against Policyholder</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Fraud committed by an employee leading to loss of policyholder’s customer.</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The claimant sought treatment from the gynecologist during her pregnancy. On the delivery date, it became apparent that the unborn baby was too large, necessitating a cesarean section to prevent complications. Despite this, the claimant experienced inadequate post-pregnancy care, and the doctor's ongoing negligence contributed to complications resulting in kidney failure.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>An overseas subsidiary was performing outsourced operational services like vendor payments for a Middle East client. The perpetrator modified the vendor master data with incorrect bank details used for remittance and diverted funds to his personal account.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer actively assumed control of the litigation, appointing attorneys to defend the doctor and covering all defense costs under the policy and the compensation was paid by the insurer</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer reimbursed the policyholder for the losses and took legal action against the perpetrator.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/crime_incident2.png' />
                                             </Col>
                                         </Row>
                                     </div>
                                     <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                    <Row className='g-4'>
+                                        <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Data Held Hostage By Ryuk Ransomware</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Fraud orchestrated by vendors and employees</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>An insured fell victim to the Ryuk ransomware, a highly destructive form of malware known for its high ransom demands. Before the attack, the insured was infected with a banking Trojan, allowing the attacker to access internal financial information. The ransom demanded exceeded $1.5 million, but the company chose not to pay. As a result, the attack made the company's data inaccessible.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>A raw material supplier raised various invoices to the company. They were supposed to be verified by the company’s F&A vendor. The invoices were actually fake and were still processed by the F&A vendor without verification. The employees of the company used to provide information for these invoices to the supplier.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer hired professionals specialized in handling ransomware incidents and successfully facilitated productive negotiations regarding the amount of ransom to be paid.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurance company established the failure of the F&A vendor and assisted the insured in realizing a substantial portion of the loss amount from them. </div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/sample.png' />
+                                                <img src='/incident/crime_incident3.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -596,91 +574,50 @@ export default function EAndO_Insurance() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Errors & Omissions Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About General Liability Insurance</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
                                 title="What is the jurisdiction/territory of the claim?"
-                                content="The jurisdiction limit of a claim indicates that the policy will cover only claims lodged in the courts of the listed countries. The territorial limit relates to the location where the act, error, or omission takes place."
+                                content="The Jurisdiction Limit of a claim indicates that the policy will cover only the claims lodged in the courts of the listed countries. The territorial limit relates to the location where the act or an error takes place."
                             />
                             <Accordion
-                                title="What limits do you need?"
-                                content="Lorem ipsum dolor sit amet,"
+                                title="How does crime insurance work?"
+                                content="Commercial crime insurance is a type of insurance that provides coverage for businesses against losses caused by criminal acts such as theft, fraud, and embezzlement. This type of insurance can be purchased by companies to protect against financial losses resulting from criminal activities committed by employees, customers, vendors, or other third parties. By having this coverage in place, businesses can improve their risk management practices, protect their assets, and improve their reputation."
                             />
                             <Accordion
-                                title="Do I need E&O if I already have D&O, general liability, and product liability insurance?"
-                                content="An insured business can opt for any limit of E&O coverage depending on its needs, business model, and financial position. Some factors that can influence the limit include the size of the business, financial background, time spent in the business, risk appetite, and so on."
+                                title="What are the most common crime insurance claims?"
+                                content="Some of the most common commercial crime insurance claims include employee theft, computer fraud, forgery and alteration, robbery and burglary, funds transfer fraud, and social engineering fraud."
                             />
                             <Accordion
-                                title="Do I need E&O if I already have D&O, general liability, and product liability insurance?"
-                                content="The necessity of Errors and Omissions (E&O) insurance can depend on various factors, even if you already have Directors and Officers (D&O), general liability, and product liability insurance. For businesses operating in the financial services sector, including venture capital firms, private equity groups, and investment advisors, it's common to amalgamate both E&O and D&O insurance into a single policy. This combined coverage provides a comprehensive safeguard against claims stemming from either category of risk. Furthermore, if your business involves investors, operates within a regulated industry, or belongs to a sector frequently subject to management litigation, the need for D&O insurance becomes more pronounced."
+                                title="What are claims-made vs occurrences?"
+                                content="Claims-made and occurrences are two different types of insurance policy coverage forms that are commonly used in the insurance industry. Claims-made policies cover claims that are made during the policy period. This means that the policy must be active when the claim is made, regardless of when the actual incident occurred. On the other hand, occurrence policies cover incidents that occur during the policy period, regardless of when the claim is made."
                             />
                             <Accordion
-                                title="Is errors and omissions insurance required by law?"
-                                content="Errors and omissions insurance is not mandatory by law in India. However, some professional bodies and regulatory authorities may require certain professionals to carry this type of insurance as a condition of their membership or licensing. For example, the Institute of Chartered Accountants of India (ICAI) recommends its members to carry professional indemnity insurance. Similarly, the Insurance Regulatory and Development Authority of India (IRDAI) mandates insurance brokers to have professional indemnity insurance."
+                                title="What is a loss sustained form?"
+                                content="A loss sustained form is a type of insurance policy that covers losses that occur during the policy period, as well as losses that are discovered after the policy has expired. It provides coverage for losses that are discovered after the policy period ends, but that occurred during the policy period."
                             />
                             <Accordion
-                                title="What are the most common reasons for claims in E&O policies?"
-                                content={[<>
-                                    <ul className={`${productStyle.listData}`}>
-                                        <li>Some of the most common reasons for E&O claims are as follows:</li>
-                                        <li>Breach of Confidentiality</li>
-                                        <li>Breach of Privacy</li>
-                                        <li>Defamation, Libel, and Slander</li>
-                                        <li>IPR Infringement</li>
-                                        <li>Breach of Contract</li>
-                                    </ul>
-                                </>]}
+                                title="What is an accidental occurrence?"
+                                content="In insurance, accidental occurrence refers to an event that causes damage or injury that was not intended or expected by the insured. An accidental occurrence is different from an intentional act. If a person intentionally causes harm or damage, it is not considered an accidental occurrence and is typically not covered by insurance."
                             />
                             <Accordion
-                                title="Does E&O cover negligence?"
-                                content="Yes, E&O insurance typically covers negligence on the part of professionals in the services they provide to clients. Negligence here is a legal term that refers to the failure to exercise reasonable care or skill in the performance of one's duties or responsibilities. E&O insurance provides protection to insured professionals against claims of negligence, errors, or mistakes that result in financial losses to their clients."
+                                title="Can you switch from claims made to occurrences?"
+                                content="Yes. You can. Changing from claims-made coverage to occurrence coverage usually requires adding a 'tail' or extended reporting period. This can be expensive, and the length of the tail coverage period may be limited."
                             />
                             <Accordion
-                                title="Is E&O insurance paid monthly or yearly?"
-                                content="E&O insurance premiums are payable only on an annual basis. Monthly payment options are not available for this type of insurance."
+                                title="What is subrogation?"
+                                content="Subrogation is a process, where your insurance company can request repayment from another insurance company based on the damages the other company’s policyholder did to you."
                             />
                             <Accordion
-                                title="Is E&O insurance tax deductible?"
-                                content="Yes, E&O insurance premiums paid by professionals in India are generally tax-deductible as a business expense. This means that the premiums paid for E&O insurance can be claimed as a deduction against the income earned by the professional, thereby reducing their taxable income and lowering their tax liability."
+                                title="What is an occurrence trigger?"
+                                content="An occurrence trigger in insurance refers to a type of coverage trigger used in liability insurance policies. Under an occurrence trigger, coverage is triggered by an event or incident that occurs during the policy period, regardless of when a claim is made."
                             />
                             <Accordion
-                                title="Does E&O insurance have a deductible?"
-                                content="Yes, E&O insurance policies typically have a deductible during the claim.which is the amount that the policyholder must pay out of pocket before the insurance coverage kicks in. The amount of the deductible can vary depending on the policy and the insurer, and it may be expressed as a specific rupee amount or as a percentage of the coverage limit. Generally, higher deductibles will result in lower premiums."
-                            />
-                            <Accordion
-                                title="What are the two types of limits offered in E&O policies?"
-                                content={[<>
-                                    <span>The two types of limits offered in E&O policies are:</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>Aggregate limit: This is the total amount your insurance provider will cover for the policy term (normally one year).</li>
-                                        <li>Per occurrence limit: This is the amount your provider will cover in a single claim.</li>
-                                    </ul>
-                                </>]}
-                            />
-                            <Accordion
-                                title="Does E&O insurance cover breach of contract?"
-                                content="No insurance policy can protect you if you knowingly breach a business contract. However, a breach of contract caused by your error or oversight may be protected by errors and omissions insurance (E&O). E&O insurance can cover breach of contract claims involving errors and omissions at work, services that have not been delivered, missed deadlines, budget overruns, incomplete work, and negligence allegations."
-                            />
-                            <Accordion
-                                title="When should E&O claims be reported?"
-                                content="You should report claims to your provider in writing as soon as you become aware of the situation. Include any pertinent paperwork with your written report or chronological account of the occurrence. Notify the provider if you receive a summons or other legal process notice. Also, notify them if you receive a written demand, a written demand for money or services, or if you are asked to produce a recorded statement or documentation."
-                            />
-                            <Accordion
-                                title="Why do insurance claims get rejected?"
-                                content={[<>
-                                    <span>Insurance claims may get rejected for several reasons, including:</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>Policy exclusions</li>
-                                        <li>Non-disclosure of material information</li>
-                                        <li>Inadequate documentation</li>
-                                        <li>Failure to meet policy conditions</li>
-                                        <li>Non-payment of premiums</li>
-                                        <li>Fraud or misrepresentation</li>
-                                    </ul>
-                                </>]}
+                                title="Which insurance policy can offer protection against embezzlement?"
+                                content="Embezzlement is a type of theft in which an employee or trusted individual takes money or property that belongs to their employer or another party.Crime insurance is typically offered as protection against embezzlement. It provides coverage for losses arising from criminal activities such as theft, fraud, and embezzlement."
                             />
                         </div>
                     </Container>

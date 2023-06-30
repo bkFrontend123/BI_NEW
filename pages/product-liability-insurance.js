@@ -189,7 +189,7 @@ export default function DAndO_Insurance() {
     return (
         <>
             <Head>
-                <title>D&O Insurance | BimaKavach Insurance for Directors and Officers</title>
+                <title>Product Liability Insurance | BimaKavach Insurance for Product Liability</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="canonical" href="" />
@@ -199,9 +199,9 @@ export default function DAndO_Insurance() {
                 {/* product banner start */}
                 <div className='bg-yellowLight'>
                     <ProductBanner
-                        title="Directors & Officers Liability Insurance"
-                        description="Good insurance decisions for C-Suite Executives begin with an understanding of D&O insurance and what it covers."
-                        customClass="dAndoBnr"
+                        title="Product Liability Liability Insurance"
+                        description="Product Liability insurance is specifically designed to protect your business from the financial impact of claims arising out of damage, injury, or harm caused by the products you manufacture, sell, or distribute. It's a specialized policy that understands the unique risks associated with products."
+                        customClass="prdctLlbtyBnr"
                     >
                         <div className={`${form.commonForm}`}>
                             <Form>
@@ -271,47 +271,27 @@ export default function DAndO_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A Director and Officers (D&O) policy protects directors, board members, and other individuals in management and supervisory positions from possible legal liability if they are indicted for decisions made to run a business. <span className='d-none d-lg-block'></span>This type of insurance protects the personal assets of the directors and officers along with their spouses and compensates them for any settlements or legal fees they incur as a result of lawsuits.</p>
-                                    </div>
-                                    <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Advantages of D&O Insurance</div>
-                                        <Row className='g-lg-5'>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Offers protection to Directors & Officers</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                            <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Saves personal assets from lawsuits</p>
-                                                </div>
-                                            </Col>
-                                            <Col lg={4}>
-                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
-                                                    <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Helps attract & retain the best talent</p>
-                                                </div>
-                                            </Col>
-                                        </Row>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product liability insurance covers a spectrum of risks that your products might encounter. These could range from manufacturing defects, design flaws, or inadequate warning labels to misuse by consumers. If someone files a claim against your business because of an issue with your product then this policy can cover legal defense costs, settlements, and court judgments.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product Liability insurance provides a shield of protection for your business reputation as well. In a time when news travels fast and a single negative incident can severely harm your business image, having a policy that promptly addresses issues and compensates those affected can be a major asset.</p>
+
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Without Product Liability insurance, one significant claim could mean the end of the business you've worked so hard to build. With this policy, you can continue your operations, innovate and expand your product line with the confidence that you're safeguarded against unforeseen liabilities.</p>
                                     </div>
                                 </Container>
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`d-none d-lg-block ${productStyle.lightYellowSecImg}`} src='/product/slideBg.png' />
                                     <img className={`d-block d-lg-none ${productStyle.lightYellowSecImg}`} src='/product/slideBgMob.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The 3 Categories of D&O Insurance</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Features of Product Liability Insurance:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-3 g-lg-5'>
                                                 <Col lg={4}>
                                                     <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>1. Side A</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Direct Indemnification</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>The D&O policy offers liability cover for company managers, officials, and directors to protect them from claims which may arise from the decisions and actions taken within the scope of their regular managerial duties.</p>
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Works on Claims-Made Basis</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Claims need to be initiated within the policy period. The incident triggering the claim must also happen within the policy’s coverage duration.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -319,9 +299,8 @@ export default function DAndO_Insurance() {
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodGlobe.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>2. Side B</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Company Reimbursement</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>When a company indemnifies (provides financial protection) its directors or officers for a covered claim under the policy, Side B Coverage ensures that the company is reimbursed for the expenses they've incurred during the process.</p>
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Retroactive Date</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Your first policy’s start date is carried forward to subsequent policy renewals. Hence, you can initiate claims for incidents that occur post your first policy’s start date assuming that continuous coverage is maintained</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -329,9 +308,8 @@ export default function DAndO_Insurance() {
                                                     <div className={`pb-0 border-0 ${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
                                                             <img src='/icons/prodUShield.svg' />
-                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>3. Side C</h3>
-                                                            <div className='title-22 font-weight-600 text-black mb-3'>Coverage for Entity</div>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>It is designed to protect the company as a whole from certain legal claims, regardless of whether the directors or officers are directly involved in the underlying dispute. This coverage typically addresses two main areas: Employment Disputes & Security Related Issues.</p>
+                                                            <h3 className='title-26 font-secondary font-weight-600 text-black my-2'>Insurance Period:</h3>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>The insurance period spans from the retroactive date to the policy's termination date, providing coverage during this entire timeframe.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -344,40 +322,52 @@ export default function DAndO_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Who Needs</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Any private or public company with corporate boards or advisory committees should have a D&O policy to protect their C-Suite executives. Today, company owners are vulnerable to lawsuits from regulators, shareholders, vendors, customers, competitors, employees, and government bodies. <span className='d-none d-lg-block'></span>It's one of those "must-have" policies for every company because it protects them in the event of an expensive lawsuit.</p>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Businesses involved in manufacturing or selling goods, as well as distributors, importers, retailers, and others interacting with products, require product liability insurance. <span className='d-none d-lg-block'></span>Clients may also need this policy to safeguard against design flaws and other risks associated to the product. This insurance protects your business from claims or lawsuits resulting from bodily harm or property damage caused to any third party by defective items that your business has manufactured, distributed, or sold.</p>
                                     </div>
                                     <div className={`mt-4 mt-xl-5 ${productStyle.tabChecklist}`}>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>What can influence the reasonable level of D&O coverage?</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Product Liability insurance is necessary for various kinds of businesses:</div>
                                         <Row>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Risk appetite</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Manufacturers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Financial background</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Distributors</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Company size</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Retailers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Past lawsuit history</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Online sellers</p>
                                                 </div>
                                             </Col>
                                             <Col lg={4}>
                                                 <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
                                                     <img src='/icons/check.svg' />
-                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Business Age</p>
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Pet supply shops</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Restaurants, Cloud Kitchens</p>
+                                                </div>
+                                            </Col>
+                                            <Col lg={4}>
+                                                <div className={`d-flex align-items-center ${productStyle.tabChecklistCard}`}>
+                                                    <img src='/icons/check.svg' />
+                                                    <p className={`ms-3 mb-0 text-black font-weight-600 ${productStyle.tabChecklistCardTitle}`}>Print Shopss</p>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -388,22 +378,16 @@ export default function DAndO_Insurance() {
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
                                         <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>Why Get</h3>
-                                        <div className='title-28 font-black font-weight-700 text-black'>Directors & Officers Liability Insurance?</div>
-                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A director or officer might face many types of financial risks as part of their job. D&O insurance provides an easy way to protect the interest of their senior officers and board members. The policy protects them from the following potential problems -</p>
-                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
-                                            <li>Allegations by other stakeholders or shareholders</li>
-                                            <li>Allegations of sexual harassment, discrimination, and other employment violations</li>
-                                            <li>Accounting mistakes & exposure to mergers & acquisitions</li>
-                                            <li>Regulatory investigations initiated by the government, a professional, or a statutory body</li>
-                                            <li>Corporate governance lapses</li>
-                                        </ul>
+                                        <div className='title-28 font-black font-weight-700 text-black'>Product Liability Insurance?</div>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Introduction of Consumer Protection Act 2019 has brought significant changes to the product liability landscape in India. It includes a dedicated chapter dealing with product liability, expanding the scope of liability across the supply chain to include manufacturers, product sellers, and product service providers​. This means businesses at various points in the supply chain could face liability claims, making product liability insurance all the more critical.</p>
+                                        <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Even with the utmost dedication and care put into crafting your products, they may still fall short of customer expectations. You need Product Liability Insurance because, in case of a lawsuit, it covers legal defense costs and potential damages. Plus, it aids in covering repair or replacement expenses for defective products—even if you aren't sued. There can be design flaws, product defects, poor instructions, labels, or warnings that cause physical harm or damage to the user.</p>
                                     </div>
                                 </Container>
 
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Who can Sue the Directors or Officers of the organisation?</h3>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The Cost of Not Having Cyber Fraud Insurance:</h3>
                                         <div className={`${productStyle.lightYellowSecCards}`}>
                                             <Row className='g-3 g-lg-5'>
                                                 <Col lg={4}>
@@ -467,7 +451,7 @@ export default function DAndO_Insurance() {
                                             </span>
                                             Coverages & Exceptions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Directors & Officers Liability Insurance</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Product Liability Insurance</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
@@ -477,161 +461,99 @@ export default function DAndO_Insurance() {
                                         <div data-tab className="place-content-center">
                                             <Row>
                                                 <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many benefits. Some of the major coverages in the insurance policy are given below -</div>
+                                                    <div className='title-20 text-black mb-4'>This insurance protects your business from claims or lawsuits resulting from bodily harm or property damage caused by defective items that your business has manufactured, distributed, or sold. <span className='d-block'></span>A product liability insurance policy addresses claims due to:</div>
                                                 </Col>
                                             </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bail and Bond Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>D&O policy covers the costs of securing bail and bond for directors and officers, which may be in connection with any criminal proceedings arising from their duties as directors or officers of the company.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Product injury</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers attorney fees and court-ordered settlements or judgment costs. This includes design flaws, manufacturing flaws, warning or use flaws, and damages and injuries stemming from proper product use.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Legal Representation Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It includes defense costs incurred by an insured on account of the attendance and/or provision of documents or information to any investigation, as required by the investigator.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Product-related property damage</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It protects your business in case a product you sell or manufactures damages a customer's property, whether due to product defects or instruction manual errors.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover reimburses the costs associated with managing and mitigating the negative impact on the company's reputation, arising out of duties performed by the directors and officers on behalf of the company.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Product-related illness</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers illnesses caused by products sold or manufactured by your business, such as expired food or allergy-inducing beauty products.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Extradition cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects a company if a director or officer is arrested or detained in a foreign country and the company needs to pay for the costs associated with his extradition back to the home country.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Products causing wrongful death</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It addresses lawsuits, burial expenses, and other costs associated with customer death resulting from your product.</div>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                            <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Product liability insurance covers the following costs related to the aforementioned claims:</p>
+                                            <Row className='justify-content-between g-4'>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Legal Representation Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>These include defense costs for providing documentation or information to investigators concerning product-related faults.</div>
+                                                    </div>
+                                                </Col>
+                                                <Col lg={5}>
+                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Public Relations Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It reimburses expenses for managing and mitigating negative company reputation due to product-related allegations.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
                                                         <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Court Attendance Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage provides protection from reasonable costs and expenses incurred by the insured due to required attendance at court proceedings, hearings, trials, and depositions related to the defense of a claim.</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It offers protection for reasonable costs and expenses incurred by attending court proceedings, hearings, trials, and depositions related to product-related claim defense.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Kidnap and Ransom Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage provides relief from the costs associated with any event or connected series of events of kidnapping, seizing, or detaining an insured person by force or fraud, for the purpose of demanding a ransom.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Self-reporting Expenses Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage helps to protect company directors and officers from the financial burden of expenses associated with self-reporting a potential violation or claim to the relevant Governmental, judiciary, or regulatory authorities.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Investigation Costs</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable fees, costs, and expenses incurred (with the insurer’s prior written consent) by or on behalf of an insured person, in relation to preparing for and attending an investigation.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Cover</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers the reasonable costs, charges, fees, and expenses incurred by an organization, in attaining the services of any public relations firm or crisis management firm to advise the organization for managing public communication.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Dedicated additional limit for Non-Executive Directors and Officers</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>With this add-on cover, you get an extra layer of protection that is added to the overall coverage limit for non-executive directors and officers of a company.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Crisis Communication Costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It covers costs for hiring public relations or crisis management firms to advise on public communication strategies related to product claims, lawsuits, or allegations.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
                                         </div>
                                         <div data-tab className="hidden place-content-center">
-                                            <Row>
-                                                <Col lg={8}>
-                                                    <div className='title-20 text-black mb-4'>D&O insurance offers many exclusions. Some of the major exclusions in the insurance policy are given below -</div>
-                                                </Col>
-                                            </Row>
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>OFAC Sanction Clause</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>OFAC stands for Office of Foreign Assets Control and is a government agency of the US Treasury Department that enforces economic and trade sanctions against countries, organizations, and individuals. If a claim is made against a director or officer for something related to OFAC sanctions, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Product guarantees</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Insurance coverage would not apply if an insured provides a warranty or guarantee to their customers regarding the products they are selling. And then the product fails to perform as promised, resulting in a claim for damages.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Product Liability</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The clause excludes any claims or losses that are related to product liability. Product liability refers to the legal responsibility of manufacturers, distributors, and sellers for any harm caused by a product they have produced or sold. If a claim is made against a director or officer for something related to product liability, they will not be covered.</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Repairing/Refurbishing costs</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In the event that the insured's product causes harm or damages someone's property as a result of its defect, the insurance policy may cover the costs of compensating the affected party. However, the policy typically will not cover the cost of repairing or refurbishing the defective product itself.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>ERISA</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>The Employee Retirement Income Security Act (ERISA) of 1974 establishes minimum standards for pension plans in the private industry under U.S. federal tax and labor laws. It regulates employee benefit plans, including retirement plans, health plans, and other types of benefits. <span className='d-none d-lg-block'></span>If a claim is made against a director or officer for something related to ERISA, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Financial losses from loss of market share/goodwill</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This exclusion applies to losses that may arise from a decrease in the insured's market share or loss of goodwill due to the harm caused by their product. These types of losses are typically not covered because they are considered to be indirect or consequential damages, rather than direct damages caused by the defective product itself.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Opioids and Narcotics</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Opioids are a class of drugs that are used to relieve pain and include drugs such as fentanyl, oxycodone, and morphine. Narcotics are a class of drugs that are used to relieve pain and include drugs such as cocaine and heroin. This means that if a claim is made against a director or officer for losses arising because of their decisions related to opioids or narcotics, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Willful manufacturing/distributing of defective/dangerous products</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If an insured engages in any willful or intentional misconduct, the insurance policy will not provide coverage for any resulting losses, including those that arise from claims of bodily injury, property damage, or other harm caused by the defective or dangerous product.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Asbestos</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Asbestos is a naturally occurring mineral that has been used in various products, including construction materials and has been linked to various diseases such as lung cancer, mesothelioma, and asbestosis. If a claim is made for something related to asbestos, they will not be covered.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Employee injuries sustained while manufacturing the product</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Employees of the insured are not covered under this policy for injuries sustained while manufacturing the product. The rationale behind this exclusion is that employees injured while manufacturing a product are typically covered by a separate policy named the workers' compensation insurance policy.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Financial Insolvency</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Financial insolvency refers to the inability of a company or individual to pay their debts as they come due. This means that if a claim is made against a director or officer for something related to the financial insolvency of the company, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>E-smoking Device</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>E-smoking Device Exclusions in Directors & Officers Insurance means exclusion for any claims or losses that are related to electronic smoking devices or e-cigarettes. If a claim is made for something related to electronic smoking devices, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>War</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>War exclusions in Directors' & Officers' Insurance is a type of coverage that excludes any claims or losses that are related to war. This means that if a claim is made against a director or officer for something that happened as a result of war, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Future Offering of Securities (IPO)</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It refers to excluding any claims or losses that are related to initial public offerings (IPOs) of securities. This means that if a claim is made against a director or officer for something related to an IPO, they will not be covered under this policy.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>No Cover for Auditors Qualification, Emphasis Matter, a Contingent Liability, if any</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>If any claims or losses arise against the Director and Officer and the same is related to auditors' qualifications, emphasis matters, or contingent liabilities, they will not be covered.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Bribes and Commission</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Directors & Officers policy excludes claims and losses arising from bribes and commissions.</div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={5}>
-                                                    <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Money Laundering</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Money laundering is a process that criminals use to hide the illegal source of their income. If a claim is made against a director or officer for something related to money laundering, they will not be covered under this policy.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Technology product claims</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This policy excludes coverage for certain types of losses that may arise from technology products. It may apply to losses resulting from claims of intellectual property infringement, failure of technology products to meet performance specifications, or failure to perform as intended. The rationale behind this exclusion is that in general, technology products are more complex than other types of products and are subject to a higher degree of risk due to their reliance on software, hardware, and other advanced technologies.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -651,7 +573,7 @@ export default function DAndO_Insurance() {
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Directors & Officers Claims Examples</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Product Liability Insurance Claims Example</h3>
                                 </div>
                             </Col>
                         </Row>
@@ -660,21 +582,20 @@ export default function DAndO_Insurance() {
                                 <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
                                     <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 3</span>
                                 </div>
                                 <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
                                     <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees claim unpaid contract</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Bodily Injury Caused by Defective Healthcare Product</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
                                                         <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer managed defense proceedings in the USA, appointing lawyers and experts through its global network to build a strong defense, resulting in a significant reduction of claimed damages.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -694,32 +615,12 @@ export default function DAndO_Insurance() {
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The law firm handling the litigation is appointed by the insurer to manage the defense of directors and all the defense costs are being borne by the insurer.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>The insurer managed defense proceedings in the USA, appointing lawyers and experts through its global network to build a robust defense strategy, resulting in a significant reduction of claimed damages.</div>
                                                     </div>
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
                                                 <img src='incident/dAndO_incident2.png' />
-                                            </Col>
-                                        </Row>
-                                    </div>
-                                    <div data-incitab className={`hidden ${productStyle.inciTabPanelBox}`}>
-                                        <Row className='g-4'>
-                                            <Col lg={7}>
-                                                <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Employees File Legal Proceedings in China</div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
-                                                    </div>
-                                                    <div className='mb-4'>
-                                                        <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>The litigation was in China and the Insurer appointed a law firm in China for translation and better defense strategy. The outcome of the litigation was favourable and only the defense cost was incurred which was reimbursed under the policy.</div>
-                                                    </div>
-                                                </div>
-                                            </Col>
-                                            <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/dAndO_incident3.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -737,100 +638,70 @@ export default function DAndO_Insurance() {
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
                                     <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
-                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Directors & Officers Liability Insurance</h3>
+                                    <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Product Liability Insurance</h3>
                                 </div>
                             </Col>
                         </Row>
                         <div className='mt-4'>
                             <Accordion
-                                title="What is the jurisdiction/territory of the claim?"
-                                content="The jurisdiction limit of a claim indicates that the policy will cover only the claims lodged in the courts of the listed countries. The territorial limit relates to the location where the act, error, or omission takes place."
+                                title="What is the jurisdiction and territory of coverage in product liability insurance?"
+                                content="Jurisdiction refers to the countries where the policy will cover claims filed in courts, while territory refers to the location where the incident causing the claim occurred."
                             />
                             <Accordion
-                                title="What limits do you need?"
-                                content="An insured business can opt for any limit of the D&O liability insurance, depending on its needs, business model, and financial position. Some of the factors that can influence the limit include the size of the business, financial background, time spent in the business, risk appetite, and so on."
+                                title="Are product recall costs covered under product liability insurance?"
+                                content="Some policies may provide full coverage for product recall costs, while others may have specific limits or exclusions. Coverage typically includes reasonable costs incurred for recall, recovery, disposal, or withdrawal, as well as customer notification costs."
                             />
                             <Accordion
-                                title="Does D&O insurance cover owners?"
-                                content="Yes. The Side B Coverage in D&O insurance provides coverage for losses that the company (or the business owner) incurs as a result of paying for damages and defense costs for claims brought against its directors and officers. Here, the owner/ company is insured and its corporate assets are at risk."
+                                title="What are the most common types of product liability cases?"
+                                content="Design defects, manufacturing defects, failure to warn consumers of potential dangers, marketing defects, and improper installation or assembly are the most common types of product liability cases."
                             />
                             <Accordion
-                                title="As a director or officer can you become personally liable for your actions?"
-                                content="Yes, as a director or officer of a company, you can become personally liable for your actions if you breach your fiduciary duties. If you breach this duty or engage in any illegal or fraudulent behavior, you may be held personally liable for any resulting damages or losses. In addition, you may be held personally liable for violations of various laws and regulations, such as environmental laws,  securities laws, and antitrust laws."
+                                title="How can a business reduce the risk of product liability claims?"
+                                content="To minimize risk, businesses should implement effective quality control programs, conduct thorough product testing, ensure proper labeling, comply with regulations and safety standards, obtain product liability insurance, and engage in post-sale monitoring."
                             />
                             <Accordion
-                                title="Are directors vs directors disputes covered?"
-                                content="If one director sues another within the same organization, this is considered an 'insured v. insured' situation, and a D&O policy would typically not cover that dispute. However, there may be certain exceptions and these may vary from one insurance provider to another."
+                                title="Can a retailer be sued for product liability?"
+                                content="Yes, retailers can be held liable for selling defective products or products posing unreasonable dangers, even if they did not manufacture or design the product."
                             />
                             <Accordion
-                                title="Are the subsidiary's board covered under the Officers & Directors liability insurance?"
-                                content={[<>
-                                    <span>Yes. D&O policy automatically protects new subsidiaries of an insured company that are acquired or created during the policy period. The automatic coverage will start with effect from the date of such creation or acquisition except-</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>The new entity is based on or has any of its securities listed on any exchange in the USA</li>
-                                        <li>It is a financial institution</li>
-                                        <li>Such creation or acquisition increases the total consolidated assets of the principal company by more than 25% (as per the most recent audited, consolidated financial statements)</li>
-                                    </ul>
-                                </>]}
+                                title="Can you be sued for reselling products?"
+                                content="Resellers can be held liable for product defects if they knew or should have known of the defect or danger associated with the product, yet still sold it. This is known as 'strict liability.'"
                             />
                             <Accordion
-                                title="Who selects defense counsel for a covered D&O claim?"
-                                content="D&O policies typically allow the defendant insureds to choose their preferred defense counsel, subject to the prior consent of the insurer. Insurers, of course, would seek to pay only reasonable and necessary defense costs. Therefore, an insured should select a counsel experienced in the field of law that is related to the concerned litigation and whom the insured trusts."
+                                title="What are the essential elements of a product liability lawsuit?"
+                                content="A product liability case generally requires proving the existence of a defect, causation and damages (the defect caused injury or harm), and intended use (the consumer used the product as intended by the manufacturer)."
                             />
                             <Accordion
-                                title="Does a small business need liability insurance for Directors and Officers?"
-                                content="Yes. Being a small business does not necessarily make a small business immune to potential lawsuits. A costly lawsuit can have a severe impact on the personal fortunes of its employees in a decision-making position. When a potentially damaging lawsuit comes in the way, a small business may not quite have the financial ‘muscle power’ enjoyed by the larger companies to deal with it. This is why, in the case of a small business, protection from D&O insurance becomes even more essential."
+                                title="What are five common product defects covered by product liability insurance?"
+                                content="Design defects, manufacturing defects, failure to warn consumers of potential dangers, marketing defects, and packaging defects are common product defects covered by product liability insurance."
                             />
                             <Accordion
-                                title="What are the most common D&O claims?"
-                                content={[<>
-                                    <span>Some of the most common D&O insurance claims include:</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li>Breach of fiduciary duty</li>
-                                        <li>Misrepresentation</li>
-                                        <li>Insider trading</li>
-                                        <li>Failure to comply with laws or regulations</li>
-                                        <li>Mismanagement</li>
-                                        <li>Securities fraud</li>
-                                        <li>Employment practices</li>
-                                    </ul>
-                                </>]}
+                                title="What are typical software product liability claims?"
+                                content="Common software product liability claims involve design defects (flawed design causing harm), manufacturing defects (improper development leading to a nonconforming product), and failure to warn (inadequate warning of known or foreseeable risks)."
                             />
                             <Accordion
-                                title="What are directors personally liable for?"
-                                content={[<>
-                                    <span>Directors can be held personally liable for a variety of actions or omissions in their roles, such as:</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li><span className='font-weight-600'>Breach of fiduciary duty:</span><span className='d-block'></span>If the directors fail in their duty to act in the best interests of the company they can be held personally liable for any resulting financial damage.</li>
-                                        <li><span className='font-weight-600'>Negligence:</span><span className='d-block'></span> If the directors fail to exercise reasonable care and skill in carrying out their duties, they can be held personally liable for any resulting financial damage.</li>
-                                        <li><span className='font-weight-600'>Mismanagement:</span><span className='d-block'></span> Directors are responsible for overseeing the management of the company. If they fail to do so and this results in financial damage, they can be held personally liable.</li>
-                                        <li><span className='font-weight-600'>Wrongful acts:</span><span className='d-block'></span> Directors can be held personally liable for any wrongful acts committed in their roles, such as fraud, misrepresentation, or insider trading.</li>
-                                        <li><span className='font-weight-600'>Failure to comply with laws or regulations:</span><span className='d-block'></span> Directors are responsible for ensuring that the company complies with all applicable laws and regulations. If they fail to do so, they can be held personally liable for any resulting financial damage.</li>
-                                    </ul>
-                                </>]}
+                                title="Who can be held liable in a product liability case?"
+                                content="Manufacturers, retailers, distributors, suppliers, contractors, subcontractors, advertisers, and marketers can all potentially be held liable in a product liability case."
                             />
                             <Accordion
-                                title="What are directors personally liable for?"
-                                content={[<>
-                                    <span>Certain differences between the two are as follows-</span>
-                                    <ul className={`mt-3 ${productStyle.listData}`}>
-                                        <li><span className='font-weight-600'>Coverage:</span> D&O insurance is specifically designed to protect directors and officers from claims arising from their roles in the company. Management liability insurance, on the other hand, provides broader coverage for claims against the company's management, including claims for employment practices liability, fiduciary liability, and crime.</li>
-                                        <li><span className='font-weight-600'>Policy terms:</span> D&O insurance policies are often designed with specific limits for each insured person and may have separate limits for defense costs and indemnification. Management liability policies may have aggregate limits that apply to all insureds and may include sub-limits for specific types of claims.</li>
-                                        <li><span className='font-weight-600'>Triggering of Claims:</span> D&O insurance is typically triggered by claims made against the directors and officers during the policy period. On the other hand,  management liability insurance can be triggered by a wider range of events, such as regulatory investigations or employee lawsuits.</li>
-                                    </ul>
-                                </>]}
+                                title="What is a breach of warranty in product liability?"
+                                content="A breach of warranty occurs when a manufacturer or seller fails to meet the terms of a warranty or guarantee they made about a product."
                             />
                             <Accordion
-                                title="Does Directors & Officers' liability insurance covers breach of contract?"
-                                content="A breach of a contract (for example, one that is promised by the company to its client) does not fall under the coverage of a D&O policy. For example, if a company has a contract with a client that states that if there is any kind of a breach of contract, the company will be liable for Rs 10 lakh in compensation. If such a breach occurs, the D&O insurance provider is not obligated to pay the compensation amount."
+                                title="How do you calculate the liability for a product warranty?"
+                                content="Calculating warranty liability depends on warranty terms, product cost, and the number of claims filed. Methods used include the expense warranty method, accrual warranty method, and warranty reserve method."
                             />
                             <Accordion
-                                title="Can a director of the company be sued for negligence?"
-                                content="Yes. If the directors fail to exercise reasonable care and skill in carrying out their duties, they can be held personally liable for any resulting financial damage and can be sued for negligence. Negligence claims against directors can arise from other situations as well such as failure to properly oversee the management of the company, failure to comply with laws or regulations, failure to disclose material information to shareholders, or failure to act in the best interests of the company."
+                                title="Are there any limits to product liability?"
+                                content="Limits on product liability include statutes of limitations, statutes of repose, contributory negligence, assumption of risk, and limitations on damages."
                             />
                             <Accordion
-                                title="Who is insured in D&O insurance?"
-                                content="The insured person is the individual or business entity that receives financial support after an insurance claim is filed and verified. He is covered under the policy. "
+                                title="What are the four elements required to prove negligence in a product liability action?"
+                                content="To establish negligence, a plaintiff must prove duty (the defendant's responsibility to provide a safe product), breach (failure to provide a safe product), causation (the breach caused the plaintiff's injuries), and damages (the plaintiff suffered harm due to the breach)."
+                            />
+                            <Accordion
+                                title="In a product liability claim, who is held liable - the manufacturer or the seller?"
+                                content="Manufacturers are typically held to a higher standard of care, as they design, test, and produce products. However, distributors and sellers also have a responsibility to ensure the products they sell are safe and free from defects. The specific liability depends on case facts."
                             />
                         </div>
                     </Container>
