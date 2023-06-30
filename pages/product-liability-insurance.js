@@ -387,51 +387,13 @@ export default function DAndO_Insurance() {
                                 <div className={`bg-yellowLight3 position-relative ${productStyle.lightYellowSec}`}>
                                     <img className={`${productStyle.whyGetImg}`} src='/product/whyGetBg.png' />
                                     <Container className='position-relative'>
-                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>The Cost of Not Having Cyber Fraud Insurance:</h3>
-                                        <div className={`${productStyle.lightYellowSecCards}`}>
-                                            <Row className='g-3 g-lg-5'>
-                                                <Col lg={4}>
-                                                    <div className={`pt-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Suppliers</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Employees</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Competitors</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Regulatory Bodies</h3>
-                                                        </div>
-                                                        <div className={`mb-3 mb-lg-4 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Clients</h3>
-                                                        </div>
-                                                        <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Shareholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                                <Col lg={4}>
-                                                    <div className={`border-0 ${productStyle.lightYellowSecCardCol}`}>
-                                                        <div className={`border-0 pb-0 ${productStyle.lightYellowSecCardBox}`}>
-                                                            <img src='/icons/prodUser.svg' />
-                                                            <h3 className='title-24 font-secondary font-weight-600 text-black mt-2 mb-0'>Other Stakeholders</h3>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </div>
+                                        <h3 className='title-36 font-secondary font-weight-700 text-primary mb-0'>Scope of coverage under Public Liability Insurance</h3>
+                                        <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
+                                            <li>Cybercrime can strIncidents Covered: The policy provides coverage for accidents, injuries, and damages resulting from the use of the product.</li>
+                                            <li>Potential Product Issues: Coverage may include manufacturing defects, improper packaging, usage instructions, and delivery specifications.</li>
+                                            <li>Domestic and Export Sales: Certain policies offer protection for both domestic sales and exports by the insured company.</li>
+                                            <li>Claim Notification: To initiate the claim process, claims must be submitted to the insurer as soon as possible.ike at any time, leaving you with a hefty bill if you're not properly protected. Without Cyber Insurance, you may be responsible for paying:</li>
+                                        </ul>
                                     </Container>
                                 </div>
                             </div>
@@ -591,7 +553,7 @@ export default function DAndO_Insurance() {
                                                     <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Bodily Injury Caused by Defective Healthcare Product</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Multiple employees initiated legal proceedings against the subsidiary of a policyholder in China claiming unpaid contractual benefits and economic compensation.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>An Indian pharmaceutical company supplied products overseas, which were found to have impurities above the acceptable level, causing bodily injury. <span className='d-block'></span>Primary Concern: A design defect in the insured's product led to bodily injury.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
@@ -600,7 +562,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='/incident/dAndO_incident1.png' />
+                                                <img src='/incident/sample.png' />
                                             </Col>
                                         </Row>
                                     </div>
@@ -608,10 +570,10 @@ export default function DAndO_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>FIR Filed for Alleged Unfair Practices</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Manufacturing Company Faces Product Liability Action Due to Failure to Warn</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>FIR filed by ex-employee against 7 directors for cheating and unfair trade practices. The matter is in litigation before the Trial Court.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Industrial cables supplied by the policyholder were used in a project. The cables broke during use, causing the entire structure to collapse and leading to property damage of 2 Crore and loss of use for the end customer.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
@@ -620,7 +582,7 @@ export default function DAndO_Insurance() {
                                                 </div>
                                             </Col>
                                             <Col lg={5} className='col-lg-5 ps-lg-5 text-end'>
-                                                <img src='incident/dAndO_incident2.png' />
+                                                <img src='incident/sample.png' />
                                             </Col>
                                         </Row>
                                     </div>
