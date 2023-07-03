@@ -191,7 +191,7 @@ export default function Footer() {
 
                   <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-1'>BimaKavach is registered as a Direct Broker | Registration No. 901, Registration Code No.  IRDAI / DB 985/ 2022, Valid till 25/06/2026, License category- Direct Broker (General).</p>
 
-                  <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-0'>Visitors are being informed that BimaKavach Insurance Broker Pvt. Ltd. holds the right to share the information submitted by you on the website with Insurers. Product information is genuine and exclusively based on information obtained from insurers.</p>
+                  <p className='title12 text-primarySkyLight2 text-uppercase font-weight-500 mb-0'>Visitors are being informed that BimaKavach Insurance Broking Pvt. Ltd. holds the right to share the information submitted by you on the website with Insurers. Product information is genuine and exclusively based on information obtained from insurers.</p>
                 </div>
               </div>
             </div>
@@ -207,7 +207,7 @@ export default function Footer() {
             <div className="col-xl-11 mx-auto copyright">
               <div className='row align-items-center justify-content-between'>
                 <div className='col-md'>
-                  <p className='title-15 text-primarySkyLight2 font-weight-500 m-0'>© 2023 BimaKavach Technologies Pvt. Ltd. All Rights Reserved</p>
+                  <p className='title-15 text-primarySkyLight2 font-weight-500 m-0'>© 2023 BimaKavach Insurance Broking Pvt. Ltd. All Rights Reserved</p>
                 </div>
                 <div className='col-md-auto'>
                   <div className='d-md-flex align-items-center gap-3 mt-3'>
