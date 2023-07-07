@@ -57,7 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 3rem;
 }
 .pymntPrgrsDiv span {
     font-size: 36px;
@@ -66,10 +66,13 @@
     color: var(--vt-c-yellow);
     line-height: 43px;
     white-space: nowrap;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 .pymntPrgrsDiv p {
     font-size: 15px;
-    color: var(--black);
+    color: var(--brown);
+    font-weight: 500;
     line-height: 20px;
     margin: 0;
 }

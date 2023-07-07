@@ -270,7 +270,7 @@ export default function product() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Contractor’s All Risk Policy?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A contractor's all risk insurance policy, also known as CAR insurance, is like a safety net for construction projects. It protects against unexpected problems and covers things like damage to construction equipment, machinery, as well as third-party claims arising from bodily injury and property damage. This insurance is important because it helps keep construction projects on track and prevents financial losses, making sure they finish on time and within budget.</p>
                                     </div>
@@ -618,8 +618,7 @@ export default function product() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

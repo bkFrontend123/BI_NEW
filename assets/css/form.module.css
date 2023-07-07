@@ -23,7 +23,7 @@
     font-size: 24px;
     color: var(--vt-c-blue);
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
 }
 .commonForm .formLabel {
@@ -136,6 +136,9 @@
     margin-bottom: 0;
     padding: 0;
 }
+.formCheckRadio:last-child {
+    margin-right: 0;
+}
 .formCheckRadio input {
     width: 1.25em;
     height: 1.25em;
@@ -235,9 +238,12 @@
 .frmftr p {
     font-size: 14px;
     color: var(--vt-c-blueSkyLight2);
-    line-height: 16px;
+    line-height: 18px;
     font-weight: 500;
     margin: 0;
+}
+.brownText p {
+    color: var(--brown);
 }
 .frmftr p a {
     color: var(--vt-c-blue);

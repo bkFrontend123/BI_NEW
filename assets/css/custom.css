@@ -263,6 +263,56 @@ body .mainMenu.navbar .navbar-brand img{
    color: var(--vt-c-yellow) !important
  }  
 
+ .homeBannerProduct {
+   border: 0 !important;
+   position: relative;
+ }
+ .homeBannerProduct::before {
+   position: absolute;
+   content: "";
+   background-image: url(/icons/border.png);
+   background-repeat: repeat-y;
+   width: 3px;
+   left: 0;
+   top: 0;
+   bottom: 0;
+}
+.homeBannerProduct::after {
+   position: absolute;
+   content: "";
+   background-image: url(/icons/border.png);
+   background-repeat: repeat-y;
+   width: 3px;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: rotate(180deg);
+}
+.homeBannerProductOuter {
+   position: relative;
+}
+.homeBannerProductOuter::before {
+   position: absolute;
+   content: "";
+   background-image: url(/icons/border1.png);
+   background-repeat: repeat-x;
+   height: 3px;
+   left: 0;
+   right: 0;
+   top: 0;
+   z-index: 1;
+}
+.homeBannerProductOuter::after {
+   position: absolute;
+   content: "";
+   background-image: url(/icons/border2.png);
+   background-repeat: repeat-x;
+   height: 3px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+}
 /****Badge****/
 .badgeIconCol {
    position: relative;
@@ -283,6 +333,15 @@ body .mainMenu.navbar .navbar-brand img{
    background-size: contain;
    background-position: center center;
    transition: all 5s ease 0s;
+   animation: rotate infinite 15s linear;
+ }
+ @keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
  }
  .badgeIcon,
  .badgeActiveIcon {
@@ -298,7 +357,7 @@ body .mainMenu.navbar .navbar-brand img{
    opacity: 0;
  }
  .badgeIconCol:hover::before {
-   transform: rotate(180deg);
+   //transform: rotate(180deg);
  }
  .badgeIconCol:hover .badgeIcon {
    opacity: 0;
@@ -418,14 +477,15 @@ body .mainMenu.navbar .navbar-brand img{
 
 .businessInsurance table td:first-child {
    padding-left: 0;
+   padding-right: 40px;
 }
 
-.businessInsurance table td.businessInsurance-col:last-child {
+.businessInsurance table td.businessInsurance-col:nth-child(2) {
    position: relative;
    border: 0;
 }
 
-.businessInsurance table td.businessInsurance-col:last-child::after {
+.businessInsurance table td.businessInsurance-col:nth-child(2)::after {
    background-color: #0e2b72;
    content: "";
    position: absolute;
@@ -485,6 +545,11 @@ body .mainMenu.navbar .navbar-brand img{
    margin-bottom: 32px;
  }
  
+
+.smoothSwiper .swiper-wrapper {
+   transition-timing-function: linear !important;
+}
+
 /* .sc-bxivhb.bCuRNq:nth-child(even) .howDo-sliderBox{
    background-color: blue;
  }*/

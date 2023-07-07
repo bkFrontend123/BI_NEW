@@ -270,7 +270,7 @@ export default function product() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Erection All Risk Policy?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>An erection all risk (EAR) policy is an insurance plan that protects you when you're setting up machinery or equipment in a factory or office. It covers any losses or damages that happen during the installation process. If anything goes wrong, this policy helps you financially, which could slow down the installation and increase costs.</p>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>The coverage of an EAR insurance policy starts from the moment materials are unloaded at the construction site and continues until the project is finished and handed over to the client.</p>
@@ -598,8 +598,7 @@ export default function product() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

@@ -270,7 +270,7 @@ export default function product() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Contractor’s Plant and Machinery Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Contractor's plant and machinery insurance (CPM) is a specialized insurance for contractors and construction companies. It protects against damage or loss to the machinery and equipment used in construction sites and factories. It covers a wide range of both owned and hired-in equipment such as:</p>
                                     </div>
@@ -649,8 +649,7 @@ export default function product() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>

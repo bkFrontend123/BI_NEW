@@ -269,7 +269,7 @@ export default function GroupPersonalAccident_Insurance() {
                             <div id="scrollspyHeading1" className={`pt-0 ${productStyle.tabWhat}`}>
                                 <Container>
                                     <div className={`${productStyle.tabWhatHeading}`}>
-                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What is</h3>
+                                        <h3 className='title-42 font-secondary font-weight-700 text-yellow mb-0'>What Is</h3>
                                         <div className='title-28 font-black font-weight-700 text-black'>Group Personal Accident Insurance?</div>
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>A group personal accident policy, also known as GPA Insurance, is a type of insurance that helps protect you and your family financially if you have an accident that causes accidental death or disability. It compensates a policyholder in the event of accidental death, loss of limbs, eyes, permanent partial disability, and permanent total disability. No matter how big or small your group is, you can purchase a customizable group personal accident policy to meet the needs of all group members. It also offers discounts based on the number of members in your group.</p>
                                     </div>
@@ -636,8 +636,7 @@ export default function GroupPersonalAccident_Insurance() {
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
                                 <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for Startups & SMEs</h3>
-                                <h4 className='title-20 text-black font-weight-500 mt-3 mb-0'>Secure the business & stakeholders against lawsuit expenses - Legal + Settlement</h4>
+                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
