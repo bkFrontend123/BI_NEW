@@ -76,8 +76,8 @@ export default function payment() {
                                                         <Col>
                                                             <Form.Label htmlFor="existingPolicy" className={`m-0 ${form.formLabel}`}>No Auditor Qualification in the latest audited financial report</Form.Label>
                                                         </Col>
-                                                        <Col lg={4}>
-                                                            <div className='text-end'>
+                                                        <Col lg={6} xl={5}>
+                                                            <div className='text-lg-end'>
                                                                 <Form.Check
                                                                     inline
                                                                     type="radio"
@@ -96,7 +96,7 @@ export default function payment() {
                                                                     name="qualification"
                                                                     label="No"
                                                                     value="No"
-                                                                    checked={qualificationValue === 'Yes'}
+                                                                    checked={qualificationValue === 'No'}
                                                                     onChange={handleChangeQualification}
                                                                     className={`${form.formCheckRadio}`}
                                                                 />
@@ -109,8 +109,8 @@ export default function payment() {
                                                         <Col>
                                                             <Form.Label htmlFor="existingPolicy" className={`${form.formLabel}`}>No scenario of resignation of equal to or more than 3 directors in past one year?</Form.Label>
                                                         </Col>
-                                                        <Col lg={4}>
-                                                            <div className='text-end'>
+                                                        <Col lg={6} xl={5}>
+                                                            <div className='text-lg-end'>
                                                                 <Form.Check
                                                                     inline
                                                                     type="radio"

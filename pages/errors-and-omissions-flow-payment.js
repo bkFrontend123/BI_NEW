@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import Link from 'next/link'
 
 import { Container, Row, Col, Form, Button, ProgressBar, ToastContainer } from 'react-bootstrap';
+import SelectSearch from 'react-select-search';
+import 'react-select-search/style.css'
 
 import HeaderPlain from '../component/HeaderPlain'
 import FooterPlain from '../component/FooterPlain'
@@ -13,6 +15,7 @@ import form from '@/assets/css/form.module.css'
 import progress from '@/assets/css/progress.module.css'
 
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
+import RuppeeIcon from '../component/Icons/Ruppee';
 import paymentIcon from '../public/payment/bajajFinserv.png';
 
 export default function payment() {
@@ -26,15 +29,15 @@ export default function payment() {
         setBusinessDetails(!isBusinessDetails);
     };
 
-    const [qualificationValue, setQualificationValue] = useState();
-    const handleChangeQualification = event => {
-        setQualificationValue(event.target.value);
-    };
-    
-    const [resignationValue, setResignationValue] = useState();
-    const handleChangeResignation = event => {
-        setResignationValue(event.target.value);
-    };
+    const [indValue, setIndValue] = useState();
+    const indTypeOptions = [
+        {name: 'B2B Consulting', value: '1'},
+        {name: 'Enterprise Technology', value: '2'},
+        {name: 'Consumer', value: '3'},
+        {name: 'BFSI', value: '4'},
+        {name: 'Enterprise Technology', value: '5'},
+        {name: 'B2B Consulting', value: '6'},
+    ];
 
     const router = useRouter();
     const goToNextPage = () => {
@@ -64,79 +67,98 @@ export default function payment() {
                                     <div className={`${form.commonForm}`}>
                                         <div className={`${form.addtnBsnDtlsFormFirst}`}>
                                             <div className={form.frmTtl}>
-                                                <h3>Additional General Information</h3>
+                                                <h3>Please fill the below details to buy the Policy</h3>
                                             </div>
                                             <Form>
-                                                <Form.Group className="mb-4">
-                                                    <Form.Label className={`${form.formLabel}`}>Corporate office Address</Form.Label>
-                                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="" as="textarea" />
+                                                <div className={form.frmGrpTtl}>
+                                                    <h4>Previous year Turnover</h4>
+                                                </div>
+                                                <Row className='g-4 align-items-center'>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>India</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>ROW excluding USA & Canada</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>USA & Canada</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                </Row>
+                                                <div className={form.frmGrpTtl}>
+                                                    <h4>Current year Turnover</h4>
+                                                </div>
+                                                <Row className='gx-4 align-items-center'>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>India</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>ROW excluding USA & Canada</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>USA & Canada</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                </Row>
+                                                <div className={form.frmGrpTtl}>
+                                                    <h4>Estimated next year Turnover</h4>
+                                                </div>
+                                                <Row className='gx-4 align-items-center'>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>India</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>ROW excluding USA & Canada</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                    <Col>
+                                                        <Form.Group className={`mb-4 ${form.formIconGroup}`}>
+                                                            <Form.Label className={`${form.formLabel} ${form.formSmallLabel} ${form.formLabelGrey}`}>USA & Canada</Form.Label>
+                                                            <Form.Control className={`${form.formInput}`} type="text" placeholder='&nbsp;' />
+                                                            <i><RuppeeIcon width="10" height="15" /></i>
+                                                        </Form.Group>
+                                                    </Col>
+                                                </Row>
+                                                <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!indValue == '' ? 'selectedDropDiv' : null}`}>
+                                                    <SelectSearch
+                                                        options={indTypeOptions}
+                                                        name="industry"
+                                                        placeholder="Search by keyword"
+                                                        onChange={setIndValue}
+                                                        search
+                                                        value={indValue}
+                                                    />
+                                                    <label>Serving any of the Industries</label>
                                                 </Form.Group>
-                                                <div className="mb-4">
-                                                    <Row className='g-4 g-xl-5 align-items-center'>
-                                                        <Col>
-                                                            <Form.Label htmlFor="existingPolicy" className={`m-0 ${form.formLabel}`}>No Auditor Qualification in the latest audited financial report</Form.Label>
-                                                        </Col>
-                                                        <Col lg={4}>
-                                                            <div className='text-end'>
-                                                                <Form.Check
-                                                                    inline
-                                                                    type="radio"
-                                                                    id="qualification-1"
-                                                                    name="qualification"
-                                                                    label="Yes"
-                                                                    value="Yes"
-                                                                    checked={qualificationValue === 'Yes'}
-                                                                    onChange={handleChangeQualification}
-                                                                    className={`${form.formCheckRadio}`}
-                                                                />
-                                                                <Form.Check 
-                                                                    inline
-                                                                    type="radio"
-                                                                    id="qualification-2"
-                                                                    name="qualification"
-                                                                    label="No"
-                                                                    value="No"
-                                                                    checked={qualificationValue === 'Yes'}
-                                                                    onChange={handleChangeQualification}
-                                                                    className={`${form.formCheckRadio}`}
-                                                                />
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </div>
-                                                <div className="mb-4">
-                                                    <Row className='g-4 g-xl-5 align-items-center'>
-                                                        <Col>
-                                                            <Form.Label htmlFor="existingPolicy" className={`${form.formLabel}`}>No scenario of resignation of equal to or more than 3 directors in past one year?</Form.Label>
-                                                        </Col>
-                                                        <Col lg={4}>
-                                                            <div className='text-end'>
-                                                                <Form.Check
-                                                                    inline
-                                                                    type="radio"
-                                                                    id="resignation-1"
-                                                                    name="resignation"
-                                                                    label="Yes"
-                                                                    value="Yes"
-                                                                    checked={resignationValue === 'Yes'}
-                                                                    onChange={handleChangeResignation}
-                                                                    className={`${form.formCheckRadio}`}
-                                                                />
-                                                                <Form.Check 
-                                                                    inline
-                                                                    type="radio"
-                                                                    id="resignation-2"
-                                                                    name="resignation"
-                                                                    label="No"
-                                                                    value="No"
-                                                                    checked={resignationValue === 'No'}
-                                                                    onChange={handleChangeResignation}
-                                                                    className={`${form.formCheckRadio}`}
-                                                                />
-                                                            </div>
-                                                        </Col>
-                                                    </Row>
-                                                </div>
                                                 <Row className='align-items-center'>
                                                     <Col>
                                                         <div className={`${form.fromButtonDiv}`}>
@@ -160,7 +182,7 @@ export default function payment() {
                                 <Col lg="auto">
                                     <PaymentCard
                                         paymentIcon={paymentIcon}
-                                        policyName="Directors & Officers Liability Insurance"
+                                        policyName="Errors & Omissions Liability Insurance"
                                         policyCover="1.5 Crore"
                                         policyPremium="35,000"
                                         gst="1,900"
