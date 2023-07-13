@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
 // import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // import the styles
@@ -201,30 +201,39 @@ export default function GroupHealth_Insurance() {
                     <ProductBanner
                         title="Group Health Insurance"
                         description="Group health insurance is a type of insurance that covers a bunch of people together, like employees in a company or members of a group. It helps them get health insurance at a cheaper price because the risk is shared among all the people in the group. Employers also get tax benefits for providing this kind of insurance to their employees."
+                        noInsurer="true"
+                        form="false"
+                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
                         customClass="grpHlthBnr"
                     >
-                        <div className={`${form.commonForm}`}>
-                            <Form>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Company Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="Your Name" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="Your Phone Number" />
-                                </Form.Group>
-                                <Form.Group className="mb-4">
-                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="Your Work Email Address" />
-                                </Form.Group>
-                                <div className={`${form.fromButtonDiv} d-sm-flex`}>
-                                    <Button variant="primary" className='btnCommon yellowBtn' type="button">
-                                        <span className='me-2'>Buy Now</span>
-                                        <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
-                                    </Button>
-                                </div>
-                            </Form>
-                        </div>
+                        <Form>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="companyName" label="Your Company Name">
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="name" label="Your Name">
+                                    <Form.Control className={`${form.formInput}`} type="text" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="phoneNumber" label="Your Phone Number">
+                                    <Form.Control className={`${form.formInput}`} type="number" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <Form.Group className="floatFormGroup mb-4">
+                                <FloatingLabel controlId="workEmail" label="Your Work Email Address">
+                                    <Form.Control className={`${form.formInput}`} type="email" placeholder="&nbsp;" />
+                                </FloatingLabel>
+                            </Form.Group>
+                            <div className={`${form.fromButtonDiv} d-sm-flex`}>
+                                <Button variant="primary" className={`btnCommon yellowBtn ${form.formBtn}`} type="button">
+                                    <span className='me-2'>Buy Now</span>
+                                    <SubscribeArrow iconColor="primary stroke" width="21" height="16" />
+                                </Button>
+                            </div>
+                        </Form>
                     </ProductBanner>
                 </div>
                 {/* product banner end */}
