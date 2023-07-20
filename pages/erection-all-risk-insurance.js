@@ -16,6 +16,8 @@ import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 
 import ProductBanner from '../component/Product/ProductBanner'
+import TalkExpert from '../component/TalkExpert'
+import RatingCard from '../component/RatingCard'
 import SubscribeArrow from '../component/Icons/SubscribeArrow';
 import WhatsApp from '../component/Icons/WhatsApp'
 import IndustryBlock from '../component/IndustryBlock'
@@ -26,6 +28,10 @@ import Accordion from '../component/Accordion'
 
 import form from '@/assets/css/form.module.css'
 import productStyle from '@/assets/css/product.module.css'
+import talkExpert from '../component/TalkExpert/style.module.css'
+
+import productImage from '@/public/productImages/productImg3.png'
+import expertImg from '../public/himaniImg.png'
 
 export default function ErectionAllRisk_Insurance() {
     const navbarExample2Ref = useRef(null);
@@ -184,7 +190,7 @@ export default function ErectionAllRisk_Insurance() {
 
     const router = useRouter();
     const goToNextPage = () => {
-        router.push('/directors_and_officers_form');
+        router.push('/erection-all-risk-flow');
     };
     return (
         <>
@@ -200,10 +206,12 @@ export default function ErectionAllRisk_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Erection All Risk Policy"
-                        description="The erection all risk policy (EAR) covers any loss or damage when installing machinery or equipment in a factory or office. It helps protect you financially in case something goes wrong during the installation process, which can be expensive. This type of insurance is important for the construction and manufacturing industries in India, where there are risks like fire, flood, or accidental damage when building residential or commercial structures, power plants, or automobile factories."
-                        noInsurer="true"
-                        form="false"
-                        formHeading="Analyse your Business Risk. Buy the right Policy within 10 Minutes"
+                        description="The erection all risk policy (EAR) covers any loss or damage when installing machinery or equipment in a factory or office. It helps protect you financially in case something goes wrong during the installation process, which can be expensive."
+                        insuranceWorth="50 Lakhs"
+                        insuranceAmount="7,000"
+                        productImgSrc={productImage}
+                        form="true"
+                        formHeading="EAR Policy"
                         customClass="erctnBnr"
                     >
                         <Form>
@@ -237,6 +245,26 @@ export default function ErectionAllRisk_Insurance() {
                     </ProductBanner>
                 </div>
                 {/* product banner end */}
+
+                {/* product rating start */}
+                <div className={`${productStyle.productRating}`}>
+                    <Container>
+                        <div className='d-md-none mb-4'>
+                            <TalkExpert
+                                background={`${talkExpert.yellow}`}
+                                size={`${talkExpert.extraSmall}`}
+                                imgSrc={expertImg}
+                                name="Himani Doshi"
+                                designation="Insurance Expert"
+                                customClass={`mt-4 ${talkExpert.tlkExprtMobile}`}
+                            />
+                        </div>
+                        <RatingCard
+                            background="true"
+                        />
+                    </Container>
+                </div>
+                {/* product rating end */}
 
                 {/* product main start */}
                 <div className={`${productStyle.ProdMain}`}>
@@ -448,7 +476,6 @@ export default function ErectionAllRisk_Insurance() {
                         <Row>
                             <Col md={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Some Examples</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>Erection All Risk Policy Examples</h3>
                                 </div>
                             </Col>
@@ -503,7 +530,6 @@ export default function ErectionAllRisk_Insurance() {
                         <Row>
                             <Col md={8} lg={6}>
                                 <div className={`${productStyle.ProductSecLeft}`}>
-                                    <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Frequently Answered Questions</div>
                                     <h3 className={`title-42 font-secondary font-weight-700 text-black mb-0 ${productStyle.ProductSecLeftTitle}}`}>About Erection All Risk Policy</h3>
                                 </div>
                             </Col>
@@ -606,8 +632,7 @@ export default function ErectionAllRisk_Insurance() {
                     <Container>
                         <div className={`${productStyle.prodContainer}`}>
                             <div className='commonHeading text-center'>
-                                <div className='polyBox border-primary bg-blueLight mb-4 text-primary title12 text-uppercase font-weight-600'>Our Products</div>
-                                <h3 className={`title-42 font-secondary font-weight-600 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
+                                <h3 className={`title-42 font-secondary font-weight-700 text-primary mb-0 ${productStyle.ProductSecLeftTitle}}`}>Business Protection for SMEs & Startups</h3>
                             </div>
                             <div className={`${productStyle.productStartupListSec}`}>
                                 {/*<div className={`tabContainer my-4 my-lg-5 ${productStyle.productStartupTab}`}>
@@ -750,7 +775,10 @@ export default function ErectionAllRisk_Insurance() {
                     font-size: 15px;
                     line-height: 22.5px;
                 }
-
+                .title-20 {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
                 @media only screen and (max-width: 1699px) {
                     .title-42 {
                         font-size: 38px;
@@ -761,18 +789,18 @@ export default function ErectionAllRisk_Insurance() {
                         line-height: 36px;
                     }
                     .title-24 {
-                        font-size: 20px;
-                        line-height: 32px;
+                        font-size: 22px;
+                        line-height: 34px;
                     } 
                 }
                 @media only screen and (max-width: 992px) {
                     .title-42 {
-                        font-size: 28px;
-                        line-height: 40px;
-                    }
-                    .title-36 {
                         font-size: 26px;
                         line-height: 38px;
+                    }
+                    .title-36 {
+                        font-size: 28px;
+                        line-height: 34px;
                     }
                     .title-32 {
                         font-size: 26px;
