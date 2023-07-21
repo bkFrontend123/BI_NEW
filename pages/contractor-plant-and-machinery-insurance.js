@@ -206,7 +206,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Contractor’s Plant and Machinery Insurance"
-                        description="A contractor’s plant and machinery insurance policy helps protect contractors, machinery owners, or investors from potential damage to their equipment. This insurance coverage ensures that if any harm occurs to the insured machinery or plant, the policy will compensate for the losses, preventing the insured from facing unnecessary financial burdens."
+                        description="A contractor’s plant and machinery insurance policy helps protect contractors, machinery owners, or investors from potential damage to their equipment."
                         insuranceWorth="3 Crore"
                         insuranceAmount="15,000"
                         productImgSrc={productImage}
@@ -326,7 +326,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/loadersIcon1.svg' width="100" height="100" alt="Loaders" />
+                                                                <Image src='/icons/loadersIcon.svg' width="100" height="100" alt="Loaders" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Loaders</p>
                                                         </div>
@@ -350,7 +350,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                     <Col lg={4}>
                                                         <div className={`d-flex align-items-center ${productStyle.productInfoCard}`}>
                                                             <span>
-                                                                <Image src='/icons/generatorssIcon.svg' width="100" height="100" alt="Generators" />
+                                                                <Image src='/icons/generatorsIcon.svg' width="100" height="100" alt="Generators" />
                                                             </span>
                                                             <p className={`ms-3 mb-0 text-primary font-weight-600 ${productStyle.productInfoCardTitle}`}>Generatorss</p>
                                                         </div>
@@ -460,19 +460,19 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Clearance and removal of debris</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Clearance and Removal of Debris</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>In the event of a covered loss, this add-on coverage provides reimbursement for the costs incurred in removing debris resulting from the damage to insured machinery and equipment.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Transit coverage</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Transit Coverage</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage extends protection to the insured machinery and equipment during transit, including loading and unloading, between different project sites or locations.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Plant and machinery cover for physical damage</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Plant and Machinery Cover for Physical Damage</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage protects the insured contractor against accidental physical loss or damage to the insured machinery and equipment. It includes coverage for covered perils such as fire, theft, flood, vandalism, accidental damage, and more. This coverage applies to items in use or at rest, or when they are being dismantled or cleaned, or when they are subsequently erected.</div>
                                                     </div>
                                                 </Col>
@@ -506,25 +506,25 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Third-party liability</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Third-party Liability</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on coverage protects the insured contractor against legal liabilities arising from bodily injury or property damage caused to third parties due to the insured machinery and equipment's operations. It includes coverage for legal defense costs and settlement amounts.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Express freight cover</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Express Freight Cover</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on coverage compensates for the additional cost of express freight charges incurred to replace or repair insured machinery and equipment in the event of a covered loss. By providing this coverage, the policy ensures that the contractor can quickly obtain the necessary machinery or equipment to resume work and minimize project disruptions.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Escalation of cost</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Escalation of Cost</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on cover ensures that in the event of a covered loss, the insured contractor is reimbursed for the increased expenses of repairing or replacing damaged machinery or equipment. As a result of inflation or price changes on the market, project costs may escalate.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Air freight</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Air Freight</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on coverage compensates the cost of transporting insured machinery and equipment by air in the event of a covered loss. A good example of this coverage is when time is of utmost importance and the quickest way to minimize delays is to transport the machinery or equipment by air.</div>
                                                     </div>
                                                 </Col>
@@ -561,7 +561,7 @@ export default function ContractorPlantAndMachinery_Insurance() {
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
                                                     <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Damaged Machinery Claim at BMRCL Site</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Rudra, one of the Tunnel Boring Machines(TBMs) out of nine TBMs deployed by Bangalore Metro Rail Co. Ltd. faced unusual hurdles. A huge pile of garbage caught the cutter head of the machine, preventing it from moving because the area where the machine was stuck used to be a quarry land that was turned into a landfill in the 1980s. Luckily, 6 months later, the machine achieved a breakthrough and tunneled toward Langford Metro station. However, in such cases, there is a high probability that the machine can have severe damage. Not only this there could be multiple instances such as landslides, earthquakes, or fire incidents which can also lead to damage to the heavy machinery used in construction projects. Here, the Contractor's Plant & Machinery (CPM) Insurance Policy comes to the rescue of the contractor. The policy covers the cost of repairs or replacement of the damaged machinery.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Bangalore Metro Rail Corporation Limited (BMRCL) deployed nine Tunnel Boring Machines (TBM) last year to dig tunnels between Dairy Circle and Nagawara. Rudra, one of the Tunnel Boring Machines (TBMs) faced a huge pile of garbage which caught the cutter head of the machine, preventing it from moving. Luckily, 6 months later, the machine achieved a breakthrough and tunneled towards Langford Metro station.However, in such cases, there is a high probability that the machine can have severe damage. Not only this, there could be multiple instances such as landslides, earthquakes, or fire incidents which can also lead to damage to the heavy machinery used in construction projects. Here, the Contractor's Plant & Machinery (CPM) Insurance Policy comes to the rescue of the contractor. The policy covers the cost of repairs or replacement of the damaged machinery.</div>
                                                     </div>
                                                 </div>
                                             </Col>

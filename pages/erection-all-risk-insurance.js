@@ -206,7 +206,7 @@ export default function ErectionAllRisk_Insurance() {
                 <div className='bg-yellowLight'>
                     <ProductBanner
                         title="Erection All Risk Policy"
-                        description="The erection all risk policy (EAR) covers any loss or damage when installing machinery or equipment in a factory or office. It helps protect you financially in case something goes wrong during the installation process, which can be expensive."
+                        description="The erection all risk policy (EAR) covers any loss or damage when installing machinery or equipment in a factory or office."
                         insuranceWorth="50 Lakhs"
                         insuranceAmount="7,000"
                         productImgSrc={productImage}
@@ -355,9 +355,9 @@ export default function ErectionAllRisk_Insurance() {
                                         <p className='title-20 mb-0 text-black font-weight-500 mt-4'>Contractors and employers can take out the policy jointly and individually. Any of the following parties involved in the construction process may be covered:</p>
                                         <ul className={`text-black title-20 mt-4 ${productStyle.listData}`}>
                                             <li>General contractors</li>
-                                            <li>Subcontractors</li>
-                                            <li>Suppliers and manufacturers of equipment</li>
-                                            <li>The purchaser or owner of the equipment</li>
+                                            <li>GSubcontractors</li>
+                                            <li>GSuppliers and manufacturers of equipment</li>
+                                            <li>GThe purchaser or owner of the equipment</li>
                                         </ul>
                                     </div>
                                 </Container>
@@ -387,7 +387,7 @@ export default function ErectionAllRisk_Insurance() {
                                             </span>
                                             Coverages & Exclusions in
                                         </h3>
-                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'> Erection All Risk Policy</div>
+                                        <div className='title-28 font-black font-weight-700 text-black font-secondary'>Erection All Risk Policy</div>
                                     </div>
                                     <div className={`tabContainer my-4 my-lg-5 ${productStyle.coverageTab}`}>
                                         <span id='tabBtn' className="tabLink title-22 transition-all active">Coverages</span>
@@ -403,43 +403,43 @@ export default function ErectionAllRisk_Insurance() {
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Storms, floods, cyclones, earthquakes, and allied perils</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Storms, Floods, Cyclones, Earthquakes, and Allied Perils</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It protects losses or damages that occur because of these covered perils during the installation period. It includes damage to the construction site, materials, equipment, or structures resulting from storms, overflowing rivers, heavy rainfall, or other flood-related events, cyclonic events, tremors, other earthquake-related factors, and other related perils.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Third-party liability</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Third-party Liability</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This add-on cover provides protection for legal liability related to accidental damage or loss to the property of a third person, arising out of the erection work of the insured. It also covers the legal liability for non-fatal and fatal injuries caused to a third person due to the work.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Fire, explosion, lightning, and aircraft damage</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Fire, Explosion, Lightning, and Aircraft Damage</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover refers to the protection provided for losses or damages that occur as a result of these specific perils during the construction or installation period. It includes damage to the construction site, materials, equipment, and structures due to fire-related incidents and explosions. This may be caused by factors such as gas leaks and chemical reactions, damage due to lightning-induced fires, electrical surges, and incidents where aircraft collide with the construction site, equipment, or structures, causing damage or destruction.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Negligence and human errors</div>
-                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>EAR insurance policies often include coverage for loss originating from negligence and errors in the design, planning, or supervision of the erection work.  An EAR insurance policy may also cover liability claims in cases of negligence or human error resulting in third-party injuries or property damage. This includes legal defence costs and any settlements or judgments against the insured party due to their negligence or errors.</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Negligence and Human Errors</div>
+                                                        <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>EAR insurance policies often include coverage for loss originating from negligence and errors in the design, planning, or supervision of the erection work. An EAR insurance policy may also cover liability claims in cases of negligence or human error resulting in third-party injuries or property damage. This includes legal defence costs and any settlements or judgments against the insured party due to their negligence or errors.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Burglary and theft</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Burglary and Theft</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage addresses the risk of theft or burglary-related incidents that may occur at the construction site or involve the insured property. It applies to theft incidents involving construction materials, equipment, tools, machinery, or other valuable items related to the project. It also provides coverage for losses or damages resulting from burglaries, which involve unauthorized entry or forced entry into locked premises or storage areas.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Faults in the erection of a building</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Faults in the Erection of a Building</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage is designed to address issues related to construction defects, workmanship errors, or faulty installation during the project. It includes issues such as faulty design, improper construction methods, inadequate materials, or substandard workmanship that result in structural failures or defects. It may also include errors in measurements, installation, assembly, or other issues that may lead to defects or failures.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Riot & strike</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Riot & Strike</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage covers damage to the construction site, materials, equipment, or structures caused by riots, demonstrations, protests, or other forms of public disturbance. It also includes damage resulting from strikes, lockouts, labor disputes, or other related events that may affect the construction project.</div>
                                                     </div>
                                                 </Col>
@@ -491,9 +491,9 @@ export default function ErectionAllRisk_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim for Machinery Collapse During Installation</div>
                                                     <div className='mb-4'>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>During the installation process of a large industrial machine at a factory, an unfortunate incident occurs where the machinery collapses, causing damage to the surrounding property. If the contractor had an EAR Insurance policy, it would cover the damage caused to the surrounding property, such as adjacent buildings, infrastructure, or any other assets affected by the collapse of the machinery. <span className='d-none d-lg-block'></span>If the contractor has obtained an EAR Insurance policy to protect its project from various risks, including third-party liability, the policy would cover the financial liability of the insured contractor. It would cover the damage caused to the own & surrounding property, such as adjacent buildings, infrastructure, or any other assets affected by the collapse of the machinery.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Bangalore Metro Rail Corporation Limited (BMRCL) deployed nine Tunnel Boring Machines (TBM) last year to dig tunnels between Dairy Circle and Nagawara. Rudra, one of the Tunnel Boring Machines (TBMs) faced a huge pile of garbage which caught the cutter head of the machine, preventing it from moving. Luckily, 6 months later, the machine achieved a breakthrough and tunneled towards Langford Metro station.However, in such cases, there is a high probability that the machine can have severe damage. Not only this, there could be multiple instances such as landslides, earthquakes, or fire incidents which can also lead to damage to the heavy machinery used in construction projects. Here, the Contractor's Plant & Machinery (CPM) Insurance Policy comes to the rescue of the contractor. The policy covers the cost of repairs or replacement of the damaged machinery.</div>
                                                     </div>
                                                 </div>
                                             </Col>
@@ -506,7 +506,7 @@ export default function ErectionAllRisk_Insurance() {
                                         <Row className='g-4'>
                                             <Col lg={7}>
                                                 <div className={`${productStyle.inciTabPanelBoxLeft}`}>
-                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Lorem Ipsum</div>
+                                                    <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Claim for Faulty Electrical System Connection</div>
                                                     <div className='mb-4'>
                                                         <div className='title-18 font-weight-500 text-black m-0'>Let's consider a construction project where a contractor is responsible for installing a new electrical system in a commercial building. During the installation process, a fire breaks out due to a faulty connection, causing significant damage to the building and the electrical equipment being installed. If the contractor has obtained an EAR Insurance policy to protect its project from various risks, including fire damage, the policy would cover the damage caused by the fire to the building and the electrical equipment being installed. It would pay for the cost of repairing or replacing the damaged property, including the building's structure, electrical wiring, panels, switches, and other related components.</div>
                                                     </div>

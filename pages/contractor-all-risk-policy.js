@@ -344,7 +344,7 @@ export default function ContractorAllRisk_Policy() {
                                                 <Col lg={4}>
                                                     <div className={`${productStyle.lightYellowSecCardCol}`}>
                                                         <div className={`${productStyle.lightYellowSecCardBox}`}>
-                                                            <p className='title-18 font-weight-500 text-black m-0'>Loss, damage, or destruction of property incurred due to any cause other than those excluded in the policy is covered.</p>
+                                                            <p className='title-18 font-weight-500 text-black m-0'>Loss, damage,  or destruction of property incurred due to any cause other than those excluded in the policy is covered.</p>
                                                         </div>
                                                     </div>
                                                 </Col>
@@ -417,25 +417,25 @@ export default function ContractorAllRisk_Policy() {
                                             <Row className='justify-content-between g-4'>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Construction material damage</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Construction Material Damage</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>It provides protection from physical loss or damage to construction materials and equipment used in the construction process due to a covered peril. It may also cover the cost of demolition and removal of damaged materials and cleanup of debris.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Third-party liability</div>
+                                                        <div className='title-26 text-primary font-weight-600 font-secondry'>Third-party Liability</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>Under this policy, the insured is protected from legal liability for accidental damage or loss to a third party's property arising from construction work. It also covers the legal liability for non-fatal and fatal injuries caused to a third person due to the construction of the property</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Negligence and human errors</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Negligence and Human Errors</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>CAR insurance policies often include coverage for loss originating from negligence and errors in the design, planning, or supervision of the construction project. If negligence or human errors result in third-party injuries or property damage, a CAR insurance policy may provide coverage for liability claims as well. This includes legal defense costs and any settlements or judgments against the insured party due to their negligence or errors.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Water damage</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Water Damage</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>A CAR insurance policy typically covers accidental water damage that occurs during the construction process. The policy may provide coverage for the resulting damage to the insured property or construction materials. It may also cover loss or damage arising from the entry of water into the construction site or the insured property due to heavy rainfall, storms, or other external factors.</div>
                                                     </div>
                                                 </Col>
@@ -447,23 +447,33 @@ export default function ContractorAllRisk_Policy() {
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Faults in construction</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Faults in Construction</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This coverage can be provided as an extension or add-on cover. If a fault occurs due to design or engineering errors, resulting in damage or loss, a CAR insurance policy may provide coverage.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Fire, explosion, lightning, and aircraft damage</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Fire, Explosion, Lightning, and Aircraft Damage</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>This cover refers to the protection provided for losses or damage that occur at the construction site, because of these specific perils. It includes damage to the construction site, materials, equipment, and structures due to fire-related incidents and explosions. This may be caused by factors such as gas leaks and chemical reactions, damage due to lightning-induced fires, electrical surges, and incidents where aircraft collide with the construction site, equipment, or structures, causing damage or destruction. The policy will cover the cost of repairing or replacing the damaged property.</div>
                                                     </div>
                                                 </Col>
                                                 <Col lg={5}>
                                                     <div className={`${productStyle.coverageTabPanelCard}`}>
-                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Storms, floods, cyclones, earthquakes, and allied perils</div>
+                                                        <div className='title-26 text-primary font-weight-600 mb-2 font-secondry'>Storms, Floods, Cyclones, Earthquakes, and Allied Perils</div>
                                                         <div className={`title-18 text-black ${productStyle.coverageTabPanelCardTitle}`}>A CAR insurance policy generally covers losses or damages to the construction site, materials, equipment, or structures resulting from storms, overflowing rivers, heavy rainfall, or other flood-related events, cyclonic events, tremors, other earthquake-related factors, and other related perils. It may also provide coverage for the cost of repairs, reconstruction, or replacement necessitated by the covered perils mentioned above.</div>
                                                     </div>
                                                 </Col>
                                             </Row>
+                                            <div class="title-32 font-secondary font-weight-600 text-yellow mb-4 mt-4 mt-xxl-5">Add-on Coverage</div>
+                                            <ul className={`text-black title-20 ${productStyle.listData}`}>
+                                                <li>Fire and allied perils</li>
+                                                <li>Collapse</li>
+                                                <li>Earthquake, shock, and fire</li>
+                                                <li>Faults in construction</li>
+                                                <li>Storms, floods, cyclones, and tempests</li>
+                                                <li>Negligence and human errors</li>
+                                                <li>Water damage</li>
+                                            </ul>
                                         </div>
                                         <div data-tab className="place-content-center">
                                             <Row>
@@ -478,6 +488,7 @@ export default function ContractorAllRisk_Policy() {
                                                 <li>Defective material or bad workmanship</li>
                                                 <li>Contractual liabilities</li>
                                                 <li>Normal wear and tear</li>
+                                                <li>Loss or damage due to faulty design</li>
                                                 <li>Damage caused by terrorism</li>
                                             </ul>
                                         </div>
@@ -501,11 +512,7 @@ export default function ContractorAllRisk_Policy() {
                         </Row>
                         <Row>
                             <Col>
-                                <div className={`tabContainer my-4 my-lg-5 ${productStyle.inciTab}`}>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all active">Incident 1</span>
-                                    <span id='inciTabBtn' className="tabLink title-22 transition-all">Incident 2</span>
-                                </div>
-                                <div className={`pt-1 overflow-hidden ${productStyle.inciTabPanel}`}>
+                                <div className={`mt-4 mt-lg-5 overflow-hidden ${productStyle.inciTabPanel}`}>
                                     <div data-incitab className={`${productStyle.inciTabPanelBox}`}>
                                         <Row className='g-4'>
                                             <Col lg={7}>
@@ -513,7 +520,7 @@ export default function ContractorAllRisk_Policy() {
                                                     <div className='title-32 font-secondary font-weight-600 text-yellow mb-4'>Repairing Cost Claim for Flood Damaged Property</div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Incident</div>
-                                                        <div className='title-18 font-weight-500 text-black m-0'>Let us suppose a construction company has undertaken a project to build a residential complex. A flood occurs during the construction phase and the floodwaters have caused significant damage to the construction site, including partially built structures, materials, equipment, and other property involved in the project.</div>
+                                                        <div className='title-18 font-weight-500 text-black m-0'>Let us suppose a construction company has undertaken a project to build a residential complex.  A flood occurs during the construction phase and the floodwaters have caused significant damage to the construction site, including partially built structures, materials, equipment, and other property involved in the project.</div>
                                                     </div>
                                                     <div className='mb-4'>
                                                         <div className='title-26 font-weight-600 text-black m-0'>Resolution</div>
