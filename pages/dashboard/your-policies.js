@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Form} from 'react-bootstrap';
+import SelectSearch from 'react-select-search';
+import 'react-select-search/style.css'
 
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
+import FilterDropdownCard from '@/component/BIDashboard/DashboardElements/FilterDropdown'
 import PolicyCardItem from "@/component/BIDashboard/DashboardElements/PolicyCard";
 import PremiumFieldItem from '@/component/BIDashboard/DashboardElements/PremiumField';
 import LinkItem from '@/component/BIDashboard/DashboardElements/LinkItem';
@@ -24,6 +27,18 @@ import tataAIG_logo from '@/public/policyLogos/tataAIG_logo.png'
 
 export default function YourPolicies() {
 
+  const [filterStatusValue, setFilterStatusValue] = useState(1);
+  const filterStatusOptions = [
+      {name: 'Active', value: '1'},
+      {name: 'Inactive', value: '2'},
+  ];
+
+  const [filterYearValue, setFilterYearValue] = useState(3);
+  const filterYearOptions = [
+      {name: '2021', value: '1'},
+      {name: '2022', value: '2'},
+      {name: '2023', value: '3'},
+  ];
   return (
     <>
       <Head>
@@ -32,14 +47,39 @@ export default function YourPolicies() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard>
-        <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
+        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
               title="Your Policies"
             />
           </Col>
           <Col md="auto">
-            
+            <FilterDropdownCard
+              title="View"
+            >
+              <Form.Group className={`selectDropDiv selectDropFilterDiv ${!filterStatusValue == '' ? 'selectedDropDiv' : null}`}>
+                <SelectSearch
+                  options={filterStatusOptions}
+                  name="filterStatus"
+                  placeholder="&nbsp;"
+                  onChange={setFilterStatusValue}
+                  value={filterStatusValue}
+                />
+              </Form.Group>
+            </FilterDropdownCard>
+            <FilterDropdownCard
+              title="Year"
+            >
+              <Form.Group className={`selectDropDiv selectDropFilterDiv ${!filterYearValue == '' ? 'selectedDropDiv' : null}`}>
+                <SelectSearch
+                  options={filterYearOptions}
+                  name="filterYear"
+                  placeholder="&nbsp;"
+                  onChange={setFilterYearValue}
+                  value={filterYearValue}
+                />
+              </Form.Group>
+            </FilterDropdownCard>
           </Col>
         </Row>
         

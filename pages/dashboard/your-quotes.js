@@ -10,6 +10,8 @@ import 'react-select-search/style.css'
 
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
+import FilterButton from '@/component/BIDashboard/DashboardElements/FilterButton'
+import FilterDropdown from '@/component/BIDashboard/DashboardElements/FilterDropdown'
 import QuoteCardItem from "@/component/BIDashboard/DashboardElements/QuoteCard";
 import PremiumFieldItem from '@/component/BIDashboard/DashboardElements/PremiumField';
 import LinkItem from '@/component/BIDashboard/DashboardElements/LinkItem';
@@ -22,6 +24,13 @@ import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
 
 export default function YourQuotes() {
+
+  const [filterYearValue, setFilterYearValue] = useState(3);
+  const filterYearOptions = [
+      {name: '2021', value: '1'},
+      {name: '2022', value: '2'},
+      {name: '2023', value: '3'},
+  ];
 
   const [sumInsuredValue, setSumInsuredValue] = useState();
   const sumInsuredOptions = [
@@ -45,14 +54,30 @@ export default function YourQuotes() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard>
-        <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
+        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
               title="Resume Quotes"
             />
           </Col>
           <Col md="auto">
-            
+            <FilterButton
+              title="Add New Quote +"
+              customClass="me-3"
+            />
+            <FilterDropdown
+              title="Year"
+            >
+              <Form.Group className={`selectDropDiv selectDropFilterDiv ${!filterYearValue == '' ? 'selectedDropDiv' : null}`}>
+                <SelectSearch
+                  options={filterYearOptions}
+                  name="filterYear"
+                  placeholder="&nbsp;"
+                  onChange={setFilterYearValue}
+                  value={filterYearValue}
+                />
+              </Form.Group>
+            </FilterDropdown>
           </Col>
         </Row>
         

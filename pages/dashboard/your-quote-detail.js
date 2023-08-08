@@ -48,7 +48,7 @@ export default function YourQuoteDetail() {
       <DashboardCard>
         <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
-            <div className='d-md-flex align-items-center'>
+            <div className='d-flex align-items-center'>
               <DashboardHeadingItem
                 title="Resume quotes"
               />

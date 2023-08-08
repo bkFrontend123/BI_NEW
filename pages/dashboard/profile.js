@@ -20,7 +20,7 @@ export default function Profile() {
         <link rel="canonical" href="" />
       </Head>
       <DashboardCard>
-        <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
+        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
               title="Profile"
