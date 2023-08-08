@@ -19,10 +19,14 @@ export default function CoverageCard(props) {
   return (
     <>
       <div className={`${style.shopCovrgCol}`}>
-        <div className={`${style.shopCovrgTtl}`}>
-          <div className={`d-md-none me-2 ${style.shopCovrgArrow} ${!isActive ? style.active : ''}`} onClick={handleClick}><DropdownArrowIcon /></div>
-          <span><i><Image src={icon} width={70} height={70} alt={title} /></i></span>
-          <h3 onClick={handleClick}>{title}</h3>
+        <div className={`d-flex gap-2 align-items-start justify-content-between ${style.shopCovrgTtl}`} onClick={handleClick}>
+          <div className={`d-flex align-items-start`}>
+            <div className={`d-md-none me-2 ${style.shopCovrgArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></div>
+            <div className={`d-flex d-md-block gap-2 align-items-start`}>
+              <span><i><Image src={icon} width={70} height={70} alt={title} /></i></span>
+              <h3 onClick={handleClick}>{title}</h3>
+            </div>
+          </div>
           <div className={`${style.shopActnBtn}`}>
             {children}
           </div>

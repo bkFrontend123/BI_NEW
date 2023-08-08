@@ -15,11 +15,15 @@ export default function QuoteCard(props) {
   return (
     <>
       <div className={`${style.quoteCardCol}`}>
-        <div className={`d-flex d-md-block align-items-center ${style.quoteCardTtl}`}>
-          <span className={`d-md-none me-2 ${style.quoteCardArrow} ${!isActive ? style.active : ''}`} onClick={handleClick}><DropdownArrowIcon /></span>
-          <h3>{title}</h3>
-          <h5>Last updated: {dateTime}</h5>
-          <div className={`${style.quoteStatus} ${statusType == 'progress' ? style.progressStatus : ''} ${statusType == 'offline' ? style.offlineStatus : ''}`}>Quote status:
+        <div className={`d-flex gap-2 align-items-start justify-content-between ${style.quoteCardTtl}`} onClick={handleClick}>
+          <div className={`d-flex align-items-start`}>
+            <span className={`d-md-none me-2 ${style.quoteCardArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></span>
+            <div>
+              <h3>{title}</h3>
+              <h5>Last updated: {dateTime}</h5>
+            </div>
+          </div>
+          <div className={`${style.quoteStatus} ${statusType == 'progress' ? style.progressStatus : ''} ${statusType == 'offline' ? style.offlineStatus : ''}`}><i className="d-none d-md-inline-block">Quote status:</i>
             {statusType === 'progress' ? (
               <span>In Progress</span>
             ):(

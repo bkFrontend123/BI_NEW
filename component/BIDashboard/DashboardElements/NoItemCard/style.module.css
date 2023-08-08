@@ -18,10 +18,10 @@
 
 @media (max-width:767px) {
     .noItemDiv {
-        min-height: 200px;
+        min-height: 180px;
     }
 
     .noItemDiv h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 }

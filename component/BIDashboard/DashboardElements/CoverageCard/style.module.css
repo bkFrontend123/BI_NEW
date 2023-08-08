@@ -7,19 +7,18 @@
 }
 .shopCovrgTtl {
   position: relative;
-  padding-right: 45px;
 }
-.shopCovrgTtl > .shopCovrgArrow {
+.shopCovrgTtl .shopCovrgArrow {
   width: 10px;
   position: relative;
   z-index: 2;
   top: -1px;
   transition: all 0.3s ease;
 }
-.shopCovrgTtl > .shopCovrgArrow.active {
+.shopCovrgTtl .shopCovrgArrow.active {
   transform: rotate(90deg);
 }
-.shopCovrgTtl > span i {
+.shopCovrgTtl span i {
     width: 70px;
     height: 70px;
     display: flex;
@@ -31,11 +30,6 @@
   color: var(--black);
   font-weight: 500;
   margin: 0;
-}
-.shopActnBtn {
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 .mblShopCovrgInfo {
   margin-top: 12px;
@@ -72,19 +66,19 @@
   .shopCovrgCol {
     padding: 16px;
   }
-  .shopCovrgTtl i {
-    width: 32px;
-    height: 32px;
-    margin-bottom: 12px;
+  .shopCovrgTtl span i {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0;
   }
   .shopCovrgTtl span img {
-    width: 32px;
-    max-width: 27px;
+    width: 36px;
+    height: 36px;
   }
   .shopCovrgTtl h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 22px;
   }
   .shopActnBtn a svg {
     width: 28px;

@@ -50,4 +50,16 @@
     .text br {
         display: none;
     }
+    
+    .font18 {
+        font-size: 16px;
+    }
+    
+    .font20 {
+        font-size: 18px;
+    }
+    
+    .font24 {
+        font-size: 22px;
+    }
 }

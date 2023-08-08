@@ -1,6 +1,9 @@
 .selectDropDiv {
     position: relative;
 }
+.selectDropFilterDiv.selectDropDiv {
+    display: inline-block;
+}
 .selectDropDiv label {
     background: var(--whiteBg);
     position: absolute;
@@ -17,6 +20,10 @@
     top: 16px;
     font-size: 15px;
 }
+.selectDropFilterDiv.selectDropDiv label {
+    top: 16px;
+    font-size: 15px;
+}
 .selectDropDiv .select-search-has-focus ~ label,
 .selectDropDiv.selectedDropDiv label {
     transform: translateY(-30px);
@@ -24,6 +31,10 @@
 }
 .selectDropDivSmall.selectDropDiv .select-search-has-focus ~ label,
 .selectDropDivSmall.selectDropDiv.selectedDropDiv label {
+    transform: translateY(-27px);
+}
+.selectDropFilterDiv.selectDropDiv .select-search-has-focus ~ label,
+.selectDropFilterDiv.selectDropDiv.selectedDropDiv label {
     transform: translateY(-27px);
 }
 .selectDropDiv .select-search-container {
@@ -45,6 +56,10 @@
     z-index: 2;
 }
 .selectDropDivSmall.searchDropDiv .select-search-value::before {
+    top: 20px;
+    left: 14px;
+}
+.selectDropFilterDiv.searchDropDiv .select-search-value::before {
     top: 20px;
     left: 14px;
 }
@@ -80,6 +95,14 @@
     top: 15px;
     right: 12px;
 }
+.selectDropFilterDiv.selectDropDiv .select-search-value::after {
+    top: 13px;
+    right: 15px;
+}
+.selectDropFilterDiv.selectDropDiv .select-search-has-focus .select-search-value::after {
+    top: 10px;
+    right: 12px;
+}
 .selectDropDiv .select-search-input {
     background-color: var(--whiteBg);
     font-size: 16px;
@@ -98,8 +121,15 @@
     font-size: 15px;
     height: 53px;
 }
+.selectDropFilterDiv.selectDropDiv .select-search-input {
+    background-color: transparent;
+    font-size: 15px;
+    height: 44px;
+    max-width: 140px;
+}
 .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
-.selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input {
+.selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
+.selectDropFilterDiv.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input {
     padding-left: 20px;
 }
 .searchDropDiv.selectDropDiv .select-search-input,
@@ -107,7 +137,9 @@
     padding-left: 40px;
 }
 .selectDropDivSmall.searchDropDiv.selectDropDiv .select-search-input,
-.selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input  {
+.selectDropDivSmall.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input,
+.selectDropFilterDiv.searchDropDiv.selectDropDiv .select-search-input,
+.selectDropFilterDiv.searchDropDiv.selectDropDiv.selectedDropDiv .select-search-has-focus .select-search-input  {
     padding-left: 36px;
 }
 .tooltipDiv.selectDropDiv .select-search-input {
@@ -140,14 +172,14 @@
     border-color: var(--vt-c-blue);
 }
 .selectDropDiv .select-search-container .select-search-select {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    left: 0;
-    border-radius: 0;
-    display: none;
-    top: 62px;
-    border-radius: 0;
+    border-radius: 0 !important;
+    top: 60px;
+}
+.selectDropDivSmall.selectDropDiv .select-search-container .select-search-select {
+    top: 52px !important;
+}
+.selectDropFilterDiv.selectDropDiv .select-search-container .select-search-select {
+    top: 43px !important;
 }
 .select-search-container.select-search-has-focus .select-search-select {
     display: block !important;

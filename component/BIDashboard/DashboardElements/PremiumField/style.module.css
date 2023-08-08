@@ -73,20 +73,18 @@
 
 @media only screen and (max-width:767px) {
     .premiumField {
-        padding: 12.5px 16px;
-        border-radius: 12px;
-    }
-
-    .premiumField i {
-        margin-right: 12px;
-        padding-right: 12px;
-    }
-
-    .premiumField i svg {
-        width: 12px;
+        padding: 10px 16px;
     }
 
     .premiumField span {
-        font-size: 22px;
+        font-size: 18px;
+    }
+
+    .premiumField i {
+        margin-right: 10px;
+    }
+
+    .premiumField i svg {
+        width: 10px;
     }
 }

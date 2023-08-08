@@ -46,7 +46,11 @@
     color: var(--black);
     font-weight: 500;
     vertical-align: middle;
-    margin-left: 80px;
+    margin-left: 24px;
+}
+
+.policyStatus i {
+    font-style: normal;
 }
 
 .policyStatus span {
@@ -56,6 +60,7 @@
     display: inline-block;
     padding: 0 12px;
     margin-left: 4px;
+    white-space: nowrap;
 }
 
 .pendingStatus span {
@@ -73,17 +78,11 @@
     color: var(--statusGreenColor);
 }
 
-.policyLogo {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
 .policyLogo .policyLogoIcon {
     max-height: 100%;
     max-width: 100%;
     width: auto;
-    height: 50px;
+    height: 40px;
 }
 
 .policyCardList {
@@ -156,7 +155,7 @@
 
 @media (max-width:767px) {
     .policyCardCol {
-        padding: 16px;
+        padding: 12px;
     }
 
     .mblPolicyCardInfo {
@@ -168,11 +167,26 @@
     }
     
     .policyCardTtl h3 {
-        font-size: 18px;
-        font-family: var(--GalanoGrotesqueMedium);
-        line-height: 24px;
+        font-size: 16px;
+        line-height: 22px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .policyCardTtl h5 {
+        font-size: 13px;
+        margin: 3px 0 0;
+    }
+
+    .policyStatus {
+        font-size: 12px;
+    }
+    
+    .policyStatus span {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 6px;
+        margin: 0;
     }
 }

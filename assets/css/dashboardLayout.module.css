@@ -6,7 +6,7 @@
 
 .dashboardMobileHeader {
     background-color: var(--whiteBg);
-    padding: 16px;
+    padding: 10px 16px;
     border-bottom: 1px solid #CCC;
     position: fixed;
     left: 0;
@@ -566,7 +566,7 @@
 
 @media (max-width:767px) {
     .dashboardMainCard {
-        padding: 110px 16px 40px 16px;
+        padding: 96px 16px 40px 16px;
     }
 
     .dashboardOuterSmall .dashSidebar {
