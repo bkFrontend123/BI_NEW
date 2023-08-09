@@ -8,11 +8,17 @@
 }
 
 .fltrDropCard > span {
-    font-size: 17px;
+    font-size: 16px;
     color: var(--black);
     font-weight: 500;
     display: inline-block;
     margin-right: 0.8rem;
+}
+
+@media (max-width:1699px) {
+    .fltrDropCard > span {
+        font-size: 15px;
+    }
 }
 
 @media (max-width:767px) {

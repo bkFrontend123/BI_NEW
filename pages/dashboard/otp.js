@@ -23,7 +23,7 @@ export default function OTP() {
 
   const goToSignupPage = () => {
     router.push('/');
-};
+  };
   
   return (
     <>
@@ -56,8 +56,9 @@ export default function OTP() {
               </Col>
               <Col md>
                 <LinkItem
-                  title="Email Policy"
-                  href="javascript:void(0);"
+                  title="Change email"
+                  href="/dashboard/login"
+                  center="true"
                 />
               </Col>
             </Row>

@@ -3,6 +3,9 @@
     color: var(--vt-c-blueSky);
     display: flex;
     align-items: center;
+}
+
+.linkBtnCenter {
     justify-content: center;
 }
 

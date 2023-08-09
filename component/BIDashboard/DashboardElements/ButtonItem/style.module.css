@@ -12,7 +12,7 @@
     border: 0;
     font-size: 16px;
     font-weight: 500;
-    line-height: 52px;
+    line-height: 50px;
     color: var(--color-text);
     transition: all 0.4s ease 0s;
     margin: 0 6px;
@@ -137,14 +137,14 @@
     background: var(--whiteBg);
     border: 1px solid var(--vt-c-blueSky);
     color: var(--vt-c-blueSky);
-    line-height: 46px;
+    line-height: 48.4px;
 }
 
 .btnYellowBorder.btnCommon {
     background: var(--whiteBg);
     border: 1px solid var(--vt-c-yellow);
     color: var(--vt-c-yellow);
-    line-height: 46px;
+    line-height: 48.4px;
     white-space: nowrap;
 }
 
@@ -225,7 +225,15 @@
     .btnCommon {
         padding: 0 20px !important;
         font-size: 15px;
-        line-height: 50px;
+        line-height: 48px;
+    }
+
+    .btnActiveBorder.btnCommon {
+        line-height: 46.4px;
+    }
+    
+    .btnYellowBorder.btnCommon {
+        line-height: 46.4px;
     }
 
     .btnCommon.btnBig {
@@ -239,6 +247,16 @@
     .btnBig.btnIcon.btnCommon {
         width: 52px;
         padding: 0 !important;
+    }
+
+    .minWidth.btnCommon {
+        min-width: 140px;
+    }
+    .minWidth2.btnCommon {
+        min-width: 160px;
+    }
+    .minWidth3.btnCommon {
+        min-width: 180px;
     }
 }
 
