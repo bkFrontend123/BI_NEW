@@ -66,7 +66,7 @@ export default function DashboardSidebar(props) {
        <SidebarLinkItem
           title="Logout"
           icon={<LogoutIcon/>}
-          href="/"
+          href="/dashboard/login"
         />
       </div>
     </>
