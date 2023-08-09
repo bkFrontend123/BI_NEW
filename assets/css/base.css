@@ -127,6 +127,11 @@ textarea:focus {
   box-shadow: none !important;
 }
 
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  border-color: #dc3545 !important;
+}
+
 body .bg-primary {
   background-color: var(--vt-c-blue) !important;
   background: var(--vt-c-blue) !important;
@@ -608,8 +613,9 @@ p {
   font-family: 'Poppins', sans-serif;
   letter-spacing: -0.72px;
 }
-h1.font-secondary {
-  letter-spacing: -0.72px;
+h1.font-secondary,
+h2.font-secondary {
+  letter-spacing: -1.28px;
 }
 
 .font-light {

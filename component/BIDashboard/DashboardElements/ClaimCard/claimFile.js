@@ -1,13 +1,12 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
 
+import ClaimCardItem from "@/component/BIDashboard/DashboardElements/ClaimCard";
 import ButtonItem from '@/component/BIDashboard/DashboardElements/ButtonItem';
 import ClaimFileModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimFileModal'
 import ClaimFileThankModal from '@/component/BIDashboard/DashboardElements/Modal/ClaimFileThankModal'
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
-
-import style from './style.module.css'
 
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
@@ -28,22 +27,19 @@ export default function ClaimFile(props) {
 
   return (
     <>
-      <div className={`${style.claimNoCardCol}`}>
-        <div>
-          <h3>No claims found</h3>
-          <div className={`${style.claimNoCardBtn}`}>
-            <ButtonItem
-              title="File a new claim"
-              type="button"
-              iconPosition="right"
-              customClass={`m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-              onClick={handleShowClaimFile}
-            >
-              <ArrowPrimaryIcon />
-            </ButtonItem>
-          </div>
-        </div>
-      </div>
+      <ClaimCardItem
+        title="No claims found"
+      >
+        <ButtonItem
+          title="File a new claim"
+          type="button"
+          iconPosition="right"
+          customClass={`m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+          onClick={handleShowClaimFile}
+        >
+          <ArrowPrimaryIcon />
+        </ButtonItem>
+      </ClaimCardItem>
       <ClaimFileModal
         show={showClaimFile}
         handleClose={handleCloseClaimFile}

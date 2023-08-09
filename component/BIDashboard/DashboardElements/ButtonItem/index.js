@@ -11,19 +11,17 @@ export default function ButtonItem(props) {
   return (
     <>
       <Button className={`${style.btnCommon} ${style.noRotate} ${customClass}`} type={type} onClick={onClick}> 
-        <span>
-          {iconPosition === 'left' ? (
-            <i className={`${style.iconLeft}`}>{children}</i>
-          ):(
-            null
-          )}
-          {title}
-          {iconPosition === 'right' ? (
-            <i className={`${style.iconRight}`}>{children}</i>
-          ):(
-            null
-          )}
-        </span>
+        {iconPosition === 'left' ? (
+          <i className={`${style.iconLeft}`}>{children}</i>
+        ):(
+          null
+        )}
+        {title}
+        {iconPosition === 'right' ? (
+          <i className={`${style.iconRight}`}>{children}</i>
+        ):(
+          null
+        )}
       </Button>
     </>
   )

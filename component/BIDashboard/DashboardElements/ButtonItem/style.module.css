@@ -20,7 +20,6 @@
 
 .btnCommon.btnBig {
     padding: 0 20px !important;
-    font-size: 17px;
     line-height: 58px;
 }
 
@@ -157,7 +156,7 @@
 
 .btnBig.btnBorder.btnCommon,
 .btnBig.border2.btnCommon {
-    line-height: 54px;
+    line-height: 54.45px;
 }
 
 .btnBig.btnIcon.btnCommon {
@@ -223,13 +222,18 @@
 }
 
 @media (max-width:1699px) {
+    .btnCommon {
+        padding: 0 20px !important;
+        font-size: 15px;
+        line-height: 50px;
+    }
+
     .btnCommon.btnBig {
-        font-size: 16px;
         line-height: 52px;
     }
     .btnBig.btnBorder.btnCommon,
     .btnBig.border2.btnCommon {
-        line-height: 48px;
+        line-height: 48.8px;
     }
 
     .btnBig.btnIcon.btnCommon {

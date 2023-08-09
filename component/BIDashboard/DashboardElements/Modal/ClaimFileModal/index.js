@@ -37,12 +37,12 @@ export default function ClaimFileModal(props) {
         <>
             <Modal show={show} onHide={handleClose} centered className={formModal.formMdlOuter}>
                 <Modal.Header className={formModal.formMdlHdr} closeButton>
-                    <Modal.Title>File a New Request</Modal.Title>
+                    <Modal.Title>File a New Claim</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className={formModal.formMdlBody}>
                     <div className={`${form.commonForm} ${formModal.formMdlForm}`}>
                         <Form>
-                            <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!insuranceValue == '' ? 'selectedDropDiv' : null}`}>
+                            <Form.Group className={`selectDropDiv selectDropDivSmall searchDropDiv mb-4 ${!insuranceValue == '' ? 'selectedDropDiv' : null}`}>
                                 <SelectSearch
                                     options={insuranceOptions}
                                     name="insurance"
@@ -54,7 +54,7 @@ export default function ClaimFileModal(props) {
                                 />
                                 <label>Select Insurance</label>
                             </Form.Group>
-                            <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!reasonValue == '' ? 'selectedDropDiv' : null}`}>
+                            <Form.Group className={`selectDropDiv selectDropDivSmall searchDropDiv mb-4 ${!reasonValue == '' ? 'selectedDropDiv' : null}`}>
                                 <SelectSearch
                                     options={reasonOptions}
                                     name="reason"

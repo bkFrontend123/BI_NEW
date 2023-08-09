@@ -3,6 +3,7 @@
     color: var(--vt-c-blueSky);
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .linkBigBtn.linkBtn {
@@ -28,10 +29,22 @@
     .linkBtn {
         font-size: 15px;
     }
+    .linkBigBtn.linkBtn {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1399px) {
+    .linkBtn {
+        font-size: 14px;
+    }
+    .linkBigBtn.linkBtn {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width:767px) {
     .linkBigBtn.linkBtn {
-        font-size: 16px;
+        font-size: 14px;
     }
 }

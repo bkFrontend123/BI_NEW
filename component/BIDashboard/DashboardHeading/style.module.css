@@ -1,7 +1,7 @@
 .dashHdngDiv h3 {
     font-size: 22px;
     font-weight: 600;
-    color: var(--color-text-black);
+    color: var(--black);
     margin-bottom: 0;
     line-height: 36px;
 }

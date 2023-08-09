@@ -11,10 +11,10 @@ export default function ClaimCard(props) {
 
   return (
     <>
-      <div className={`${style.claimCardCol}`}>
+      <div className={`${style.claimNoCardCol}`}>
         <div>
           <h3>{title}</h3>
-          <div className={`${style.claimCardBtn}`}>
+          <div className={`${style.claimNoCardBtn}`}>
             {children}
           </div>
         </div>

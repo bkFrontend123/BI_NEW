@@ -32,7 +32,7 @@ export default function ClaimRequestModal(props) {
                 <Modal.Body className={formModal.formMdlBody}>
                     <div className={`${form.commonForm} ${formModal.formMdlForm}`}>
                         <Form>
-                            <Form.Group className={`selectDropDiv searchDropDiv mb-4 ${!requestTypeValue == '' ? 'selectedDropDiv' : null}`}>
+                            <Form.Group className={`selectDropDiv selectDropDivSmall searchDropDiv mb-4 ${!requestTypeValue == '' ? 'selectedDropDiv' : null}`}>
                                 <SelectSearch
                                     options={requestTypeOptions}
                                     name="requestType"

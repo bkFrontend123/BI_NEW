@@ -17,12 +17,10 @@
     z-index: 1;
 }
 .selectDropDivSmall.selectDropDiv label {
-    top: 16px;
-    font-size: 15px;
+    top: 18px;
 }
 .selectDropFilterDiv.selectDropDiv label {
-    top: 16px;
-    font-size: 15px;
+    top: 18px;
 }
 .selectDropDiv .select-search-has-focus ~ label,
 .selectDropDiv.selectedDropDiv label {
@@ -88,7 +86,7 @@
     right: 12px;
 }
 .selectDropDivSmall.selectDropDiv .select-search-value::after {
-    top: 18px;
+    top: 20px;
     right: 15px;
 }
 .selectDropDivSmall.selectDropDiv .select-search-has-focus .select-search-value::after {
@@ -96,7 +94,7 @@
     right: 12px;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-value::after {
-    top: 13px;
+    top: 15px;
     right: 15px;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-has-focus .select-search-value::after {
@@ -118,13 +116,11 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .selectDropDivSmall.selectDropDiv .select-search-input {
-    font-size: 15px;
-    height: 53px;
+    height: 58px;
 }
 .selectDropFilterDiv.selectDropDiv .select-search-input {
     background-color: transparent;
-    font-size: 15px;
-    height: 44px;
+    height: 50px;
     max-width: 140px;
 }
 .searchDropDiv.selectDropDiv.selectedDropDiv .select-search-input,
@@ -202,6 +198,31 @@
 .selectDropDiv .select-search-is-selected {
     color: var(--vt-c-blue) !important;
     font-weight: 600;
+}
+
+@media (max-width:1699px) {
+    .selectDropDivSmall.selectDropDiv .select-search-input {
+        font-size: 15px;
+        height: 52px;
+    }
+    .selectDropFilterDiv.selectDropDiv .select-search-input {
+        font-size: 15px;
+        height: 44px;
+    }
+    .selectDropDivSmall.selectDropDiv .select-search-value::after {
+        top: 18px;
+    }
+    .selectDropDivSmall.selectDropDiv .select-search-has-focus .select-search-value::after {
+        top: 14px;
+    }
+    .selectDropDivSmall.selectDropDiv label {
+        font-size: 15px;
+        top: 16px;
+    }
+    .selectDropFilterDiv.selectDropDiv label {
+        font-size: 15px;
+        top: 16px;
+    }
 }
 
 @media (max-width:767px) {
