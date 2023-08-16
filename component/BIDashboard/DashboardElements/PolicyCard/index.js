@@ -16,9 +16,9 @@ export default function PolicyCard(props) {
   return (
     <>
       <div className={`${style.policyCardCol}`}>
-        <div className={`d-flex gap-2 align-items-start justify-content-between ${style.policyCardTtl}`} onClick={handleClick}>
-          <div className={`d-flex align-items-start ${style.policyTitle}`}>
-            <span className={`d-md-none me-2 ${style.policyCardArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></span>
+        <div className={`d-md-flex gap-2 align-items-start justify-content-between ${style.policyCardTtl}`} onClick={handleClick}>
+          <div className={`d-md-flex align-items-start ${style.policyTitle}`}>
+            <span className={`d-none me-2 ${style.policyCardArrow} ${!isActive ? style.active : ''}`}><DropdownArrowIcon /></span>
             <div>
               <h3>{title}</h3>
               <h5>Policy purchase date: {purchaseDate}</h5>

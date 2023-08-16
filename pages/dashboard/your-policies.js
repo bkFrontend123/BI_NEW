@@ -2,6 +2,12 @@ import React, {useState} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import "swiper/css";
+import "swiper/css/scrollbar";
+import 'swiper/css/pagination';
+import "swiper/css/navigation";
 
 import {Row, Col, Form} from 'react-bootstrap';
 import SelectSearch from 'react-select-search';
@@ -39,6 +45,34 @@ export default function YourPolicies() {
       {name: '2022', value: '2'},
       {name: '2023', value: '3'},
   ];
+
+  const policyData = ([
+    {
+      id: "1",
+      title: "Fire Insurance",
+      purchaseDate: "24 April 2023",
+      insurerName: "ICICI Lombard",
+      policyPeriod: "29 April 2023 to 28 April 2024",
+      statusType: "pending"
+    },
+    {
+      id: "2",
+      title: "Shopkeeper's Insurance",
+      purchaseDate: "24 April 2023",
+      insurerName: "Bajaj Allianz",
+      policyPeriod: "29 April 2023 to 28 April 2024",
+      statusType: "process"
+    },
+    {
+      id: "3",
+      title: "Office Insurance",
+      purchaseDate: "24 April 2023",
+      insurerName: "Tata AIG",
+      policyPeriod: "29 April 2023 to 28 April 2024",
+      statusType: "confirm"
+    },
+  ])
+
   return (
     <>
       <Head>
@@ -50,7 +84,7 @@ export default function YourPolicies() {
         talkExpert="himani"
         activeMenu="2"
       >
-        <Row className="g-0 g-md-4 align-items-center justify-space-between mb-4">
+        <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
               title="Your Policies"
@@ -86,164 +120,87 @@ export default function YourPolicies() {
           </Col>
         </Row>
         
-        <Row className="g-3 g-md-4">
-          <Col xs={12}>
-            <PolicyCardItem
-              title="Fire Insurance"
-              purchaseDate="24 April 2023"
-              insurerLogo={icici_logo}
-              insurerName="ICICI Lombard"
-              policyPeriod="29 April 2023 to 28 April 2024"
-              statusType="pending"
-            >
-              <Row className="g-0 align-items-center">
-                <Col md={8} lg={9}>
+        <div className='cardsSliderOuter'>
+          <Swiper
+            modules={[Autoplay]}                
+            className={`cardsSlider`}
+            spaceBetween={0}
+            slidesPerView={100}
+            loop="true"
+            breakpoints={{
+              1399: {
+                slidesPerView: 100,
+              },
+              1200: {
+                slidesPerView: 100,
+              },
+              992: {
+                slidesPerView: 100,
+              },
+              768: {
+                slidesPerView: 100,
+              },
+              320: {
+                slidesPerView: 1.3,
+              },
+            }}
+          >
+            {policyData.map((item) =>
+              <SwiperSlide key={item.id}>
+                <PolicyCardItem
+                  title={item.title}
+                  purchaseDate={item.purchaseDate}
+                  insurerLogo={icici_logo}
+                  insurerName={item.insurerName}
+                  policyPeriod={item.policyPeriod}
+                  statusType={item.statusType}
+                >
                   <Row className="g-3 align-items-center">
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Sum insured"
-                        cost="1500 Cr"
-                      />
+                    <Col md={8} lg={9}>
+                      <Row className="g-3 align-items-center">
+                        <Col md>
+                          <PremiumFieldItem
+                            title="Sum insured"
+                            cost="1500 Cr"
+                          />
+                        </Col>
+                        <Col md>
+                          <PremiumFieldItem
+                            title="Premium"
+                            cost="50,000"
+                          />
+                        </Col>
+                        <Col md={4}>
+                          <LinkItem
+                            title="Email Policy"
+                            icon="true"
+                            href="javascript:void(0);"
+                          >
+                            <EmailIcon />
+                          </LinkItem>
+                        </Col>
+                      </Row>
                     </Col>
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Premium"
-                        cost="50,000"
-                      />
-                    </Col>
-                    <Col md={4}>
-                      <LinkItem
-                        title="Email Policy"
-                        icon="true"
-                        href="javascript:void(0);"
-                      >
-                        <EmailIcon />
-                      </LinkItem>
+                    <Col md={4} lg={3}>
+                      <Row className="g-3 align-items-center">
+                        <Col md={12}>
+                          <ButtonItem
+                            title="Fill Proposal Form"
+                            type="submit"
+                            iconPosition="right"
+                            customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
+                          >
+                            <ArrowPrimaryIcon />
+                          </ButtonItem>
+                        </Col>
+                      </Row>
                     </Col>
                   </Row>
-                </Col>
-                <Col md={4} lg={3}>
-                  <Row className="g-3 align-items-center">
-                    <Col md={12}>
-                      <ButtonItem
-                        title="Fill Proposal Form"
-                        type="submit"
-                        iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                      >
-                        <ArrowPrimaryIcon />
-                      </ButtonItem>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </PolicyCardItem>
-          </Col>
-          <Col xs={12}>
-            <PolicyCardItem
-              title="Shop-keeper's Insurance"
-              purchaseDate="24 April 2023"
-              insurerLogo={tataAIG_logo}
-              insurerName="TATA AIG"
-              policyPeriod="29 April 2023 to 28 April 2024"
-              statusType="process"
-            >
-              <Row className="g-0 align-items-center">
-                <Col md={8} lg={9}>
-                  <Row className="g-3 align-items-center">
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Sum insured"
-                        cost="1 Cr"
-                      />
-                    </Col>
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Premium"
-                        cost="50,000"
-                      />
-                    </Col>
-                    <Col md={4}>
-                      <LinkItem
-                        title="Email Policy"
-                        icon="true"
-                        href="javascript:void(0);"
-                      >
-                        <EmailIcon />
-                      </LinkItem>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col md={4} lg={3}>
-                  <Row className="g-3 align-items-center">
-                    <Col md={12}>
-                      <ButtonItem
-                        title="Fill Proposal Form"
-                        type="submit"
-                        iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                      >
-                        <ArrowPrimaryIcon />
-                      </ButtonItem>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </PolicyCardItem>
-          </Col>
-          <Col xs={12}>
-            <PolicyCardItem
-              title="Office Insurance"
-              purchaseDate="24 April 2023"
-              insurerLogo={bajajAllianz_logo}
-              insurerName="Bajaj"
-              policyPeriod="29 April 2023 to 28 April 2024"
-              statusType="confirm"
-            >
-              <Row className="g-0 align-items-center">
-                <Col md={8} lg={9}>
-                  <Row className="g-3 align-items-center">
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Sum insured"
-                        cost="1 Cr"
-                      />
-                    </Col>
-                    <Col md>
-                      <PremiumFieldItem
-                        title="Premium"
-                        cost="50,000"
-                      />
-                    </Col>
-                    <Col md={4}>
-                      <LinkItem
-                        title="Email Policy"
-                        icon="true"
-                        href="javascript:void(0);"
-                      >
-                        <EmailIcon />
-                      </LinkItem>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col md={4} lg={3}>
-                  <Row className="g-3 align-items-center">
-                    <Col md={12}>
-                      <ButtonItem
-                        title="Fill Proposal Form"
-                        type="submit"
-                        iconPosition="right"
-                        customClass={`w-100 m-0 px-2 ${buttonStyle.btnDark} ${buttonStyle.btnBig}`}
-                      >
-                        <ArrowPrimaryIcon />
-                      </ButtonItem>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </PolicyCardItem>
-          </Col>
-        </Row>
+                </PolicyCardItem>
+              </SwiperSlide>
+            )}
+          </Swiper>
+        </div>
 
         <NoItemCard customClass="mt-4">No Policies Found</NoItemCard>
       </DashboardCard>
