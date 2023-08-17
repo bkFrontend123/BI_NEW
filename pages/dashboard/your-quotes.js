@@ -1,14 +1,8 @@
 import React, {useState} from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import "swiper/css";
-import "swiper/css/scrollbar";
-import 'swiper/css/pagination';
-import "swiper/css/navigation";
 
 
 import {Row, Col, Form} from 'react-bootstrap';
@@ -16,6 +10,7 @@ import SelectSearch from 'react-select-search';
 import 'react-select-search/style.css'
 
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
+import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
 import FilterButton from '@/component/BIDashboard/DashboardElements/FilterButton'
 import FilterDropdown from '@/component/BIDashboard/DashboardElements/FilterDropdown'
@@ -104,6 +99,9 @@ export default function YourQuotes() {
         talkExpert="himani"
         activeMenu="1"
       >
+        <DashboardPageTitle
+          title="Your Quotes"
+        />
         <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
@@ -132,12 +130,11 @@ export default function YourQuotes() {
           </Col>
         </Row>
         <div className='cardsSliderOuter'>
-          <Swiper
-            modules={[Autoplay]}                
+          <Swiper              
             className={`cardsSlider`}
             spaceBetween={0}
             slidesPerView={100}
-            loop="true"
+            loop="false"
             breakpoints={{
               1399: {
                 slidesPerView: 100,
@@ -172,6 +169,7 @@ export default function YourQuotes() {
                     <Col md={8}>
                       <Row className="g-3 align-items-center">
                         <Col md>
+                          <hr className="mt-0 mb-3 d-md-none" />
                           <Form.Group className={`selectDropDiv selectDropDivSmall ${!sumInsuredValue == '' ? 'selectedDropDiv' : null}`}>
                             <SelectSearch
                                 options={sumInsuredOptions}
@@ -190,12 +188,13 @@ export default function YourQuotes() {
                             cost="93,000"
                             gst="true"
                           />
+                          <hr className="mt-3 mb-0 d-md-none" />
                         </Col>
                         <Col md={3}>
                           <LinkItem
                             title="Email Policy"
                             icon="true"
-                            href="javascript:void(0);"
+                            href=""
                           >
                             <EmailIcon />
                           </LinkItem>

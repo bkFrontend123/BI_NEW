@@ -42,10 +42,11 @@ export default function PolicyCard(props) {
             </div>
           </div>
           <div className={`${style.policyLogo}`}>
-            <Image className={`${style.policyLogoIcon}`} src={insurerLogo} alt={insurerName} />
+            <Image className={`${style.policyLogoIcon}`} src={insurerLogo} width={200} height={40} alt={insurerName} />
           </div>
         </div>
         <div className={`${style.mblPolicyCardInfo} ${!isActive ? style.show : ''}`}>
+          <hr className="mt-3 mb-0 d-md-none" />
           <div className={`${style.policyCardList}`}>
             <ul>
               <li>

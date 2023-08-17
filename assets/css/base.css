@@ -789,14 +789,23 @@ h2.font-secondary {
   .cardsSlider .swiper-wrapper {
     display: block;
     transform: inherit !important;
+    overflow: hidden;
+  }
+  .cardsSliderItemTwo.cardsSlider .swiper-wrapper {
+    margin: -1.5rem -0.75rem 0 -0.75rem;
+    width: calc(100% + 1.5rem);
   }
   .cardsSlider .swiper-wrapper .swiper-slide {
     width: 100% !important;
     margin: 0 !important;
     transform: inherit !important;
-  }
-  .cardsSlider .swiper-wrapper .swiper-slide + .swiper-slide {
     margin-top: 1.5rem !important;
+  }
+  .cardsSliderItemTwo.cardsSlider .swiper-wrapper .swiper-slide {
+    float: left;
+    width: 50% !important;
+    padding-left: calc((1.5rem)/2) !important;
+    padding-right: calc((1.5rem)/2) !important;
   }
 }
 

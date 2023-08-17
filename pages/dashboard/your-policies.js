@@ -1,19 +1,14 @@
 import React, {useState} from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import "swiper/css";
-import "swiper/css/scrollbar";
-import 'swiper/css/pagination';
-import "swiper/css/navigation";
 
 import {Row, Col, Form} from 'react-bootstrap';
 import SelectSearch from 'react-select-search';
 import 'react-select-search/style.css'
 
 import DashboardCard from '@/component/BIDashboard/DashboardCard'
+import DashboardPageTitle from '@/component/BIDashboard/DashboardPageTitle'
 import DashboardHeadingItem from '@/component/BIDashboard/DashboardHeading'
 import FilterDropdownCard from '@/component/BIDashboard/DashboardElements/FilterDropdown'
 import PolicyCardItem from "@/component/BIDashboard/DashboardElements/PolicyCard";
@@ -26,10 +21,6 @@ import EmailIcon from '@/component/BIDashboard/Icons/IconEmail';
 import ArrowPrimaryIcon from '@/component/BIDashboard/Icons/IconArrowPrimary';
 
 import buttonStyle from '@/component/BIDashboard/DashboardElements/ButtonItem/style.module.css';
-
-import bajajAllianz_logo from '@/public/policyLogos/bajajAllianz_logo.png'
-import icici_logo from '@/public/policyLogos/icici_logo.png'
-import tataAIG_logo from '@/public/policyLogos/tataAIG_logo.png'
 
 export default function YourPolicies() {
 
@@ -51,6 +42,7 @@ export default function YourPolicies() {
       id: "1",
       title: "Fire Insurance",
       purchaseDate: "24 April 2023",
+      insurerLogo: "/policyLogos/icici_logo.png",
       insurerName: "ICICI Lombard",
       policyPeriod: "29 April 2023 to 28 April 2024",
       statusType: "pending"
@@ -59,6 +51,7 @@ export default function YourPolicies() {
       id: "2",
       title: "Shopkeeper's Insurance",
       purchaseDate: "24 April 2023",
+      insurerLogo: "/policyLogos/tataAIG_logo.png",
       insurerName: "Bajaj Allianz",
       policyPeriod: "29 April 2023 to 28 April 2024",
       statusType: "process"
@@ -67,6 +60,7 @@ export default function YourPolicies() {
       id: "3",
       title: "Office Insurance",
       purchaseDate: "24 April 2023",
+      insurerLogo: "/policyLogos/tataAIG_logo.png",
       insurerName: "Tata AIG",
       policyPeriod: "29 April 2023 to 28 April 2024",
       statusType: "confirm"
@@ -84,6 +78,9 @@ export default function YourPolicies() {
         talkExpert="himani"
         activeMenu="2"
       >
+        <DashboardPageTitle
+          title="Your Policies"
+        />
         <Row className="g-3 g-md-4 align-items-center justify-space-between mb-4">
           <Col md>
             <DashboardHeadingItem
@@ -121,12 +118,11 @@ export default function YourPolicies() {
         </Row>
         
         <div className='cardsSliderOuter'>
-          <Swiper
-            modules={[Autoplay]}                
+          <Swiper            
             className={`cardsSlider`}
             spaceBetween={0}
             slidesPerView={100}
-            loop="true"
+            loop="false"
             breakpoints={{
               1399: {
                 slidesPerView: 100,
@@ -150,7 +146,7 @@ export default function YourPolicies() {
                 <PolicyCardItem
                   title={item.title}
                   purchaseDate={item.purchaseDate}
-                  insurerLogo={icici_logo}
+                  insurerLogo={item.insurerLogo}
                   insurerName={item.insurerName}
                   policyPeriod={item.policyPeriod}
                   statusType={item.statusType}
@@ -159,6 +155,7 @@ export default function YourPolicies() {
                     <Col md={8} lg={9}>
                       <Row className="g-3 align-items-center">
                         <Col md>
+                          <hr className="mt-0 mb-3 d-md-none" />
                           <PremiumFieldItem
                             title="Sum insured"
                             cost="1500 Cr"
@@ -169,12 +166,13 @@ export default function YourPolicies() {
                             title="Premium"
                             cost="50,000"
                           />
+                          <hr className="mt-3 mb-0 d-md-none" />
                         </Col>
                         <Col md={4}>
                           <LinkItem
                             title="Email Policy"
                             icon="true"
-                            href="javascript:void(0);"
+                            href=""
                           >
                             <EmailIcon />
                           </LinkItem>

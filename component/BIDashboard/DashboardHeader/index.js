@@ -17,7 +17,7 @@ export default function DashboardHeader(props) {
 
   return (
     <>
-      <div className={`mb-3 mb-md-4`}>
+      <div className={`mb-4`}>
         <Row className='g-2 g-md-3 align-items-center'>
           <Col md>
             <div className={`${dashLayoutStyle.dashboardHeader}`}>
