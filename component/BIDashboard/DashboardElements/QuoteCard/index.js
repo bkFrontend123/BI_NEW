@@ -37,7 +37,7 @@ export default function QuoteCard(props) {
           </div>
         </div>
         <div className={`${style.mblQuoteCardInfo} ${!isActive ? style.show : ''}`}>
-          <hr class="mt-3 mb-0 d-md-none" />
+          <hr className="mt-3 mb-0 d-md-none" />
           <div className={`${style.quoteCardList}`}>
             <ul>
               <li>
