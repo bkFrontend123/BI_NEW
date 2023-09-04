@@ -85,6 +85,7 @@ export default function WorkmensCompensation_Flow() {
         { name: 'B2B Consulting', value: '6' },
     ];
 
+    const [newlyAddedEmployeeId, setNewlyAddedEmployeeId] = useState(null);
     const addEmployee = () => {
         const newId = employeeDetails.length + 1;
 
@@ -104,6 +105,7 @@ export default function WorkmensCompensation_Flow() {
         };
 
         setEmployeeDetails([...updatedDetails, newEmployee]);
+        setNewlyAddedEmployeeId(true);
     };
 
     const handleNatureOfWorkChange = (employeeId, value) => {
@@ -364,7 +366,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                 <Tabs id={`skill-level-${employee.id}`} className={`mb-4 ${tabStyle.tabCmnNav}`}>
                                                                                     <Tab eventKey={`${employee.id}_skilled`} title="Skilled" className={tabStyle.tabCmnCol}>
                                                                                         <Form.Group className="floatFormGroup tooltipDiv mb-4">
-                                                                                            <FloatingLabel controlId={`${employee.id}_skilledNumberWorkers`} label="Number of workers">
+                                                                                            <FloatingLabel controlId={`${employee.id}_skilledNumberWorkers`} label="Number of skilled workers">
                                                                                                 <Form.Control
                                                                                                     className={`${form.formInput}`}
                                                                                                     type="text"
@@ -387,7 +389,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                             </FloatingLabel>
                                                                                         </Form.Group>
                                                                                         <Form.Group className="floatFormGroup tooltipDiv mb-4">
-                                                                                            <FloatingLabel controlId={`${employee.id}_skilledMonthlySalary`} label="Monthly salary per worker">
+                                                                                            <FloatingLabel controlId={`${employee.id}_skilledMonthlySalary`} label="Avg monthly salary per skilled worker">
                                                                                                 <Form.Control
                                                                                                     className={`${form.formInput}`}
                                                                                                     type="text"
@@ -508,7 +510,7 @@ export default function WorkmensCompensation_Flow() {
                                                                                     </Tab>
                                                                                 </Tabs>
                                                                             </div>
-                                                                            {employee.isEditing && (
+                                                                            {employee.isEditing && newlyAddedEmployeeId && (
                                                                                 <div className={`${form.fromConfirmButtonDiv} ${form.fromButtonDiv} mb-4`}>
                                                                                     <Button variant="" className={`btnCommon border-primary btnBorder w-100 justify-content-center ${form.formBtn}`} type="button" onClick={() => saveEmployeeDetails(employee.id)}>
                                                                                         <span>Confirm Changes</span>
